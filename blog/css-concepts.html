@@ -26,7 +26,13 @@
       <p>But you can change this behavior, and tell a span to display as a "block", which might be a way of adding a linebreak after it. Or telling a div to display as inline-block, so that it still takes up a block of space, but put the next element on the same line. There is also a "none" value, which makes it so that the element doesn't display or take up any space at all.</p>
       <p>This is the tip of the iceberg though. There are display values for lists, tables, etc., which is how those HTML elements display by default, but you could go crazy and make your lists display like tables and vice versa, if you had some good reason for wanting to do that. For most purposes, you can probably get by with "block", "inline", "inline-block", and "none".</p>
       <p></p>
-      <p>I hope this has been helpful to you!</p>
+      <p>Let's mess with a page that you probably see every day, your "new tab" in Chrome. It's got some links to frequently visited sites like this:</p>
+      <img src="../imgs/css-fig-1.png" alt="4 x 2 grid">
+      <p>It behaves this way because display="inline-block". If we use Inspect Element to change this to just "block", we can see that they get arrayed vertically:</p>
+      <img src="../imgs/css-fig-2.png" alt="1 x 8 grid">
+      <p>And if we change it to "inline", we can see that they're all put in a row, but they aren't treated as distinct blocks anymore:</p>
+      <img src="../imgs/css-fig-3.png" alt="jumbled mess">
+      <p>If we change it to "none", well, there isn't anything to show for that.</p>
     </article>
   </main>
     <footer>
