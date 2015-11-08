@@ -1,4 +1,4 @@
-[My website](nbdavies.github.io)
+[My website](http://nbdavies.github.io/)
 
 What did you learn about CSS padding, borders, and margin by doing this challenge?
 
