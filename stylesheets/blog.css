@@ -1,3 +1,13 @@
 footer {
 	text-align:center;
 }
+
+pre {
+	font-family: monospace;
+	background-color: #CCFFFF;
+	display: block;
+}
+p {
+	margin-top: 0em;
+	margin-bottom: 0.5em;
+}
