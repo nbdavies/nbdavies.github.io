@@ -3,31 +3,32 @@ nav {
 	border: 2px #bbbbbb solid;
 	padding: 1%;
 	margin: 1%;
-	width: 80%;
-	left: 9%;
+	width: 50%;
+	left: 23%;
 	position: relative;
-	background-color: #7beeff;
+	background-color: #C8F9FF;
 	border-radius: 10px;
 }
 h1 {
 	display: inline;
-	margin-right: 2em;
+	margin-right: 1em;
 }
 main {
 	border: 2px #bbbbbb solid;
 	padding: 1%;
 	margin: 1%;
 	height: 50%;
-	width: 80%;
-	left: 9%;
+	width: 50%;
+	left: 23%;
 	position: relative;
 	display: inline-block;
-	background-color: #7beeff;
+	background-color: #C8F9FF;
 	border-radius: 10px;
 }
-img {
+main img {
 	display: inline;
 	margin: 1%;
+	border-radius: 4%;
 }
 article {
 	display: inline-block;
@@ -50,7 +51,8 @@ nav a {
 	position: relative;
 	padding: .25em;
 	margin: 0;
-	width: 5em;	
+	width: 6em;	
+	font-size: .75em;
 }
 ul {
 	border: 1px	solid #bbbbbb;
@@ -77,12 +79,23 @@ html {
 .last {
 	border-radius: 0 5px 5px 0;
 }
-h1 {
-	font-family: palatino;
+
+.socialmedia img {
+	display: inline-block;
+	height: 1.25em;
+	margin-left: 13%;
 }
-h2 {
-	font-family: palatino;
+.socialmedia {
+	padding: 0% 0% 0% 1%;
+	margin: 0% 0% 0% 1%;
+	height: 5%;
+	width: 50%;
+	left: 23%;
+	position: relative;
 }
-h3 {
-	font-family: palatino;
+.socialmedia div {
+	width: 49%;
+	height: 100%;
+	display: inline-block;
+	float: left;
 }
