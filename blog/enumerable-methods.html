@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nick's Blog</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css" />
+  </head>
+  <body>
+<nav>
+    <h1>Nick Davies</h1>
+    <a href="../index.html" class="first">Home
+    </a><a href="index.html">Blog
+    </a><a href="../aboutme.html">About Me
+    </a><a href="../projects.html">Projects
+    </a><a href="../resume.html" class="last">Resume</a>
+  </nav>
+    <main>
+    <article>
+      <h2>Ruby Enumberable Methods: Group_by</h2>
+      <h3>Don't Ska What Your Country Can Ska For You</h3>
+      <h4>11/20/2015</h4>
+      <p>Ruby has certain classes of objects called "enumerables" meaning essentially that these objects have multiple values, but the number of values they have is...enumerable. You could enumerate it or count it up, if you so desired. The most basic of these is a range of numbers like 1 to 6, which would have 6 values in it. But it also includes arrays and hashes.</p>
+      <p>One of the methods available to use on enumerables is .group_by. This can evaluate each item in your enumerable, evaluate them using a block of code, and then store them in a hash where the key is the result of the code block, and the hash value is a list of the original items that got that result.</p>
+      <p>This probably doesn't make a lot of sense yet, but let's walk through an example. Let's say you had a list of bands:</p>
+      <code><pre>
+bands = ["The Monkees", 
+         "The Skatalites", 
+         "Reel Big Fish", 
+         "Ska-P"]
+      </pre></code>
+      <p>And you want to create two lists from this, one list of ska bands, and one list of non-ska bands. And you know that ska bands have "ska" in the name. So you write this little method to return whether a band is ska or not.</p>
+      <code><pre>
+def is_ska? (band)
+  if band.downcase.include?("ska")
+    return "Ska"
+  else
+    return "Not ska"
+  end
+end</pre></code>
+      <p>Now you can create your separate lists like this:</p>
+      <code><pre>
+bands_by_genre = bands.group_by {|band| is_ska?(band)}
+      </pre></code>
+      <p>And you get this totally accurate and comprehensive categorization of bands by genre:</p>
+      <code><pre>
+{"Not ska"=>["The Monkees", "Reel Big Fish"], 
+"Ska"=>["The Skatalites", "Ska-P"]}</pre></code>
+      <p>So sorting things into two arrays is one possible usage of it. But I chose an example with two categories because I thought it would be easier for you to grasp. There's all sorts of things you can do with this.</p>
+      <p>Did someone say...sorts? The method .sort_by is similar to .group_by, except after evaluating the code block for each item, instead of the hash I just showed you, it puts the items in an array, ordered based on the output of the code block. But that output itself isn't saved, so it's completely invisible where the groups would end and begin.</p>
+    </article>
+  </main>
+    <footer>
+      <p>Copyright &copy; 2015</p>
+    </footer>
+  </body>
+</html>
