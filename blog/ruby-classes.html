@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nick's Blog</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css" />
+  </head>
+  <body>
+<nav>
+    <h1>Nick Davies</h1>
+    <a href="../index.html" class="first">Home
+    </a><a href="index.html">Blog
+    </a><a href="../aboutme.html">About Me
+    </a><a href="../projects.html">Projects
+    </a><a href="../resume.html" class="last">Resume</a>
+  </nav>
+    <main>
+    <article>
+      <h2>A Class in Ruby Classes with a Touch of Class</h2>
+      <h3>A story of alarm clocks</h3>
+      <h4>11/28/2015</h4>
+      <p>In Ruby, you can create your own classes of objects, and give those objects their own methods (things they can do), and their own instance variables (attributes). Here's one example of why that's useful.</p>
+      <p>Let's say you want to create an object class of AlarmClock. For any alarm clock to work, it needs to be have a time that it goes off, and it needs to remember that time even if you don't.</p>
+      <p>Here's how we could write our class in Ruby:</p>
+      <code><pre>
+class AlarmClock
+  
+  def initialize (alarm_time)
+    @alarm_time = alarm_time
+  end
+
+  def ring? (time_now)
+    if time_now == @alarm_time
+  end
+
+end
+</pre></code>
+      <p>This is great, because now we can set an alarm for when to get up in the morning:</p>
+      <code><pre>
+morning_alarm = AlarmClock.new("7:45 AM")
+</pre></code>
+      <p>Our morning_alarm will remember what time we want to get up, so if we're in bed and want to know whether it's time to get up yet, we can just roll over and type this into our Ruby console:</p>
+<code><pre>
+> p morning_alarm.ring?("7:30 AM")
+false
+</pre></code>
+      <p>Oh good. We can sleep a little more. But even better, we can create multiple alarm clocks, each set to different times. Each alarm clock will remember what time it's set to. In the meantime, we can work on other things, run other Ruby methods, and our alarm clocks will remain untouched.</p>
+      <p>If you had tried to keep track of your alarm time yourself, and made it a local variable instead of an instance variable, you'd have to define it at the console level and pass it into any method you want to have access to it. And then if any methods changed the value of that variable, you might wake up at the wrong time. Or not at all. That's a scary thought.</p>
+      <p>This is just a tiny, not very functional example of course. There's a lot more you can do with classes and their instance variables in Ruby; the only limit is your imagination! You can modify the standard Ruby classes, though it's not generally a good idea. You can create classes contained within other classes. You can have your object create another set of objects. Go crazy with it.</p>
+    </article>
+  </main>
+    <footer>
+      <p>Copyright &copy; 2015</p>
+    </footer>
+  </body>
+</html>
