@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nick's Blog</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css" />
+  </head>
+  <body>
+<nav>
+    <h1>Nick Davies</h1>
+    <a href="../index.html" class="first">Home
+    </a><a href="index.html">Blog
+    </a><a href="../aboutme.html">About Me
+    </a><a href="../projects/index.html">Projects
+    </a><a href="../resume.html" class="last">Resume</a>
+  </nav>
+    <main>
+    <article>
+      <h2>What's Your Type?</h2>
+      <h3>Handling of data type mismatches in Ruby vs. Javascript</h3>
+      <h4>12/6/2015</h4>
+      <p>If you're a typical human, you probably think that 5 = "5" = 5.0. But of course to a computer, these are three different things: an integer, a string, and a "float" number. And if you give the computer one of these things when it's expecting another, interesting things can happen. The results will vary between programming languages, and how the language handles these points of confusion can give you insight into the character of the language.</p>
+      <p>Let's start with some examples in Ruby:</p>
+      <code><pre>
+p 5 + 5.0
+> 10.0
+p "5" + "5"
+> "55"
+p "5" + 5
+> TypeError
+p 5 * 5.0
+> 25.0
+p "5" * 5
+> "55555"
+p "5" * 5.4
+> "55555"
+p 5 * "5"
+> TypeError
+p "5" * "5"
+> TypeError
+p 5 / 5
+> 1
+p 5 / 5.0
+> 1.0
+</pre></code>
+    <p>Things to note:</p>
+    <ol>
+      <li>Anything involving an integer and a float results in another float.</li>
+      <li>Strings can be added to other strings or multiplied by a number (floats get rounded to the nearest integer). This has the interesting result that multiplication is not always commutative in Ruby.</li>
+      <li>Ruby has a special form of integer division only available to integers.</li>
+      <li>Any other shenanigans you try to pull with mixed data types will get you a TypeError.</li>
+    </ol>
+    <p>Now let's see how JavaScript handles these things!</p>
+<code><pre>
+console.log(5 + 5.0)
+> 10
+console.log("5" + "5")
+> 55
+console.log("5" + 5)
+> 55
+console.log("55" - 5)
+> 50
+console.log(5 * 5.0)
+> 25
+console.log("5" * 5)
+> 25
+console.log("5" * 5.4)
+> 27
+console.log(5 * "5")
+> 25
+console.log("5" * "5")
+> 25
+console.log(5 / 5.0)
+> 1
+console.log(6 / 5)
+> 1.2
+console.log(5 / "05")
+> 1
+console.log(5 / "05a")
+> NaN
+</pre></code>
+    <p>What's interesting here:</p>
+    <ol>
+      <li>Anything involving an integer and a float can result in a float, but JavaScript has no problem reducing a float ending in .0 to an integer.</li>
+      <li>You can add strings together, and if one of the things you're adding together is a string, then JavaScript thinks you're doing string addition.</li>
+      <li>Other than addition, if you do mathematical operations on strings that are numbers, JavaScript will perform the mathematical operation. This means there is no special string multiplication, so multiplication is commutative.</li>
+      <li>If converting the string to a number is not trivial, the operation will result in "NaN", or "Not a Number".</li>
+    </ol>
+    <p>With a few notable exceptions, Ruby seems like the stricter language in this area, making sure you are only combining like with like. That stricture is allows for those exceptions, because Ruby knows precisely when to apply them and when not to. It makes you convert your variables to the proper data type before you perform the operation on them, and so there are no surprises about the data type coming out of it.</p>
+    <p>JavaScript is generally more lenient about data type mismatches, and there are fewer rules to remember. This does mean you don't get the occasional use of string multiplication or integer division, but it does mean that you don't need to convert your variables from one data type to another quite so often. However this laxity of data types could end up surprising you if you completely ignore what few rules it has. Let me run you through a pernicious scenario:</p>
+    <code><pre>
+var integerA = 5
+var floatA = 5.0
+var stringA = "5.0"
+integerA = integerA * floatA
+stringA = stringA + integerA
+floatA = stringA/10
+console.log(floatA)
+> 0.5025000000000001
+//Mkay. I might have been expecting 3, but at least I got a value. 
+//What if one of the values had been slightly different?
+var integerA = 5
+var floatA = 5.01
+var stringA = "5.0"
+integerA = integerA * floatA
+stringA = stringA + integerA
+floatA = stringA/10
+console.log(floatA)
+> NaN
+//Yuck. Now I have to debug.
+</pre></code>
+    </article>
+  </main>
+    <footer>
+      <p>Copyright &copy; 2015</p>
+    </footer>
+  </body>
+</html>
