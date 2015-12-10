@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nick's Blog</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" />
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css" />
+  </head>
+  <body>
+<nav>
+    <h1>Nick Davies</h1>
+    <a href="../index.html" class="first">Home
+    </a><a href="index.html">Blog
+    </a><a href="../aboutme.html">About Me
+    </a><a href="../projects/index.html">Projects
+    </a><a href="../resume.html" class="last">Resume</a>
+  </nav>
+    <main>
+    <article>
+      <h2>Big O Complexity</h2>
+      <h3>May the largest exponent win!</h3>
+      <h4>12/10/2015</h4>
+      <p>Big O notation represents the complexity of an algorithm or program. You may also see it referred to as Landau notation to give credit to its inventor. Any program is comprised of individual steps. Perform this addition, set that variable, evaluate if 1=2. Let's get into some examples:</p>
+      <pre>def method(array) {p "Hello"}</pre>
+      <p>It doesn't matter how big an array you pass to this method, every time the method is called, it will do exactly one thing. We don't care how long it takes your computer to print "Hello" vs. how long it takes mine. But because it doesn't depend on the size of the input, we say this is O(1).</p>
+      <p>But that's a pretty dumb program. Let's try something a little more advanced:</p>
+      <pre>array.each {|value| p value}</pre>
+      <p>How many individual steps this takes depends on how many values are in the input array. If you were to graph the number of steps vs. the size of the array, you would get a diagonal line, showing that they're linearly related. So this would be O(n), because if your array has n values, the complexity of this code is "on the order of" n.</p>
+      <p>One more example, and then we'll get back to the theory.</p>
+      <pre>def find_pairs(array) do
+  array.each do |a|
+    array.each do |b|
+      p a if a == b
+    end
+  end
+end</pre>
+      <p>To find duplicate values in the array, we're looping over the array, and then for each value in the array, we're checking the rest of the array for that value. This means that for an array with 2 elements, this method would be checking 4 combinations of values, and for an array with 3 elements, it would be checking 9 combinations. So the complexity of this method would be O(n<sup>2</sup>). 
+      <p>Now, a slightly more efficient approach to finding duplicates in an array would be:</p>
+      <pre>def find_pairs(array) do
+  array.each_with_index do |a,i|
+    array[i+1..-1].each do |b|
+      p a if a == b
+    end
+  end
+end</pre>
+      <p>Now when we're looking for a duplicate of "a", we're only checking the part of the array that hasn't had a turn at being "a" yet. This eliminates accidentally counting an array value as its own duplicate, and it reduces the number of steps involved. For an array of 2 values, it only has to make 1 comparison. For an array of 3 values, it only has to make 3. For an array of 4 values, it only has to make 6. So the steps involved is (n<sup>2</sup>-n)/2. We made an improvement! Well, sorry to say, but this is still considered O(n<sup>2</sup>), because the constant (2) doesn't scale up, and the -n ends up not mattering much when your array size is up in the hundreds.</p>
+      <p>But that's okay! Certain tasks will just require a certain complexity, and there may be no way around it. For some examples of this, check out <a href="http://bigocheatsheet.com/">this cheat sheet</a> or <a href="https://en.wikipedia.org/wiki/Time_complexity#Table_of_common_time_complexities"> this Wikipedia page</a>. This is also a good starting point to learn more about algorithms you might not be familiar with.</p>
+      <p>We also need to keep in mind that because there's an inherent complexity in, for example, sorting an array, the complexity is there, even if it's hiding behind the scenes when we call the .sort! method. So to really understand the complexity of the code we're writing, we need to know what's going on in those methods, like knowing that Ruby uses a Merge Sort algorithm, which in all situations has a complexity of O(n*log(n)), but that other sort algorithms could be better in certain cases, so you could write your own sorting method based on what works best for you. But this also means that chaining a bunch of standard methods together into a one-line method might not look like a lot of code, but it might be much less efficient than just writing out what you're doing step by step.</p>
+      <p>I hinted at this earlier, that the big O complexity of a program doesn't necessarily predict its system performance. Something on the order of n<sup>3</sup> might not be a problem at all, if it's only executing one command that many times. Conversely, if you do have an O(n<sup>3</sup>) program maxing out your computers resources, cutting the number of steps in half might give you a reprieve, even if it won't change that O(n<sup>3</sup>) complexity.</p>
+      <p>Figuring out the big O complexity of your program doesn't take the place of actual performance load testing. But it can give you a theoretical idea of what's going to happen when your number of users goes from 5,000 to 10,000. Is that going to make your servers work twice as hard? Four times? Eight times? That could be important to know.</p>
+    </article>
+  </main>
+    <footer>
+      <p>Copyright &copy; 2015</p>
+    </footer>
+  </body>
+</html>
