@@ -1,0 +1,121 @@
+<html>
+<head>
+	<title>Nick Davies: Ruby Cheatsheet</title>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/default.css" />
+	<link rel="stylesheet" type="text/css" href="../stylesheets/cheatsheet.css" />
+</head>
+<body>
+	<nav>
+		<h1>Nick Davies</h1>
+		<a href="../index.html" class="first">Home
+		</a><a href="../blog/index.html">Blog
+		</a><a href="../aboutme.html">About Me
+		</a><a href="index.html">Projects
+		</a><a href="../resume.html" class="last">Resume</a>
+	</nav>
+	<main>
+		<h2>Ruby Cheatsheet</h2>
+		<div class="left">
+			<section>
+				<h3>Standard Classes</h3>
+				<ul>
+					<li>Integers <span>3</span></li>
+					<li>Floats <span>2.95</span></li>
+					<li>Strings <span>"anything in quotes"</span></li>
+					<li>Booleans <span>true/false</span></li>
+					<li>Symbols (literal sequence of characters)<span>:symbol</span></li>
+					<li>Ranges <span>[1..6]</span></li>
+					<li>Arrays <span>[1,"a",[3,4]]</span></li>
+					<li>Hashes <span>{key:"value","key2":[1,2,3]}</span></li>
+				</ul>
+			</section>
+			<section>
+				<h3>Operators</h3>
+				<h4>Math</h4>
+				<ul>
+					<li>Addition: <span>a + b</span></li>
+					<li>String addition: <span>"a"+"b"="ab"</span></li>
+					<li>Subtraction: <span>a - b</span></li>
+					<li>Multiplication: <span>a * b</span></li>
+					<li>String multiplication: <span>"a"*5="aaaaa"</span></li>
+					<li>Division: <span>a / b</span></li>
+					<li>Integer division: <span>1 / 2 = 0</span></li>
+					<li>Remainder/modulus: <span>a % b</span></li>
+				</ul>
+				<h4>Comparison</h4>
+				<ul>
+					<li>Equals: <span>==</span></li>
+					<li>Less than: <span>&#60;</span></li>
+					<li>Greater than: <span>&#62;</span></li>
+					<li>Not equals: <span>!=</span></li>
+					<li>Less than or equal to: <span>&#60;=</span></li>
+					<li>Greater than or equal to: <span>&#62;=</span></li>
+					<li>Included in: <span>===</span></li>
+					<li>Less than/equal to/greater than (returns -1/0/1): <span>&#60;=&#62;</span></li>
+					<li>Boolean And: <span>&amp;&amp;</span></li>
+					<li>Boolean Or: <span>||</span></li>
+					<li>Ternary operator (equivalent to if A then B else C) <span>A ? B : C</span></li>
+				</ul>
+			</section>
+			<section>
+				<h4>Defining a class:</h4>
+				<pre>class Something
+	@instance_variable = value
+	def method...
+end</pre>
+				<h4>Create a new object of that class:</h4>
+				<pre>object = Something.new(args)</pre>
+				<h4>Call a method of that class:</h4>
+				<pre>object.method(args)</pre>
+		</div>
+		<div>
+			<section>
+				<h3>Flow Control</h3>
+				<h4>Defining methods:</h4>
+				<pre>def <em>method_name</em>(<em>arguments</em>) do
+	<em>code block</em>
+	return <em>value</em>
+end</pre>
+				<aside>When not using "return", a code block will return the value of the last expression evaluated.</aside>
+				<h4>Calling methods:</h4>
+				<pre><em>method_name</em>(<em>args</em>)
+or for object/class-defined methods...
+<em>object.method_name</em>(<em>args</em>)</pre>
+<aside>Code blocks can be enclosed with {}, or with "do" and "end".</aside>
+				<h4>Conditionals:</h4>
+				<pre>if <em>condition</em> {<em>block 1</em>}
+elsif {<em>block 2</em>}
+else {<em>block 3</em>}
+end</pre>
+				<h4>Case switches:</h4>
+					<pre>case <em>letter</em>
+	when <em>"a"</em> {<em>block 1</em>}
+	when <em>"b"</em> {<em>block 2</em>}
+	else {<em>block 3</em>}
+end</pre>
+				<h4>Looping</h4>
+				<pre>while <em>condition</em> {<em>block</em>}</pre>
+				<pre>until <em>condition</em> {<em>block</em>}</pre>
+				<pre>for <em>counter</em> in <em>range</em> {<em>block</em>}</pre>
+				<h4>Recursion</h4>
+				<pre>def method_name() do
+	break if condition
+	method_name()
+end</pre>
+			</section>
+			<section>
+				<h3>Iterating on Objects</h3>
+				<h4>Integers</h4>
+				<pre>integer.times {block}</pre>
+				<h4>Arrays</h4>
+				<pre><em>array</em>.each {|<em>value</em>| <em>block</em>}</pre>
+<aside>Strings can be iterated over like arrays!</aside>
+				<h4>Hashes</h4>
+				<pre><em>hash</em>.each {|<em>key,value</em>| <em>block</em>}</pre>
+				<h4>Ranges</h4>
+				<pre>[<em>start..end</em>].each {|<em>value</em>| <em>block</em>}</pre>
+			</section>
+		</div>
+	</main>
+</body>
+</html>
