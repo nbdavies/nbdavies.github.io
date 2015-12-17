@@ -2,36 +2,64 @@
 <head>
   <title>Technical blog</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" />
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css" />
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
-<nav>
-  <h1>Nick Davies</h1>
-  <a href="../index.html" class="first">Home
-  </a><a href="index.html">Blog
-  </a><a href="../aboutme.html">About Me
-  </a><a href="../projects/index.html">Projects
-  </a><a href="../resume.html" class="last">Resume</a>
-</nav>
-<main>
-  <h1>Git, GitHub, and version control walk into a bar...</h1>
-  <h2>Attack of the clones, forks, and requests to Push!</h2>
+<nav class="col-md-6 col-md-offset-3">
+    <ul class="nav nav-pills">
+      <li role="presentation" class="navbar-brand">Nick Davies</li>
+        <li role="presentation"><a href="../index.html">Home</a></li>
+        <li role="presentation"><a href="../aboutme.html">About Me</a></li>
+        <li role="presentation"><a href="../resume.html">Resume</a></li>
+        <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Blog<span class="caret"></a><ul class="dropdown-menu">
+          <li><a href="git.html">Magic of Version Control</a></li>
+          <li><a href="css-concepts.html">CSS Display Attribute: Don't Leave Home Without It!</a></li>
+          <li><a href="arrays-hashes.html">Arrays vs. Hashes in Ruby</a></li>
+          <li><a href="enumerable-methods.html">Ruby Enumerable Methods: #group_by</a></li>
+          <li><a href="ruby-classes.html">Ruby Classes Are Worth Getting Up For</a></li>
+          <li><a href="JavaScript.html">What's Your Type? Mismatch Handling in Ruby vs. JavaScript</a></li>
+        </ul></li>
+        <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a><ul class="dropdown-menu">
+          <li><a href="../projects/cheat-sheet.html">Ruby Cheatsheet</a></li>
+        </ul></li>
+      </ul>
+  </nav>
+  <div class="row"></div>
+  <div class="list-group col-md-3">
+    <a href="git.html" class="list-group-item active">Magic of Version Control</a>
+    <a href="css-concepts.html" class="list-group-item">CSS Display Attribute: Don't Leave Home Without It!</a>
+    <a href="arrays-hashes.html" class="list-group-item">Arrays vs. Hashes in Ruby</a>
+    <a href="enumerable-methods.html" class="list-group-item">Ruby Enumerable Methods: #group_by</a>
+    <a href="ruby-classes.html" class="list-group-item">Ruby Classes Are Worth Getting Up For</a>
+    <a href="JavaScript.html" class="list-group-item">What's Your Type? Mismatch Handling in Ruby vs. JavaScript</a>
+  </div>
+<main class="col-md-6">
+  <h1>The Magic of Version Control: Git, GitHub, and the Multiverse</h1>
   <h4>10/21/2015</h4>
 
   <section>
-    <p>
-      Why version control?
-      No one gives birth to an adult. (Thank goodness, right?) Maybe you think the first version of your code got everything right. No bugs? Never going to add features later? Will it continue to work forever, as people upgrade their operating systems or their browsers? Things can get complicated pretty quickly, and if you want any help, you'll have multiple people contributing to the code at once. You need some system for keeping track of what changed in each version, and a way to go back to old versions or have multiple versions in the works at once.
-    </p>
-    <p>
-      How git helps...
-      All the code for your project gets stored in a directory, and git keeps track of what changes you make to files in that directory. You can create code branches to try something out without messing up your master copy. Git lets you switch seemlessly between them, without having to manage all those copies of your code yourself.
-    </p>
-    <p>
-      What about GitHub?
-      As the name suggests, GitHub can function as a central online repository for your code and history of your code changes, and those of other people contributing to the same code. It can also be how you release your code to the public, or as a backup in case you drop  your laptop into lava.
-    </p>
+  <h4>Why do you need version control?</h4>
+
+<p>You, yes you, need version control. And once you understand how useful version control is, you'll be wishing you could have it in aspects of your life beyond programming. </p>
+
+<em>Version control is time travel.</em> <p>Remember that one time in 8th grade when you played video games instead of studying for the history test the next day? Imagine if you could go back and correct that error. No one gets everything right on the first try. But with a version control system, you can figure out where a bug got introduced, and look at what your code was like before that point, and roll back to it if necessary.</p>
+
+<em>Version control is access to parallel universes.</em> <p>You aren't sure whether you want to continue your career in politics, or spend all your time carving scary faces into wood blocks, but you know you can't do both. Imagine if you could explore both options before you had to pick? Version control allows you to maintain distinct branches of your code, where you can safely go out on a limb without making a final decision.</p>
+
+<em>Version control is also an all-seeing eye.</em> <p>You failed chemistry lab because your lab partner added the wrong amount of hydrochloric acid. But once the ingredients were mixed, there was no way to prove that you weren't the one who did it. At least you had safety goggles on! With version control, you can collaborate with others, and track the changes each person is making and why they're making it, as well as having someone in control of what changes make it into the final product.</p>
+
+<p>Convinced now? Then let's talk about the two parts of a very common version control system.</p>
+
+<h4>Git</h4>
+
+<p>Git is your local version tracker. It sits next to you and keeps track of all the changes you make. All the code for your project gets stored in a directory, and git keeps track of what changes you make to files in that directory. You can create code branches to try something out without messing up your master copy. Git lets you switch between them, without having to manage all those copies of the code yourself.</p>
+
+<h4>GitHub</h4>
+
+<p>As the name suggests, GitHub can function as a central online repository for your code and the history of your code changes, and those of other people contributing to the same code. It can also be how you release your code to the public, or as a backup in case you drop your laptop into lava.</p>
   </section>
   </main>
   <footer>

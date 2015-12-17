@@ -2,80 +2,94 @@
 <html>
   <head>
     <title>Nick's Blog</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" />
-    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css" />
-  </head>
-
-  <body>
-<nav>
-    <h1>Nick Davies</h1>
-    <a href="../index.html" class="first">Home
-    </a><a href="index.html">Blog
-    </a><a href="../aboutme.html">About Me
-    </a><a href="../projects/index.html">Projects
-    </a><a href="../resume.html" class="last">Resume</a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="col-md-6 col-md-offset-3">
+    <ul class="nav nav-pills">
+      <li role="presentation" class="navbar-brand">Nick Davies</li>
+        <li role="presentation"><a href="../index.html">Home</a></li>
+        <li role="presentation"><a href="../aboutme.html">About Me</a></li>
+        <li role="presentation"><a href="../resume.html">Resume</a></li>
+        <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Blog<span class="caret"></a><ul class="dropdown-menu">
+          <li><a href="git.html">Magic of Version Control</a></li>
+          <li><a href="css-concepts.html">CSS Display Attribute: Don't Leave Home Without It!</a></li>
+          <li><a href="arrays-hashes.html">Arrays vs. Hashes in Ruby</a></li>
+          <li><a href="enumerable-methods.html">Ruby Enumerable Methods: #group_by</a></li>
+          <li><a href="ruby-classes.html">Ruby Classes Are Worth Getting Up For</a></li>
+          <li><a href="JavaScript.html">What's Your Type? Mismatch Handling in Ruby vs. JavaScript</a></li>
+        </ul></li>
+        <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a><ul class="dropdown-menu">
+          <li><a href="../projects/cheat-sheet.html">Ruby Cheatsheet</a></li>
+        </ul></li>
+      </ul>
   </nav>
-    <main>
+  <div class="row"></div>
+  <div class="list-group col-md-3">
+    <a href="git.html" class="list-group-item">Magic of Version Control</a>
+    <a href="css-concepts.html" class="list-group-item">CSS Display Attribute: Don't Leave Home Without It!</a>
+    <a href="arrays-hashes.html" class="list-group-item active">Arrays vs. Hashes in Ruby</a>
+    <a href="enumerable-methods.html" class="list-group-item">Ruby Enumerable Methods: #group_by</a>
+    <a href="ruby-classes.html" class="list-group-item">Ruby Classes Are Worth Getting Up For</a>
+    <a href="JavaScript.html" class="list-group-item">What's Your Type? Mismatch Handling in Ruby vs. JavaScript</a>
+  </div>
+<main class="col-md-6">
     <article>
       <h2>Arrays vs. Hashes in Ruby</h2>
-      <h3>What to do when, like Dwight, you have too many keys to know what to do with</h3>
       <h4>11/13/2015</h4>
-      <p>That subtitle was a reference to The Office, or so I'm told.</p><p>
-      Let's talk about arrays and hashes in Ruby. Maybe you're familiar with arrays from math class. Maybe you think you know <a href="https://en.wikipedia.org/wiki/Hash_function">what a hash is</a>. Time to un-learn that.</p>
-      <h4>Arrays the drawbridge!</h4>
-      <p>Describing these things doesn't work very well, so why don't I just show you. The following is an array in Ruby:</p>
-      <code class="language-ruby"><pre>
-array = ["z", 1, "a", -5.6]</pre></code>
-      <p>Another way to write the same array would be:</p>
-      <code class="language-ruby"><pre>
+      <h3>Arrays in Ruby</h3>
+      <p>Let's start by defining an example array in Ruby:</p>
+      <pre>
+array = ["z", 1, "a", -5.6]</pre>
+      <p>This sets the first four elements of the array to those values. In other words, it's equivalent to writing this:</p>
+      <pre>
 array[0] = "z"
 array[1] = 1
 array[2] = "a"
-array[3] = -5.6</pre></code>
-      <p>That's straightforward, right? A little too straightforward. So let's show you a couple of odd cases. I'll add a couple more values to my array, while specifying the index number:</p>
-      <code class="language-ruby"><pre>
+array[3] = -5.6</pre>
+      <p>But maybe you don't want to define your index values implicitly like that. Counting up is a bit boring. Let's look at a few odd cases. I'll add a couple more values to my array, while specifying the index number:</p>
+      <pre>
 array[5]="Hi"
 array[1.2]=false
 array[-3]="-3"
 array[-2.1]="yawn"
-      </pre></code>
+      </pre>
       <p>Now the contents of my array are:</p>
-      <code class="language-ruby"><pre>
-["z", false, "a", "-3", "yawn", "Hi"]</pre></code>
+      <pre>
+["z", false, "a", "-3", "yawn", "Hi"]</pre>
       <p>What happened was:</p>
       <ol>
-        <li>I specified the fifth entry in the array, which meant there had to be a fourth entry. But by default, its value is nil.</li>
-        <li>I specified the 1.2th entry to be boolean value false. The 1.2th value goes between the first and the second, naturally. Anytime I ask for the 1.2th value in this array, it'll return false. I should just try not to forget that it's there.</li>
-        <li>Then I specified the -3rd value in the array. -1 would be the last value in the array, and so on. So it replaced the third-from-last value with "-3", which is a string, not a number, FYI.</li>
+        <li>I specified the fifth entry in the array, which meant there had to be a fourth entry. By default, its value is nil.</li>
+        <li>I specified the 1.2th entry to be boolean value false. Naturally, the 1.2th value goes between the first and the second. Anytime I ask for the 1.2th value in this array, it'll return false. I just have to remember it's there.</li>
+        <li>Then I specified the -3rd value in the array. -1 would be the last value in the array, and so on. So it replaced the third-from-last value with "-3", which is a string, not a number.</li>
         <li>Then I specified the -2.1th element. But it does not allow in-between elements when you're counting backwards, so "yawn" was stored in element -2, aka element 4.</li>
       </ol>
-      <h4>I can hash cheezburger</h4>
-      <p>Now that you've got the basics of what an array can look like, I'll show you a hash. You've made it this far, and endured my puns, so you deserve it.</p>
-      <code class="language-ruby"><pre>
+      <h3>Hashes in Ruby</h3>
+      <p>Now that you've got the basics of how arrays look and act in Ruby, let's look at a hash, which is a data structure you might not have encountered in other languages. If you want to be really dull, you can make your hash look just like an array:</p>
+      <pre>
 hash[0]="z"
 hash[1]=1
 hash[2]="a"
 hash[3]=-5.6
-{0=>"z", 1=>1, 2=>"a", 3=>-5.6}</pre></code>
-      <p>So you can create the same data structure as you have in the array, but to do it, you have to specify the key and the value, something that was optional with the array.</p>
+{0=>"z", 1=>1, 2=>"a", 3=>-5.6}</pre>
+      <p>Notice that to do this you do have to specify both the keys and the values, whereas arrays could pick the indexes for you. This is because the hash can't make any assumptions about what you want inside the brackets.</p>
       <p>Now let's try some of the weird stuff we did to the array, and see what happens to the hash.</p>
-      <code class="language-ruby"><pre>
+      <pre>
 hash[5]="Hi"
 hash[1.2]=false
 hash[-3]="-3"
 hash[-2.1]="yawn"
-{0=>"z", 1=>1, 2=>"a", 3=>-5.6, 5=>"Hi", 1.2=>false, -3=>"-3", -2.1=>"yawn"}</pre></code>
-      <p>Absolutely nothing weird happened. Kind of disappointing, right? It handled those 4 additional key+value pairs the exact same way it handled the previous four, and has them listed in the order I added them. If you want a hash sorted, you need to make the sorting happen. It doesn't have the handy tricks for starting at the end, or adding an element in between. The key values didn't even need to be numbers, which would absolutely not fly in an array:</p>
-      <code class="language-ruby"><pre>
+{0=>"z", 1=>1, 2=>"a", 3=>-5.6, 5=>"Hi", 1.2=>false, -3=>"-3", -2.1=>"yawn"}</pre>
+      <p>Absolutely nothing weird happened. Kind of disappointing, right? It handled those 4 additional key+value pairs the exact same way it handled the previous four, and has them listed in the order I added them. Again, with a Hash, because the keys can be any type of value, Ruby can't make any assumptions about how you want the elements of your hash ordered. If you want a hash sorted, you need to sort it yourself. It doesn't have the handy tricks for starting at the end, or adding an element in between, though you can absolutely do those things with code. The key values didn't even need to be numbers, which would absolutely not fly in an array:</p>
+      <pre>
 hash["Chicken of the Woods"]="Laetiporus sulphureus" 
-hash["Hen of the Woods"]="Grifola frondosa"</pre></code>
-      <h4>Anything you can do, I can do better</h4>
-      <p>When do you use an array vs. a hash? They both have their strengths and weaknesses. One way to think of it would be: if you were writing out the information you're going to store, would you use a numbered list, or a bulleted list? If you'd write it as a numbered list, then you may be better off with an array. If you would write it as a bulleted or unordered list, or as more of a glossary, then you may be better off using a hash.</p>
-
+hash["Hen of the Woods"]="Grifola frondosa"</pre>
+      <h3>Which one do I use?</h3>
+      <p>Hashes and arrays both have their strengths and weaknesses. One way to think of it would be: if you were writing out the information you're going to store, would you use a numbered list, or a bulleted list? If you'd write it as a numbered list, then you may be better off with an array. If you would write it as a bulleted or unordered list, or as more of a glossary, then you may be better off using a hash.</p>
     </article>
   </main>
-    <footer>
-      <p>Copyright &copy; 2015</p>
-    </footer>
   </body>
 </html>

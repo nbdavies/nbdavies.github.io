@@ -1,132 +1,56 @@
 nav {
-	float: top;
-	border: 2px #bbbbbb solid;
-	padding: 1%;
-	margin: 1%;
-	width: 60%;
-	left: 18%;
-	position: relative;
+	border: 1px #bbbbbb solid;
 	background-color: #FFFFE9;
-	border-radius: 10px;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+
 }
-h1 {
-	display: inline;
-	margin-right: 1em;
+pre {
+	background-color: #CCFFFF;
 }
 main {
-	border: 2px #bbbbbb solid;
-	padding: 1%;
-	margin: 1%;
-	/*height: 50%;*/
-	width: 60%;
-	left: 18%;
-	position: relative;
-	display: inline-block;
+	border: 1px #bbbbbb solid;
 	background-color: #FFFFE9;
-	border-radius: 10px;
+	border-radius: 5px;
+	padding-top: 1%;
+	padding-bottom: 1%;
 }
-main img {
-	float: left;
-	margin: 1%;
-	margin-right: 2%;
+.list-group-item{
+	background-color: #FFFFE9;
+}
+.portrait {
 	border-radius: 4%;
-	max-width: 30%;
-	clear: left;
-}
-article {
-	margin:1%;
-	top:0;
-}
-.align-right {
-	position: relative;
-	max-width: 50%;
-	float: right;
-	vertical-align: top;
-	display: inline-block;
-	clear: none;
 }
 p {
 	text-align: justify;
-	font-size: .9em;
 	display: block;
+	clear: left;
+}
+.row{
+	margin-bottom: 10px;
 }
 * {
 	font-family: helvetica, arial, sans-serif;
 	color: #ae4b24;
 }
-.right {
-	display: block;
-	position: relative;
-	padding-left: 34%;
-}
-.left {
-	float: left;
-	clear: left;
-	display: inline-block;
-	position: relative;
-	vertical-align: top;
-	width: 44%;
-}
-nav a {
-	display: inline-block;
-	border: 1px solid #bbbbbb;
-	text-decoration: none;
-	text-align: center;
-	position: relative;
-	padding: .25em;
-	margin: 0;
-	width: 6em;	
-	font-size: .8em;
-}
-ul {
-	border: 1px	solid #bbbbbb;
-	padding-top: .5em;
-	padding-bottom: .5em;
-	margin: 1em;
-}
-nav a:hover {
-	background-color: #bbbbbb;
-}
-nav a:active {
-	background-color: #bbbbbb;
-}
-a {
-	color: #ae4b24;
-}
+
 html {
 	background-color: #00c0de;
 	background-image: url("../imgs/bg.png");
 }
-.first {
-	border-radius: 5px 0 0 5px;
-}
-.last {
-	border-radius: 0 5px 5px 0;
-}
 
 .socialmedia img {
-	display: inline-block;
 	height: 1.25em;
-	margin-left: 13%;
-}
-.socialmedia {
-	padding: 0% 0% 0% 1%;
-	margin: 0% 0% 0% 1%;
-	height: 5%;
-	width: 50%;
-	left: 23%;
-	position: relative;
-}
-.socialmedia div {
-	width: 49%;
-	height: 100%;
-	display: inline-block;
-	float: left;
+	padding-right: 4em;
+	margin-bottom: 5px;
 }
 aside {
-	position: relative;
-	display: inline-block;
-	border: 2px solid #bbbbbb;
-	border-radius: 10px;
-	padding: 1%;
+	margin-top: 10px;
+}
+body {
+	background-color: transparent;
+}
+img {
+	max-width: 100%;
 }
