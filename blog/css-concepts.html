@@ -2,36 +2,57 @@
 <html>
   <head>
     <title>Nick's Blog</title>
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" />
-    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css" />
-  </head>
-  <body>
-<nav>
-    <h1>Nick Davies</h1>
-    <a href="../index.html" class="first">Home
-    </a><a href="index.html">Blog
-    </a><a href="../aboutme.html">About Me
-    </a><a href="../projects/index.html">Projects
-    </a><a href="../resume.html" class="last">Resume</a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="col-md-6 col-md-offset-3">
+    <ul class="nav nav-pills">
+      <li role="presentation" class="navbar-brand">Nick Davies</li>
+        <li role="presentation"><a href="../index.html">Home</a></li>
+        <li role="presentation"><a href="../aboutme.html">About Me</a></li>
+        <li role="presentation"><a href="../resume.html">Resume</a></li>
+        <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Blog<span class="caret"></a><ul class="dropdown-menu">
+          <li><a href="git.html">Magic of Version Control</a></li>
+          <li><a href="css-concepts.html">CSS Display Attribute: Don't Leave Home Without It!</a></li>
+          <li><a href="arrays-hashes.html">Arrays vs. Hashes in Ruby</a></li>
+          <li><a href="enumerable-methods.html">Ruby Enumerable Methods: #group_by</a></li>
+          <li><a href="ruby-classes.html">Ruby Classes Are Worth Getting Up For</a></li>
+          <li><a href="JavaScript.html">What's Your Type? Mismatch Handling in Ruby vs. JavaScript</a></li>
+        </ul></li>
+        <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a><ul class="dropdown-menu">
+          <li><a href="../projects/cheat-sheet.html">Ruby Cheatsheet</a></li>
+        </ul></li>
+      </ul>
   </nav>
-    <main>
+  <div class="row"></div>
+  <div class="list-group col-md-3">
+    <a href="git.html" class="list-group-item">Magic of Version Control</a>
+    <a href="css-concepts.html" class="list-group-item active">CSS Display Attribute: Don't Leave Home Without It!</a>
+    <a href="arrays-hashes.html" class="list-group-item">Arrays vs. Hashes in Ruby</a>
+    <a href="enumerable-methods.html" class="list-group-item">Ruby Enumerable Methods: #group_by</a>
+    <a href="ruby-classes.html" class="list-group-item">Ruby Classes Are Worth Getting Up For</a>
+    <a href="JavaScript.html" class="list-group-item">What's Your Type? Mismatch Handling in Ruby vs. JavaScript</a>
+  </div>
+<main class="col-md-6">
     <article>
-      <h2>CSS Concepts: </h2>
-      <h3>Importance of the Display Attribute</h3>
+      <h2>CSS Display Attribute: Don't Leave Home Without It!</h2>
       <h4>11/8/2015</h4>
-      <p>I'm here to hopefully clarify some common areas of uncertainty in CSS. But take this with a grain of salt, and consult other resources as needed.</p>
-      <p>Everything we're talking about pertains to how things display, so what does "display" do? </p>
-      <p>The first thing to be aware of is that every type of element has a default value for this. Text a la carte, or a "span" tag, has a display type of "inline", meaning that the browser will put the next thing to the right of it. But paragraphs, images, divs, by default these will all have a default display type of "block" meaning that whatever comes next will go below it. </p>
-      <p>But you can change this behavior, and tell a span to display as a "block", which might be a way of adding a linebreak after it. Or telling a div to display as inline-block, so that it still takes up a block of space, but put the next element on the same line. There is also a "none" value, which makes it so that the element doesn't display or take up any space at all.</p>
+      <p>Everything in CSS controls how things display, so why is there an attribute called "display", and what does it do?</p>
+      <p>When you load an webpage, all the elements on that page line up, starting at the top left corner of the page. It's sort of like lining up in the jetway to get on a plane. All elements have a default for how they behave in line. Things like bullet points don't want anything next to them, so their display behavior is "block". But normal text, like a link or a span tag, those expect to be used in the context of a paragraph where text will continue on the same line, so their behavior is "inline".</p>
+      <p>But you can change this behavior, and tell a span to display as a "block", which would be one way of adding a linebreak after it. Or telling a div to display as inline-block, so that it still takes up a block of space, but allows other elements next to it. There's also a "none" value, which makes it so that the element doesn't display or take up any space at all, something you might use to dynamically add and remove elements from view.</p>
       <p>This is the tip of the iceberg though. There are display values for lists, tables, etc., which is how those HTML elements display by default, but you could go crazy and make your lists display like tables and vice versa, if you had some good reason for wanting to do that. For most purposes, you can probably get by with "block", "inline", "inline-block", and "none".</p>
       <p></p>
-      <p>Let's mess with a page that you probably see every day, your "new tab" in Chrome. It's got some links to frequently visited sites like this:</p>
+      <p>Now let's look at a page that you probably see every day, your "new tab" in Chrome. It's got some links to frequently visited sites like this:</p>
       <img src="../imgs/css-fig-1.png" alt="4 x 2 grid">
-      <p>It behaves this way because display="inline-block". If we use Inspect Element to change this to just "block", we can see that they get arrayed vertically:</p>
+      <p>It behaves this way because for each thumbnail, display="inline-block". If we use Inspect Element to change this to just "block", we can see that they get arrayed vertically:</p>
       <img src="../imgs/css-fig-2.png" alt="1 x 8 grid">
       <p>And if we change it to "inline", we can see that they're all put in a row, but they aren't treated as distinct blocks anymore:</p>
       <img src="../imgs/css-fig-3.png" alt="jumbled mess">
-      <p>If we change it to "none", well, there isn't anything to show for that.</p>
+      <p>And if we change it to "none", well, there isn't anything to show for that.</p>
+      <p>I hope this has been useful. Please contact me if you have any questions or corrections about this post.</p>
     </article>
   </main>
     <footer>

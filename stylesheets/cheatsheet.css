@@ -1,45 +1,6 @@
-div {
-	width: 50%;
-	float: left;
-	display: block;
-}
 section{
-	border: 2px solid #bbbbbb;
-	border-radius: 9px;
-	margin: 1%;
-	padding: 1%;
-	margin-bottom: 2%;
-	font-size: .9em;
 	tab-size: 1em;
 }
-ul {
-	border:0;
-	margin-top: 0;
-	margin-bottom: 0;
-}
 h3 {
-	margin-bottom: 0;
 	margin-top: 0;
-}
-h4{
-	margin-bottom: 0;
-	margin-top: 0;
-}
-pre {
-	font-family: monospace;
-	background-color: #CCFFFF;
-	display: block;
-	margin: 0;
-}
-pre em{
-	font-family: monospace;
-}
-aside {
-	margin: 1%;
-	max-width: 95%;
-	font-size: .9em;
-	border: 1px solid #bbbbbb;
-}
-span{
-	float: right;
 }

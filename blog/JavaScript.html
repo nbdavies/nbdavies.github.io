@@ -2,26 +2,48 @@
 <html>
   <head>
     <title>Nick's Blog</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" />
-    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
   <body>
-<nav>
-    <h1>Nick Davies</h1>
-    <a href="../index.html" class="first">Home
-    </a><a href="index.html">Blog
-    </a><a href="../aboutme.html">About Me
-    </a><a href="../projects/index.html">Projects
-    </a><a href="../resume.html" class="last">Resume</a>
+<nav class="col-md-6 col-md-offset-3">
+    <ul class="nav nav-pills">
+      <li role="presentation" class="navbar-brand">Nick Davies</li>
+        <li role="presentation"><a href="../index.html">Home</a></li>
+        <li role="presentation"><a href="../aboutme.html">About Me</a></li>
+        <li role="presentation"><a href="../resume.html">Resume</a></li>
+        <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Blog<span class="caret"></a><ul class="dropdown-menu">
+          <li><a href="git.html">Magic of Version Control</a></li>
+          <li><a href="css-concepts.html">CSS Display Attribute: Don't Leave Home Without It!</a></li>
+          <li><a href="arrays-hashes.html">Arrays vs. Hashes in Ruby</a></li>
+          <li><a href="enumerable-methods.html">Ruby Enumerable Methods: #group_by</a></li>
+          <li><a href="ruby-classes.html">Ruby Classes Are Worth Getting Up For</a></li>
+          <li><a href="JavaScript.html">What's Your Type? Mismatch Handling in Ruby vs. JavaScript</a></li>
+        </ul></li>
+        <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a><ul class="dropdown-menu">
+          <li><a href="../projects/cheat-sheet.html">Ruby Cheatsheet</a></li>
+        </ul></li>
+      </ul>
   </nav>
-    <main>
+  <div class="row"></div>
+  <div class="list-group col-md-3">
+    <a href="git.html" class="list-group-item">Magic of Version Control</a>
+    <a href="css-concepts.html" class="list-group-item">CSS Display Attribute: Don't Leave Home Without It!</a>
+    <a href="arrays-hashes.html" class="list-group-item">Arrays vs. Hashes in Ruby</a>
+    <a href="enumerable-methods.html" class="list-group-item">Ruby Enumerable Methods: #group_by</a>
+    <a href="ruby-classes.html" class="list-group-item">Ruby Classes Are Worth Getting Up For</a>
+    <a href="JavaScript.html" class="list-group-item active">What's Your Type? Mismatch Handling in Ruby vs. JavaScript</a>
+  </div>
+    <main class="col-md-6">
     <article>
       <h2>What's Your Type?</h2>
       <h3>Handling of data type mismatches in Ruby vs. Javascript</h3>
       <h4>12/6/2015</h4>
-      <p>If you're a typical human, you probably think that 5 = "5" = 5.0. But of course to a computer, these are three different things: an integer, a string, and a "float" number. And if you give the computer one of these things when it's expecting another, interesting things can happen. The results will vary between programming languages, and how the language handles these points of confusion can give you insight into the character of the language.</p>
+      <p>If you're a typical human, you probably think that 5 = "5" = 5.0. To a computer, these are three different things: an integer, a string, and a "float" number or decimal. And if you give the computer one of these things when it's expecting another, interesting things can happen, depending on the programming language you're working with. How different languages handle these situations can tell us a bit about what makes them special.</p>
       <p>Let's start with some examples in Ruby:</p>
-      <code><pre>
+      <pre>
 p 5 + 5.0
 > 10.0
 p "5" + "5"
@@ -42,7 +64,7 @@ p 5 / 5
 > 1
 p 5 / 5.0
 > 1.0
-</pre></code>
+</pre>
     <p>Things to note:</p>
     <ol>
       <li>Anything involving an integer and a float results in another float.</li>
@@ -50,8 +72,8 @@ p 5 / 5.0
       <li>Ruby has a special form of integer division only available to integers.</li>
       <li>Any other shenanigans you try to pull with mixed data types will get you a TypeError.</li>
     </ol>
-    <p>Now let's see how JavaScript handles these things!</p>
-<code><pre>
+    <p>Now let's see how JavaScript handles these things:</p>
+<pre>
 console.log(5 + 5.0)
 > 10
 console.log("5" + "5")
@@ -78,17 +100,17 @@ console.log(5 / "05")
 > 1
 console.log(5 / "05a")
 > NaN
-</pre></code>
+</pre>
     <p>What's interesting here:</p>
     <ol>
       <li>Anything involving an integer and a float can result in a float, but JavaScript has no problem reducing a float ending in .0 to an integer.</li>
-      <li>You can add strings together, and if one of the things you're adding together is a string, then JavaScript thinks you're doing string addition.</li>
-      <li>Other than addition, if you do mathematical operations on strings that are numbers, JavaScript will perform the mathematical operation. This means there is no special string multiplication, so multiplication is commutative.</li>
-      <li>If converting the string to a number is not trivial, the operation will result in "NaN", or "Not a Number".</li>
+      <li>If one of the things you're adding together is a string, then JavaScript thinks you're doing string addition.</li>
+      <li>Other than addition, if you do mathematical operations on strings, JavaScript will attempt to convert the string to a number and then perform the mathematical operation. This means there is no special string multiplication, so multiplication is always commutative.</li>
+      <li>If converting the string to a number is not trivial, the operation will result in "NaN" ("Not a Number").</li>
     </ol>
-    <p>With a few notable exceptions, Ruby seems like the stricter language in this area, making sure you are only combining like with like. That stricture is allows for those exceptions, because Ruby knows precisely when to apply them and when not to. It makes you convert your variables to the proper data type before you perform the operation on them, and so there are no surprises about the data type coming out of it.</p>
-    <p>JavaScript is generally more lenient about data type mismatches, and there are fewer rules to remember. This does mean you don't get the occasional use of string multiplication or integer division, but it does mean that you don't need to convert your variables from one data type to another quite so often. However this laxity of data types could end up surprising you if you completely ignore what few rules it has. Let me run you through a pernicious scenario:</p>
-    <code><pre>
+    <p>With a few notable exceptions, Ruby seems like the stricter language in this area, making sure you are only combining like with like. That stricture is what allows for those exceptions, because Ruby knows precisely when to apply them and when not to. Otherwise it makes you convert your variables to the proper data type before you perform the operation on them, so there are no surprises about the data type coming out of it.</p>
+    <p>JavaScript is generally more lenient about data type mismatches, and there are fewer rules to remember. If you want string multiplication or integer division like in Ruby, you can always write simple functions to do those things. You don't need to convert your variables from one data type to another quite so often. However this laxity of data types could end up surprising you if you completely ignore what few rules it has. Let me run you through a pernicious scenario:</p>
+<pre>
 var integerA = 5
 var floatA = 5.0
 var stringA = "5.0"
@@ -97,8 +119,9 @@ stringA = stringA + integerA
 floatA = stringA/10
 console.log(floatA)
 > 0.5025000000000001
-//Mkay. I might have been expecting 3, but at least I got a value. 
-//What if one of the values had been slightly different?
+</pre>
+    <p>If you were expecting the result to be 3, you might be surprised. 5 * 5.0 = 25, and "5.0" + 25 = "5.025". But at least I got a value. What if one of the values had been slightly different?</p>
+<pre>
 var integerA = 5
 var floatA = 5.01
 var stringA = "5.0"
@@ -107,12 +130,9 @@ stringA = stringA + integerA
 floatA = stringA/10
 console.log(floatA)
 > NaN
-//Yuck. Now I have to debug.
-</pre></code>
+</pre>
+    <p>Just to explain what happened, 5 * 5.01 = 25.05. And then "5.0" + 25.05 = "5.025.05". Which is perfectly valid as a string, but numbers can't have more than one decimal point in them. So when you try to divide it by 10, all JavaScript can tell you is that the output is not a number. That might throw an even more serious wrench in whatever your program was planning to do with that value. So even though JavaScript lets some type mismatches slide, it's still something you need to be conscious of.</p>
     </article>
   </main>
-    <footer>
-      <p>Copyright &copy; 2015</p>
-    </footer>
   </body>
 </html>

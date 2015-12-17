@@ -1,61 +1,76 @@
 <html>
 <head>
 	<title>Nick Davies: Ruby Cheatsheet</title>
-	<link rel="stylesheet" type="text/css" href="../stylesheets/default.css" />
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../stylesheets/cheatsheet.css" />
 </head>
 <body>
-	<nav>
-		<h1>Nick Davies</h1>
-		<a href="../index.html" class="first">Home
-		</a><a href="../blog/index.html">Blog
-		</a><a href="../aboutme.html">About Me
-		</a><a href="index.html">Projects
-		</a><a href="../resume.html" class="last">Resume</a>
-	</nav>
-	<main>
+	<nav class="col-md-6 col-md-offset-3">
+    <ul class="nav nav-pills">
+      <li role="presentation" class="navbar-brand">Nick Davies</li>
+        <li role="presentation"><a href="../index.html">Home</a></li>
+        <li role="presentation"><a href="../aboutme.html">About Me</a></li>
+        <li role="presentation"><a href="../resume.html">Resume</a></li>
+        <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Blog<span class="caret"></a><ul class="dropdown-menu">
+          <li><a href="../blog/git.html">Magic of Version Control</a></li>
+          <li><a href="../blog/css-concepts.html">CSS Display Attribute: Don't Leave Home Without It!</a></li>
+          <li><a href="../blog/arrays-hashes.html">Arrays vs. Hashes in Ruby</a></li>
+          <li><a href="../blog/enumerable-methods.html">Ruby Enumerable Methods: #group_by</a></li>
+          <li><a href="../blog/ruby-classes.html">Ruby Classes Are Worth Getting Up For</a></li>
+          <li><a href="../blog/JavaScript.html">What's Your Type? Mismatch Handling in Ruby vs. JavaScript</a></li>
+        </ul></li>
+        <li role="presentation" class="dropdown active"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a><ul class="dropdown-menu">
+          <li><a href="cheat-sheet.html">Ruby Cheatsheet</a></li>
+        </ul></li>
+      </ul>
+  </nav>
+	<main class="col-md-6 col-md-offset-3">
 		<h2>Ruby Cheatsheet</h2>
-		<div class="left">
+		<div class="col-md-6">
 			<section>
 				<h3>Standard Classes</h3>
-				<ul>
-					<li>Integers <span>3</span></li>
-					<li>Floats <span>2.95</span></li>
-					<li>Strings <span>"anything in quotes"</span></li>
-					<li>Booleans <span>true/false</span></li>
-					<li>Symbols (literal sequence of characters)<span>:symbol</span></li>
-					<li>Ranges <span>[1..6]</span></li>
-					<li>Arrays <span>[1,"a",[3,4]]</span></li>
-					<li>Hashes <span>{key:"value","key2":[1,2,3]}</span></li>
-				</ul>
+				<dl class="dl-horizontal">
+					<dt>Integers</dt><dd>3</dd>
+					<dt>Floats</dt><dd>2.95</dd>
+					<dt>Strings</dt><dd>"anything in quotes"</dd>
+					<dt>Booleans</dt><dd>true/false</dd>
+					<dt>Symbols</dt><dd>:symbol</dd>
+					<dt>Ranges</dt><dd>[1..6]</dd>
+					<dt>Arrays</dt><dd>[1,"a",[3,4]]</dd>
+					<dt>Hashes</dt><dd>{key:"value",
+					"key2":[1,2,3]}</dd>
+				</dl>
 			</section>
 			<section>
 				<h3>Operators</h3>
 				<h4>Math</h4>
-				<ul>
-					<li>Addition: <span>a + b</span></li>
-					<li>String addition: <span>"a"+"b"="ab"</span></li>
-					<li>Subtraction: <span>a - b</span></li>
-					<li>Multiplication: <span>a * b</span></li>
-					<li>String multiplication: <span>"a"*5="aaaaa"</span></li>
-					<li>Division: <span>a / b</span></li>
-					<li>Integer division: <span>1 / 2 = 0</span></li>
-					<li>Remainder/modulus: <span>a % b</span></li>
-				</ul>
+				<dl class="dl-horizontal">
+					<dt>Addition:</dt><dd>a + b</dd>
+					<dt>String addition:</dt><dd>"a" + "b" = "ab"</dd>
+					<dt>Subtraction:</dt><dd>a - b</dd>
+					<dt>Multiplication:</dt><dd>a * b</dd>
+					<dt>String multiplication:</dt><dd>"a" * 5 = "aaaaa"</dd>
+					<dt>Division:</dt><dd>a / b</dd>
+					<dt>Integer division:</dt><dd>1 / 2 = 0</dd>
+					<dt>Remainder/modulus:</dt><dd>a % b</dd>
+				</dl>
 				<h4>Comparison</h4>
-				<ul>
-					<li>Equals: <span>==</span></li>
-					<li>Less than: <span>&#60;</span></li>
-					<li>Greater than: <span>&#62;</span></li>
-					<li>Not equals: <span>!=</span></li>
-					<li>Less than or equal to: <span>&#60;=</span></li>
-					<li>Greater than or equal to: <span>&#62;=</span></li>
-					<li>Included in: <span>===</span></li>
-					<li>Less than/equal to/greater than (returns -1/0/1): <span>&#60;=&#62;</span></li>
-					<li>Boolean And: <span>&amp;&amp;</span></li>
-					<li>Boolean Or: <span>||</span></li>
-					<li>Ternary operator (equivalent to if A then B else C) <span>A ? B : C</span></li>
-				</ul>
+				<dl class="dl-horizontal">
+					<dt>Equals:</dt><dd>==</dd>
+					<dt>Less than:</dt><dd>&#60;</dd>
+					<dt>Greater than:</dt><dd>&#62;</dd>
+					<dt>Not equals:</dt><dd>!=</dd>
+					<dt>Less than or equal to:</dt><dd>&#60;=</dd>
+					<dt>Greater than or equal to:</dt><dd>&#62;=</dd>
+					<dt>Included in:</dt><dd>===</dd>
+					<dt>Spaceship (-1/0/1):</dt><dd>&#60;=&#62;</dd>
+					<dt>Boolean And:</dt><dd>&amp;&amp;</dd>
+					<dt>Boolean Or:</dt><dd>||</dd>
+					<dt>Ternary (if...then...else)</dt><dd>A ? B : C</dd>
+				</dl>
 			</section>
 			<section>
 				<h4>Defining a class:</h4>
@@ -67,36 +82,38 @@ end</pre>
 				<pre>object = Something.new(args)</pre>
 				<h4>Call a method of that class:</h4>
 				<pre>object.method(args)</pre>
-		</div>
-		<div>
-			<section>
-				<h3>Flow Control</h3>
 				<h4>Defining methods:</h4>
-				<pre>def <em>method_name</em>(<em>arguments</em>)
-	<em>code block</em>
-	return <em>value</em>
+				<pre>def method_name(arguments)
+	code block
+	return value
 end</pre>
 				<aside>When not using "return", a code block will return the value of the last expression evaluated.</aside>
+		</div>
+		<div class="col-md-6">
+			<section>
+				<h3>Flow Control</h3>
 				<h4>Calling methods:</h4>
-				<pre><em>method_name</em>(<em>args</em>)
-or for object/class-defined methods...
-<em>object.method_name</em>(<em>args</em>)</pre>
+				<pre>method_name(args)</pre>
+<p>or for object/class-defined methods:</p>
+<pre>object.method_name(args)</pre>
 <aside>Code blocks can be enclosed with {}, or with "do" and "end".</aside>
 				<h4>Conditionals:</h4>
-				<pre>if <em>condition</em> {<em>block 1</em>}
-elsif {<em>block 2</em>}
-else {<em>block 3</em>}
+				<pre>if condition {block 1}
+elsif {block 2}
+else {block 3}
 end</pre>
+<p>Or for single line single conditions:</p>
+<pre>statement if condition</pre>
 				<h4>Case switches:</h4>
-					<pre>case <em>letter</em>
-	when <em>"a"</em> {<em>block 1</em>}
-	when <em>"b"</em> {<em>block 2</em>}
-	else {<em>block 3</em>}
+					<pre>case letter
+	when "a" {block 1}
+	when "b" {block 2}
+	else {block 3}
 end</pre>
 				<h4>Looping</h4>
-				<pre>while <em>condition</em> {<em>block</em>}</pre>
-				<pre>until <em>condition</em> {<em>block</em>}</pre>
-				<pre>for <em>counter</em> in <em>range</em> {<em>block</em>}</pre>
+				<pre>while condition {block}</pre>
+				<pre>until condition {block}</pre>
+				<pre>for counter in range {block</em>}</pre>
 				<h4>Recursion</h4>
 				<pre>def method_name() do
 	break if condition
@@ -108,12 +125,12 @@ end</pre>
 				<h4>Integers</h4>
 				<pre>integer.times {block}</pre>
 				<h4>Arrays</h4>
-				<pre><em>array</em>.each {|<em>value</em>| <em>block</em>}</pre>
+				<pre>array.each {|value| block}</pre>
 <aside>Strings can be iterated over like arrays!</aside>
 				<h4>Hashes</h4>
-				<pre><em>hash</em>.each {|<em>key,value</em>| <em>block</em>}</pre>
+				<pre>hash.each {|key,value| block}</pre>
 				<h4>Ranges</h4>
-				<pre>[<em>start..end</em>].each {|<em>value</em>| <em>block</em>}</pre>
+				<pre>[start..end].each {|value| block}</pre>
 			</section>
 		</div>
 	</main>

@@ -2,55 +2,73 @@
 <html>
   <head>
     <title>Nick's Blog</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" />
-    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css" />
-  </head>
-  <body>
-<nav>
-    <h1>Nick Davies</h1>
-    <a href="../index.html" class="first">Home
-    </a><a href="index.html">Blog
-    </a><a href="../aboutme.html">About Me
-    </a><a href="../projects/index.html">Projects
-    </a><a href="../resume.html" class="last">Resume</a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="col-md-6 col-md-offset-3">
+    <ul class="nav nav-pills">
+      <li role="presentation" class="navbar-brand">Nick Davies</li>
+        <li role="presentation"><a href="../index.html">Home</a></li>
+        <li role="presentation"><a href="../aboutme.html">About Me</a></li>
+        <li role="presentation"><a href="../resume.html">Resume</a></li>
+        <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Blog<span class="caret"></a><ul class="dropdown-menu">
+          <li><a href="git.html">Magic of Version Control</a></li>
+          <li><a href="css-concepts.html">CSS Display Attribute: Don't Leave Home Without It!</a></li>
+          <li><a href="arrays-hashes.html">Arrays vs. Hashes in Ruby</a></li>
+          <li><a href="enumerable-methods.html">Ruby Enumerable Methods: #group_by</a></li>
+          <li><a href="ruby-classes.html">Ruby Classes Are Worth Getting Up For</a></li>
+          <li><a href="JavaScript.html">What's Your Type? Mismatch Handling in Ruby vs. JavaScript</a></li>
+        </ul></li>
+        <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a><ul class="dropdown-menu">
+          <li><a href="../projects/cheat-sheet.html">Ruby Cheatsheet</a></li>
+        </ul></li>
+      </ul>
   </nav>
-    <main>
+  <div class="row"></div>
+  <div class="list-group col-md-3">
+    <a href="git.html" class="list-group-item">Magic of Version Control</a>
+    <a href="css-concepts.html" class="list-group-item">CSS Display Attribute: Don't Leave Home Without It!</a>
+    <a href="arrays-hashes.html" class="list-group-item">Arrays vs. Hashes in Ruby</a>
+    <a href="enumerable-methods.html" class="list-group-item active">Ruby Enumerable Methods: #group_by</a>
+    <a href="ruby-classes.html" class="list-group-item">Ruby Classes Are Worth Getting Up For</a>
+    <a href="JavaScript.html" class="list-group-item">What's Your Type? Mismatch Handling in Ruby vs. JavaScript</a>
+  </div>
+<main class="col-md-6">
     <article>
-      <h2>Ruby Enumberable Methods: Group_by</h2>
-      <h3>Don't Ska What Your Country Can Ska For You</h3>
+      <h2>Ruby Enumberable Methods: #group_by</h2>
       <h4>11/20/2015</h4>
       <p>Ruby has certain classes of objects called "enumerables" meaning essentially that these objects have multiple values, but the number of values they have is...enumerable. You could enumerate it or count it up, if you so desired. The most basic of these is a range of numbers like 1 to 6, which would have 6 values in it. But it also includes arrays and hashes.</p>
-      <p>One of the methods available to use on enumerables is .group_by. This can evaluate each item in your enumerable, evaluate them using a block of code, and then store them in a hash where the key is the result of the code block, and the hash value is a list of the original items that got that result.</p>
-      <p>This probably doesn't make a lot of sense yet, but let's walk through an example. Let's say you had a list of bands:</p>
-      <code><pre>
-bands = ["The Monkees", 
-         "The Skatalites", 
-         "Reel Big Fish", 
-         "Ska-P"]
-      </pre></code>
-      <p>And you want to create two lists from this, one list of ska bands, and one list of non-ska bands. And you know that ska bands have "ska" in the name. So you write this little method to return whether a band is ska or not.</p>
-      <code><pre>
-def is_ska? (band)
-  if band.downcase.include?("ska")
-    return "Ska"
-  else
-    return "Not ska"
+      <p>One of the methods available to use on enumerables is #group_by. This method goes through each item in your object, evaluates it using a block of code, and creates a hash where the key is the result of the code block, and the hash value is an array of the items that got that result.</p>
+      <p>If you didn't follow that, don't worry. Let's look at an example. You have a list of songs, and you want to figure out what genre they are:</p>
+      <pre>
+songs = ["Come Away With Me", 
+         "Moon River",
+         "Smells Like Teen Spirit", 
+         "Sandstorm",
+         "Song 2"]</pre>
+      <p>Let's say you have a method to calculate the BPM of each song, and you figure out that songs with slow BPMs are jazz, songs with high BPMs are techno, and songs with middling BPMs are rock. You and I know that this is not universally true, but in this example, perhaps these are the only songs you've ever heard.</p>
+      <pre>
+def genre (song)
+  if song.bpm &gt; 130
+    return "Techno"
+  elsif song.bpm &lt; 90 
+    return "Jazz"
+  else return "Rock"
   end
-end</pre></code>
+end</pre>
       <p>Now you can create your separate lists like this:</p>
-      <code><pre>
-bands_by_genre = bands.group_by {|band| is_ska?(band)}
-      </pre></code>
-      <p>And you get this totally accurate and comprehensive categorization of bands by genre:</p>
-      <code><pre>
-{"Not ska"=>["The Monkees", "Reel Big Fish"], 
-"Ska"=>["The Skatalites", "Ska-P"]}</pre></code>
-      <p>So sorting things into two arrays is one possible usage of it. But I chose an example with two categories because I thought it would be easier for you to grasp. There's all sorts of things you can do with this.</p>
-      <p>Did someone say...sorts? The method .sort_by is similar to .group_by, except after evaluating the code block for each item, instead of the hash I just showed you, it puts the items in an array, ordered based on the output of the code block. But that output itself isn't saved, so it's completely invisible where the groups would end and begin.</p>
+      <pre>
+songs_by_genre = songs.group_by {|song| genre(song)}</pre>
+      <p>And you get this totally accurate and comprehensive categorization of songs by genre:</p>
+      <pre>
+{"Jazz"=>["Come Away With Me", "Moon River"], 
+"Rock"=>["Smells Like Teen Spirit", "Song 2"],
+"Techno"=>["Sandstorm"]}</pre>
+      <p>As you can see, you can use #group_by to sort a list of things into distinct groups. The method #sort_by is similar to #group_by, except after evaluating the code block for each item, instead of the hash I just showed you, it puts all the items in an array, ordered based on the output of the code block. But that output value (the genre in our example) isn't part of the array, so if you used #sort_by, you'd have a list of songs arranged by genre, but there wouldn't be any break between the jazz songs and the rock songs.</p>
     </article>
   </main>
-    <footer>
-      <p>Copyright &copy; 2015</p>
-    </footer>
   </body>
 </html>
