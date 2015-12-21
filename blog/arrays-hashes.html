@@ -10,7 +10,7 @@
 <body>
 <nav class="col-md-6 col-md-offset-3">
     <ul class="nav nav-pills">
-      <li role="presentation" class="navbar-brand">Nick Davies</li>
+      <li role="presentation"><a href="../index.html" class="btn-success">Nick Davies</a></li>
         <li role="presentation"><a href="../index.html">Home</a></li>
         <li role="presentation"><a href="../aboutme.html">About Me</a></li>
         <li role="presentation"><a href="../resume.html">Resume</a></li>
@@ -21,6 +21,7 @@
           <li><a href="enumerable-methods.html">Ruby Enumerable Methods: #group_by</a></li>
           <li><a href="ruby-classes.html">Ruby Classes Are Worth Getting Up For</a></li>
           <li><a href="JavaScript.html">What's Your Type? Mismatch Handling in Ruby vs. JavaScript</a></li>
+          <li><a href="tech.html">Big O Complexity</a></li>
         </ul></li>
         <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a><ul class="dropdown-menu">
           <li><a href="../projects/cheat-sheet.html">Ruby Cheatsheet</a></li>
@@ -28,6 +29,18 @@
       </ul>
   </nav>
   <div class="row"></div>
+  <div class="col-md-offset-3 row">
+    <div class="socialmedia col-md-3 btn-group-justified">
+      <a href="https://www.facebook.com/nicholas.davies.988"><img src="../imgs/facebook.png" /></a>
+      <a href="https://twitter.com/GentleBronto"><img src="../imgs/twitter.png" id="twitter"/></a>
+      <a href="https://plus.google.com/+NicholasDavies988"><img src="../imgs/googleplus.png" /></a>
+      <a href="https://www.linkedin.com/in/nbdavies"><img src="../imgs/linkedin.png" /></a>
+      <a href="https://www.youtube.com/user/nbdaviesify"><img src="../imgs/youtube.png" id="youtube"/></a>
+      <a href="https://github.com/nbdavies"><img src="../imgs/github.png" /></a>
+      <a href="https://soundcloud.com/spiral-island"><img src="../imgs/soundcloud.png" id="soundcloud"/></a>
+      <a href="mailto:nbdavies@gmail.com"><img src="../imgs/email.png" /></a>
+    </div>
+  </div>
   <div class="list-group col-md-3">
     <a href="git.html" class="list-group-item">Magic of Version Control</a>
     <a href="css-concepts.html" class="list-group-item">CSS Display Attribute: Don't Leave Home Without It!</a>
@@ -35,12 +48,12 @@
     <a href="enumerable-methods.html" class="list-group-item">Ruby Enumerable Methods: #group_by</a>
     <a href="ruby-classes.html" class="list-group-item">Ruby Classes Are Worth Getting Up For</a>
     <a href="JavaScript.html" class="list-group-item">What's Your Type? Mismatch Handling in Ruby vs. JavaScript</a>
+    <a href="tech.html" class="list-group-item">Big O Complexity</a>
   </div>
 <main class="col-md-6">
     <article>
       <h2>Arrays vs. Hashes in Ruby</h2>
       <h4>11/13/2015</h4>
-      <h3>Arrays in Ruby</h3>
       <p>Let's start by defining an example array in Ruby:</p>
       <pre>
 array = ["z", 1, "a", -5.6]</pre>
@@ -67,7 +80,6 @@ array[-2.1]="yawn"
         <li>Then I specified the -3rd value in the array. -1 would be the last value in the array, and so on. So it replaced the third-from-last value with "-3", which is a string, not a number.</li>
         <li>Then I specified the -2.1th element. But it does not allow in-between elements when you're counting backwards, so "yawn" was stored in element -2, aka element 4.</li>
       </ol>
-      <h3>Hashes in Ruby</h3>
       <p>Now that you've got the basics of how arrays look and act in Ruby, let's look at a hash, which is a data structure you might not have encountered in other languages. If you want to be really dull, you can make your hash look just like an array:</p>
       <pre>
 hash[0]="z"
@@ -87,7 +99,6 @@ hash[-2.1]="yawn"
       <pre>
 hash["Chicken of the Woods"]="Laetiporus sulphureus" 
 hash["Hen of the Woods"]="Grifola frondosa"</pre>
-      <h3>Which one do I use?</h3>
       <p>Hashes and arrays both have their strengths and weaknesses. One way to think of it would be: if you were writing out the information you're going to store, would you use a numbered list, or a bulleted list? If you'd write it as a numbered list, then you may be better off with an array. If you would write it as a bulleted or unordered list, or as more of a glossary, then you may be better off using a hash.</p>
     </article>
   </main>

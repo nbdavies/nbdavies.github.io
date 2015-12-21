@@ -42,8 +42,17 @@ html {
 
 .socialmedia img {
 	height: 1.25em;
-	padding-right: 4em;
+	padding-right: 6%;
 	margin-bottom: 5px;
+}
+#twitter {
+	height: 1.75em;
+}
+#youtube {
+	height: 2.5em;
+}
+#soundcloud {
+	height: 2em;
 }
 aside {
 	margin-top: 10px;
