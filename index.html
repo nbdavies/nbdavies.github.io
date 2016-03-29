@@ -2,50 +2,77 @@
 <html>
 <head>
 	<title>Nick Davies' Website</title>
+	<link href='https://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/default.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<nav class="col-md-6 col-md-offset-3">
-		<ul class="nav nav-pills">
-			<li role="presentation"><a href="index.html" class="btn-success">Nick Davies</a></li>
-  			<li role="presentation"><a href="index.html">Home</a></li>
-  			<li role="presentation"><a href="aboutme.html">About Me</a></li>
-  			<li role="presentation"><a href="resume.html">Resume</a></li>
-  			<li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Blog<span class="caret"></a><ul class="dropdown-menu">
-  				<li><a href="blog/git.html">Magic of Version Control</a></li>
-  				<li><a href="blog/css-concepts.html">CSS Display Attribute: Don't Leave Home Without It!</a></li>
-  				<li><a href="blog/arrays-hashes.html">Arrays vs. Hashes in Ruby</a></li>
-  				<li><a href="blog/enumerable-methods.html">Ruby Enumerable Methods: #group_by</a></li>
-  				<li><a href="blog/ruby-classes.html">Ruby Classes Are Worth Getting Up For</a></li>
-  				<li><a href="blog/JavaScript.html">What's Your Type? Mismatch Handling in Ruby vs. JavaScript</a></li>
-  			</ul></li>
+	<nav class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+		<h1>Nick Davies</h1>
+		<ul class="nav nav-pills navbar-right">
+  			<li role="presentation"><a href="ndavies-resume.pdf">Resume</a></li>
   			<li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a><ul class="dropdown-menu">
-  				<li><a href="projects/cheat-sheet.html">Ruby Cheatsheet</a></li>
+  				<li><a href="https://twitvet.herokuapp.com/">TwitVet</a></li>
+  				<li><a href="https://mic-drop.herokuapp.com/">Mic Drop</a></li>
   			</ul></li>
   		</ul>
 	</nav>
+	<main class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+		<img src="portrait.png" alt="Portrait" class="portrait col-md-4 col-sm-4 col-xs-5">
+		<article class="col-md-8 col-sm-8 col-xs-7">
+			<h4>Connect with me today!</h4>
+			<p>Consider what you could do, with an extensive healthcare IT and project management background, knowledge of web development, and an interest in learning more. What would you want to accomplish?</p><p>Together we can make it happen.</p>
+		</article>
+	</main>
 	<div class="row"></div>
-	<div class="col-md-offset-3 row">
-		<div class="socialmedia col-md-3 btn-group-justified">
-			<a href="https://www.facebook.com/nicholas.davies.988"><img src="imgs/facebook.png" /></a>
-			<a href="https://twitter.com/GentleBronto"><img src="imgs/twitter.png" id="twitter"/></a>
-			<a href="https://plus.google.com/+NicholasDavies988"><img src="imgs/googleplus.png" /></a>
-			<a href="https://www.linkedin.com/in/nbdavies"><img src="imgs/linkedin.png" /></a>
-			<a href="https://www.youtube.com/user/nbdaviesify"><img src="imgs/youtube.png" id="youtube"/></a>
-			<a href="https://github.com/nbdavies"><img src="imgs/github.png" /></a>
-			<a href="https://soundcloud.com/spiral-island"><img src="imgs/soundcloud.png" id="soundcloud"/></a>
+	<div class="row socialmedia">
+		<div class="col-md-1 col-md-offset-2 col-sm-1 col-sm-offset-2 col-xs-1 col-xs-offset-1">
 			<a href="mailto:nbdavies@gmail.com"><img src="imgs/email.png" /></a>
 		</div>
+		<div class="col-md-1 col-sm-1 col-xs-1">
+			<a href="https://www.linkedin.com/in/nbdavies"><img src="imgs/linkedin.png" id="linkedin"/></a>
+		</div>
+		<div class="col-md-1 col-sm-1 col-xs-1">
+			<a href="https://github.com/nbdavies"><img src="imgs/github.png" /></a>
+		</div>
+		<div class="col-md-1 col-sm-1 col-xs-1">
+			<a href="https://www.facebook.com/nicholas.davies.988"><img src="imgs/facebook.png" /></a>
+		</div>
+		<div class="col-md-1 col-sm-1 col-xs-1">
+			<a href="https://twitter.com/GentleBronto"><img src="imgs/twitter.png" id="twitter"/></a>
+		</div>
+		<div class="col-md-1 col-sm-1 col-xs-1">
+			<a href="https://plus.google.com/+NicholasDavies988"><img src="imgs/googleplus.png" /></a>
+		</div>
+		<div class="col-md-1 col-sm-1 col-xs-1">
+			<a href="https://www.youtube.com/user/nbdaviesify"><img src="imgs/youtube.png" id="youtube"/></a>
+		</div>
+		<div class="col-md-1 col-sm-1 col-xs-1">
+			<a href="https://soundcloud.com/spiral-island"><img src="imgs/soundcloud.png" id="soundcloud"/></a>
+		</div>
 	</div>
-	<main class="container col-md-6 col-md-offset-3">
-		<div class="col-md-4"><img src="portrait.png" alt="Portrait" class="portrait"></div>
-		<article class="col-md-8">
-			<h4>Connect with me on your choice of social media.</h4>
-			<p>Oh, the places we could go! What would you do with programming and project management experience, web development expertise, and interests in music and creative writing?</p> <p>Let's go do it.</p>
-		</article>
+
+	<main class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+		<img src="imgs/portrait2.jpg" alt="Portrait with cat" class="col-md-4 col-sm-4 col-xs-5">
+			<section class="col-md-8 col-sm-8 col-xs-7">
+				<h2>About Me</h2>
+				<p>I grew up in the Washington, DC area, moved to Chicago for college, and now call Madison, WI home.</p>
+				<h3>Interests</h3>
+				<p>I play music, currently in the band <a href="http://gentlebrontosaurus.bandcamp.com">Gentle Brontosaurus</a>, and previously in <a href="http://tldr.bandcamp.com">TL;DR</a>. I play keyboard and pocket trumpet, and will try any instrument I can.</p>
+				<p>I read and write speculative fiction, and I participate in <a href="http://nanowrimo.org/">NaNoWriMo</a> and <a href="http://fawm.org/">FAWM</a>. Even when I'm not programming, you can typically find me at some type of keyboard.</p>
+			</section>
+			<section class="col-md-6 col-sm-6 col-xs-6">
+				<h3>Web Development</h3>
+				<p>I enjoy writing code that is beautiful on the inside as well as the outside. I enjoy refactoring to find the patterns hidden under strata of incremental change. Test-driven development represents a way to draw upon my extensive troubleshooting experience and use it to create.</p>
+				<p>I recently completed <a href="http://devbootcamp.com/">Dev Bootcamp</a> in Chicago, where I learned a lot about web development. In particular, I did a lot of cool stuff using Ruby and Javascript, including Rails, Sinatra, jQuery, React.js, and APIs. I'm looking forward to using my skills to elevate future projects, and continuing to learn.</p><p>Things I'd like to pick up include Angular, Ember, mobile development, Unity, and to refamiliarize myself with Python.</p>
+			</section>
+			<img src="imgs/band.jpg" alt="Band photo" class="col-md-6 col-sm-6 col-xs-6">
+			<aside class="col-md-6 col-sm-6 col-xs-6">
+				<h4>How to tell if I've been replaced by an alien</h4>
+				<p>Try offering me a piece of <a href="https://en.wikipedia.org/wiki/Salty_liquorice">salty licorice</a>. The alien would likely refuse, but I love the stuff.</p>
+			</aside>
 	</main>
 </body>
 </html>
