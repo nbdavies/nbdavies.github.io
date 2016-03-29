@@ -1,23 +1,25 @@
 nav {
-	border: 1px #bbbbbb solid;
-	background-color: #FFFFE9;
-	border-radius: 5px;
-	margin-top: 10px;
-	margin-bottom: 5px;
-
+	background-color: #00c0de;
 }
-pre {
-	background-color: #CCFFFF;
+nav li a {
+	color: #F8F8F8;
+}
+h1 {
+	font-family: 'Berkshire Swash', cursive;
+	display: inline-block;
+}
+h2 {
+	font-family: 'Berkshire Swash', cursive;
+}
+nav ul {
+	display: inline-block;
 }
 main {
-	border: 1px #bbbbbb solid;
-	background-color: #FFFFE9;
-	border-radius: 5px;
+	background-color: #F8F8F8;
+	border-radius: 7px;
 	padding-top: 1%;
 	padding-bottom: 1%;
-}
-.list-group-item{
-	background-color: #FFFFE9;
+	margin-bottom: 10px;
 }
 .portrait {
 	border-radius: 4%;
@@ -27,12 +29,9 @@ p {
 	display: block;
 	clear: left;
 }
-.row{
-	margin-bottom: 10px;
-}
 * {
 	font-family: helvetica, arial, sans-serif;
-	color: #ae4b24;
+	color: #555555;
 }
 
 html {
@@ -41,25 +40,27 @@ html {
 }
 
 .socialmedia img {
-	height: 1.25em;
-	padding-right: 6%;
+	min-height: 20px;
+	max-height: 20px;
+	min-width: 20px;
+	max-width: 20px;
 	margin-bottom: 5px;
 }
 #twitter {
-	height: 1.75em;
+	max-height: 24px;
+	max-width: 24px;
 }
 #youtube {
-	height: 2.5em;
+	max-height: 30px;
+	max-width: 40px;
 }
 #soundcloud {
-	height: 2em;
+	max-height: 24px;
+	max-width: 24px;
 }
-aside {
-	margin-top: 10px;
+#linkedin {
+	max-width: 26px;
 }
 body {
 	background-color: transparent;
-}
-img {
-	max-width: 100%;
 }
