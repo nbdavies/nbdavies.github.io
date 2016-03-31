@@ -1,5 +1,6 @@
 nav {
 	background-color: #00c0de;
+	margin-bottom: 5px;
 }
 nav li a {
 	color: #F8F8F8;
@@ -7,6 +8,24 @@ nav li a {
 h1 {
 	font-family: 'Berkshire Swash', cursive;
 	display: inline-block;
+	border: 3px solid #f8f8f8;
+	border-radius: 8px;
+	color: #f8f8f8;
+	position: relative;	
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	padding: 4px;
+	padding-left: 10px;
+}
+.name {
+	border: 3px solid transparent;
+	background-color: #f90;
+	border-radius: 11px;
+	display: inline-block;
+	box-sizing: border-box;
+	background-image: url("../imgs/wood.jpg");
 }
 h2 {
 	font-family: 'Berkshire Swash', cursive;
