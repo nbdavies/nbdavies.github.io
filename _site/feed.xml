@@ -1,4 +1,225 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-04T15:47:53-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Winter Taiwan Biking Trip</title><link href="http://localhost:4000/2019/07/01/taiwan-trip.html" rel="alternate" type="text/html" title="Winter Taiwan Biking Trip" /><published>2019-07-01T00:00:00-05:00</published><updated>2019-07-01T00:00:00-05:00</updated><id>http://localhost:4000/2019/07/01/taiwan-trip</id><content type="html" xml:base="http://localhost:4000/2019/07/01/taiwan-trip.html">&lt;p&gt;In December 2018, my partner and I took a trip to Taiwan, and spent most of the time biking down the east coast. I just want to put together some of my impressions of the trip. Maybe this can be useful to someone planning something similar; I referenced other people’s blogs in preparation. But I want to save how to plan this kind of trip for another time.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-12-15T22:50:53-06:00</updated><id>/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Catalonia Trip</title><link href="/2019/12/08/catalonia-trip.html" rel="alternate" type="text/html" title="Catalonia Trip" /><published>2019-12-08T00:00:00-06:00</published><updated>2019-12-08T00:00:00-06:00</updated><id>/2019/12/08/catalonia-trip</id><content type="html" xml:base="/2019/12/08/catalonia-trip.html">&lt;p&gt;I previously posted about how to plan a bike trip. Now I get to tell you how your plans can go wrong.&lt;/p&gt;
+
+&lt;h3 id=&quot;prologue&quot;&gt;Prologue&lt;/h3&gt;
+&lt;p&gt;Back in the spring, I was starting to look at where to go next. I had a few possible trips in Europe spec’d out, and I was comparing airfares between them. I noticed that the cheapest options connected through Barcelona, so I looked at what the airfare to Barcelona was, and booked tickets to go there in September. It turned out there was an appealing bike route in the region north of Barcelona, called the Vies Verdes or Pirinexus. The route forms a giant loop, and our plan was to do roughly half of it, starting from Ripoll up in the mountains down to the coast, and along the coast for a few days, ending at Figueres.&lt;/p&gt;
+
+&lt;p&gt;Over the summer, I reserved rental bikes with a shop in Barcelona. It was a complicated process. The rental shop’s reservation system got prices wrong at first, and then a payment link never came, so I ended up having to enter it again. Once the bikes were reserved, I started reserving the hotels for each night along the route. The plan was to bike up bikes the day we landed, bike off the jetlag and see some sights, and then catch the train to Ripoll the next morning.&lt;/p&gt;
+
+&lt;p&gt;Then the bike shop informed me that the day we planned to pick up the bikes, September 24, was a public holiday, and they would be closed. The first leg of our trip, from Ripoll to Olot, was expected to involve a mountain pass, and I wanted to allow plenty of time for that. I worried that if we didn’t pick up bikes until 10 AM the next day, we wouldn’t have as much time for that leg of the trip. I also wanted to bike around the day we arrived. So I went back to square one, trying to line up another bike rental.&lt;/p&gt;
+
+&lt;p&gt;I found a place that charged about the same, and looked to have what we needed. Having been burned once already, I contacted them and confirmed that they would actually be open that day, that they understood what kind of bike we needed, and that they had bikes of that type in our size.&lt;/p&gt;
+
+&lt;h3 id=&quot;day-1&quot;&gt;Day 1&lt;/h3&gt;
+&lt;p&gt;We arrived in Barcelona on schedule on September 24 after a 2.5-movie flight, and went from the airport to the bike shop. They had a bike for me that was okay but not in great condition, and for my partner, they had pulled out a city cruiser. It had a gear guard, swooping handle-bars, big triangular seat, etc. And it looked like it had probably been in storage for a decade. The shop owner didn’t handle it well at all. Rather than admit the error and helping fix it, he tried to convince us that this bike was what we had reserved, despite the evidence of our own eyes. When it became clear that they had nothing to offer, we left to get lunch, check into the hotel, and start looking for a back-up plan.&lt;/p&gt;
+
+&lt;p&gt;I spent much of that day contacting other rental shops. A lot were closed for the holiday, and others didn’t have what we needed. By the end of the day, our best bet was to show up at the first shop I’d talked to the next morning, and hope they still had bikes for us.&lt;/p&gt;
+
+&lt;p&gt;We did also get out for a walk through Parc de la Ciutadella, and see some of the festivities.
+&lt;img src=&quot;https://pbs.twimg.com/media/EFQLG1tXkAI2ZIc?format=jpg&amp;amp;name=small&quot; alt=&quot;Parc&quot; /&gt;
+&lt;img src=&quot;https://pbs.twimg.com/media/EFQLHt6WkAEgQrn?format=jpg&amp;amp;name=small&quot; alt=&quot;Lebanese Dancing&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;day-2&quot;&gt;Day 2&lt;/h3&gt;
+&lt;p&gt;That shop did not have any bikes for us. At that point, we had checked out of last night’s hotel, so we were standing on the sidewalk, calling around a few more places that had been closed the previous day. Finally one of them didn’t have bikes in our sizes, but knew of another shop in Girona that might. I had pretty much exhausted our options Barcelona, so I gave them a try.&lt;/p&gt;
+
+&lt;p&gt;We quickly changed plans for the day. One way or another, we had to get to Olot that night, where the next hotel was reserved, or forfeit what I’d already paid for it. But biking from Olot to Girona was the plan for day 3, so we decided to try biking Girona to Olot. Compared to the Ripoll-Olot segment we’d been planning to do that day, this was going to be even longer and more uphill.&lt;/p&gt;
+
+&lt;p&gt;We took a train to Girona and found the bike shop, and got some lunch while they finished getting the bikes ready. It was a relief to finally get on the road around 2:30 PM, and the first section was mostly nice and flat. But we were clearly headed up into the mountains soon.
+&lt;img src=&quot;https://pbs.twimg.com/media/EFVYW5cWsAANkIH?format=jpg&amp;amp;name=small&quot; alt=&quot;Flat path for now&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It was nearly dusk by the time we struggled up to Coll d’en Bas, the high mountain pass. By the time we reached the next town, it was completely dark. At that point the trail involved tight corners and narrow bridges, and the rental bikes’ headlights were more for being seen than for seeing, so we went the last 10 miles into Olot on road. Luckily the hotel was still open to take us in at 9 PM when we arrived, and then we got a well deserved plate of kabob meat in the town square.&lt;/p&gt;
+
+&lt;h3 id=&quot;day-3&quot;&gt;Day 3&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://pbs.twimg.com/media/EFYvgOnUYAIr0fP?format=jpg&amp;amp;name=small&quot; alt=&quot;Olot morning&quot; /&gt;
+From here, the plan was definitely back on track, and I could just literally roll with it. After breakfast at the Olot market, we mostly retraced yesterday’s course. Except this time it was mostly downhill, and we could see things, and the first 10 miles of the path were new to us.
+&lt;img src=&quot;https://pbs.twimg.com/media/EFYviEMU4AEiJXx?format=jpg&amp;amp;name=small&quot; alt=&quot;Near Olot&quot; /&gt;
+&lt;img src=&quot;https://pbs.twimg.com/media/EFYvj9hU4AAx3ls?format=jpg&amp;amp;name=small&quot; alt=&quot;Nice bridge&quot; /&gt;
+Even as we went down into the Ter valley, the mountains were never far. (That’s a pun because this mountain is called El Far.)
+&lt;img src=&quot;https://pbs.twimg.com/media/EFZXx9NX4AA9zam?format=jpg&amp;amp;name=small&quot; alt=&quot;El Far&quot; /&gt;
+The day’s ride ended up back in Girona, with plenty of time to walk the city walls.
+&lt;img src=&quot;https://pbs.twimg.com/media/EFZ-nREX4AI57lm?format=jpg&amp;amp;name=small&quot; alt=&quot;City walls&quot; /&gt;
+&lt;img src=&quot;https://pbs.twimg.com/media/EFZ-nREX4AI57lm?format=jpg&amp;amp;name=small&quot; alt=&quot;More city walls&quot; /&gt;
+&lt;img src=&quot;https://pbs.twimg.com/media/EFZ-mO1XsAIVceR?format=jpg&amp;amp;name=small&quot; alt=&quot;Girona river&quot; /&gt;
+The hotel put us in a room with a balcony overlooking the cathedral, so for dinner we sat up there and had flatbreads from a nearby bakery.&lt;/p&gt;
+
+&lt;h3 id=&quot;day-4&quot;&gt;Day 4&lt;/h3&gt;
+&lt;p&gt;For breakfast we hit the public market in Girona too. (Public markets are great.) The first bit of riding took us through a lot of farms and office parks. By now we were also in the habit of getting sliced meat and cheese at a grocery to snack on later. Catalonia had some excellent varieties of these things.
+&lt;img src=&quot;https://pbs.twimg.com/media/EFer65KWkAESq4a?format=jpg&amp;amp;name=small&quot; alt=&quot;Rolling hills&quot; /&gt;
+In the latter half of the route, there were some nice rolling hills down towards the sea. We reached the Mediterranean at Sant Feliu de Guixolles.
+&lt;img src=&quot;https://pbs.twimg.com/media/EFer7_zWkAcZaWE?format=jpg&amp;amp;name=small&quot; alt=&quot;Sea&quot; /&gt;
+The day ended at Platya d’Aro, a beach town with a bustling strip.&lt;/p&gt;
+
+&lt;h3 id=&quot;day-5&quot;&gt;Day 5&lt;/h3&gt;
+&lt;p&gt;The next morning, we were mostly off the Vies Verdes and on the Pirinexus route. For one thing, it’s not as well signed, and uses some busy roads instead of designated bike path. The start of the route took us up over a ridge to the next beach town, Sant Antoni de Calonge.
+&lt;img src=&quot;https://pbs.twimg.com/media/EFkxZPoUwAA08L1?format=jpg&amp;amp;name=small&quot; alt=&quot;More beach&quot; /&gt;
+The terrain was quite varied; sometimes it was well-maintained gravel paths like this, with mountains in the distance. Other times it was dirt roads that were quite disused and difficult to bike. There’d be deep ruts, rocks sticking up, overgrown weeds on either side.
+&lt;img src=&quot;https://pbs.twimg.com/media/EFkxevuVAAAiEuF?format=jpg&amp;amp;name=small&quot; alt=&quot;View of the castle ahead&quot; /&gt;
+Most of the day we were making our way gradually towards Montgrí castle, which you can faintly see in the distinct on the center hill above. The approach to the town below, Torroella de Montgrí was a bit grueling. Flat ground, but difficult dirt roads, carving a sawtooth pattern towards the destination. We had picnic lunch in the town and then climbed the hill to the castle. Mid-afternoon may have not been the best time to climb it; it was very sunny and hot. The castle was impressive up close though, and offered a vantage in every direction. We could see all the way back to El Far.
+&lt;img src=&quot;https://pbs.twimg.com/media/EFkxgEXU8AAFayT?format=jpg&amp;amp;name=small&quot; alt=&quot;Castle up close&quot; /&gt;
+After that, we were getting really tired of the bumpy dirt roads that the Pirinexus route made use of, at least in that area, so for the last few miles to L’Escala, we switched over to the main road. The traffic was a little much, but the pavement was a real improvement.
+&lt;img src=&quot;https://pbs.twimg.com/media/EFkxnUwU4AA3k0m?format=jpg&amp;amp;name=small&quot; alt=&quot;L'Escala&quot; /&gt;
+For dinner we found a rostisseria, a regional type of rotisserie chicken.&lt;/p&gt;
+
+&lt;h3 id=&quot;day-6&quot;&gt;Day 6&lt;/h3&gt;
+&lt;p&gt;The hotel in l’Escala provided breakfast, which was a pleasant surprise; hotel breakfest buffets these include someone slicing a leg of Iberian ham.&lt;/p&gt;
+
+&lt;p&gt;The original plan was to continue on the Pirinexus route as far as Castelló d’Empúries, and then cut across to Figueres, and take the train back, with bikes. But because of the change of plans at the beginning of the trip, the bikes now had to go back to Girona, which was a stop on the same train line. Also, we were still pretty tired of the types of roads the Pirinexus route used, and didn’t have high hopes for the next segment being better. So we decided to change plans.&lt;/p&gt;
+
+&lt;p&gt;Even though we’d been riding two days since Girona, we hadn’t entirely been riding away from there, to it was only a 25 mile ride back. We took our chances with Google’s suggested route, and it was a very mixed bag. Some of it was single-lane paved road, which is absolutely perfect for riding–cars can’t just rush past you at speed. Flaçá was pretty quiet on a Sunday, but there was a nice bakery by the train station. Closer to Girona, we ended up on the C-66 highway, which was…not an ideal road for bikes to be on. At least the last leg into the city itself was back on bike paths and along the river.&lt;/p&gt;
+
+&lt;p&gt;We turned in the bikes and took the train back to Barcelona, where we checked into a hotel in the Gràcia neighborhood.&lt;/p&gt;
+
+&lt;h3 id=&quot;day-7&quot;&gt;Day 7&lt;/h3&gt;
+&lt;p&gt;We climbed Montjuïc, which was a nice hike up and a nice overlook over Barcelona. We tried going down the other side, only to find that it was a longer walk than expected. I feel like I might have made that mistake before too.
+&lt;img src=&quot;https://pbs.twimg.com/media/EFxdpGvWwAEYMnA?format=jpg&amp;amp;name=small&quot; alt=&quot;View from Montjuic&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I did a lot of reading that day; I was in the middle of “The Warrior Moon” and used all my phone battery on that.&lt;/p&gt;
+
+&lt;h3 id=&quot;day-8&quot;&gt;Day 8&lt;/h3&gt;
+&lt;p&gt;There was also some biking I wanted to try in/around Barcelona, so we rented bikes again, just for the day. The first stop was Park Güell, which was already a rather hard climb. It was too full of tourists, and we weren’t sure what to do with the rental bikes, so we moved on. Then we climbed to the Carretera de les Aigües, a mostly flat route across the side of the Collserola ridge. It was a great ride, though it was also really sunny and hot.
+&lt;img src=&quot;https://pbs.twimg.com/media/EFzS3RtXoAAgV9a?format=jpg&amp;amp;name=small&quot; alt=&quot;Carretera de les Aigües&quot; /&gt;
+From there, we followed the Ronda Verde, a route around the perimeter of Barcelona. It’s fairly well marked, but it takes a lot of abrupt turns, rather than following any straight course for very long. Eventually we turned and used the bike lanes along one of the main avenues to get most of the way back to the city center where the rental shop was. That night, we went down to the beachside Barceloneta area for pizza and a sunset, and some wandering around the gothic quarter.
+&lt;img src=&quot;https://pbs.twimg.com/media/EF0TYyXXkAEJKYm?format=jpg&amp;amp;name=small&quot; alt=&quot;Sunset&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;day-9&quot;&gt;Day 9&lt;/h3&gt;
+&lt;p&gt;The next day, we went to the zoo in the morning. In the afternoon, we took the bus back up to Park Güell and walked around a bit more. That night we walked around the Gràcia neighborhood again and got some excellent gelato.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-end&quot;&gt;The end&lt;/h3&gt;
+&lt;p&gt;I really enjoyed a lot about the trip, though I may have had enough Barcelona for another 10 years. Maybe I’ve been reading too much Carlos Ruiz Zafón, and remembered it as a gloomy, damp, mysterious place more so than the bright, sunny, hectic metropolis that it is. For me, the best parts of the trip were certainly covering new ground outside the city.&lt;/p&gt;
+
+&lt;p&gt;I’ve been really fortunate to be able to do these trips, to Denmark and Taiwan and Catalonia. To be able to afford the flights and the lodging and the logistics and the food. To still be in good enough health to travel by the power of my own body. To have a life at home that we can step away from for 8 or 10 days at a time. To live in an age of global travel. I don’t want to do this kind of thing too often and start to take it for granted. Though there plenty of other places I want to see while I still have time and am still able to, other experiences to have.&lt;/p&gt;
+
+&lt;h3 id=&quot;where-to-next&quot;&gt;Where to next?&lt;/h3&gt;
+&lt;p&gt;I didn’t really mean to start planning my next trip so soon, it just kind of happened. Biking season is officially over for me, so I guess I’m daydreaming of future opportunities.&lt;/p&gt;
+
+&lt;p&gt;I started looking at Eurovelo routes. Some of the major ones follow major rivers, starting from their headwaters in the Alps to where they join the sea, and I was curious about how far up to the source you could start.&lt;/p&gt;
+
+&lt;p&gt;It turns out that the Rhône and the Rhein (one branch anyway) start less than 30 miles from each other, on either side of Andermatt, a Swiss skiing village that’s also close to the source of the Ticino, Reuss, and Aare rivers. So I figured that might be a place to start, regardless of which river valley would be the best to follow. From there I worked out a route that I hope to go on next summer.&lt;/p&gt;</content><author><name></name></author><summary type="html">I previously posted about how to plan a bike trip. Now I get to tell you how your plans can go wrong.</summary></entry><entry><title type="html">Total Update!</title><link href="/2019/12/01/total-update.html" rel="alternate" type="text/html" title="Total Update!" /><published>2019-12-01T00:00:00-06:00</published><updated>2019-12-01T00:00:00-06:00</updated><id>/2019/12/01/total-update</id><content type="html" xml:base="/2019/12/01/total-update.html">&lt;p&gt;My intentions for regularly updating this blog have so far not turned into reality. There have been some other things going on. So here’s a rapid-fire update on various fronts:&lt;/p&gt;
+
+&lt;h3 id=&quot;coding&quot;&gt;Coding&lt;/h3&gt;
+
+&lt;p&gt;For the Open Elections project, Wisconsin hasn’t had any elections lately, but we noticed that the website went down in August, and parts of the site are down still. It was an occasion for the folks leading that project to reassess how it’s presented online. Some of my effort since then has been prototyping what an alternative site could look like. I plan to post more about that later.&lt;/p&gt;
+
+&lt;p&gt;I’ve also been helping a Wisconsin assembly candidate get her website going. I didn’t have much experience with Wordpress going into it, so it’s been educational for me, as well as good practice in design. Is it exemplary? Next-level? Not yet. But it’s helping a challenger establish a competitive web presence against the incumbent.&lt;/p&gt;
+
+&lt;p&gt;I also switched my band’s site (gentlebrontosaurus.com) over to a Jekyll/Github Pages stack like this one. The concept of pulling content from Facebook and Twitter dynamically wasn’t reliable in practice. Events didn’t show up consistently. The newsfeed wasn’t very useful. The Facebook API version I’d used was going to be deprecated soon. Also the SSL certificate had expired, and it seemed like Heroku was going to charge for maintenance of that. Since the site didn’t really need a database or API keys behind it anymore, moving to a static site made sense.&lt;/p&gt;
+
+&lt;p&gt;I also fixed a couple things I’d noticed wrong with the page. YouTube embeds were loading Google Ads and Analytics scripts that caused errors. For the social icons, an &lt;code class=&quot;highlighter-rouge&quot;&gt;a&lt;/code&gt; tag with an &lt;code class=&quot;highlighter-rouge&quot;&gt;object&lt;/code&gt; inside it for SVG content no longer made the &lt;code class=&quot;highlighter-rouge&quot;&gt;object&lt;/code&gt; clickable.&lt;/p&gt;
+
+&lt;p&gt;The downside of this stack is that I had the site written in Slim, and I had to convert it all to HTML. There is a Jekyll plugin for Slim support, but it doesn’t work with more recent Jekyll versions. More to the point, Github Pages only supports certain Jekyll plugins, and that one isn’t in the list. Nor is HAML.&lt;/p&gt;
+
+&lt;h3 id=&quot;travel&quot;&gt;Travel&lt;/h3&gt;
+
+&lt;p&gt;My partner and I went on a trip to Catalonia. It was my third time there, her first. We spent about 5 days in Barcelona and about 5 days biking in the Girona region, mostly following the Vies Verdes and/or Pirinexus route. Though our itinerary didn’t go entirely according to plan. I intend to write more about that.&lt;/p&gt;
+
+&lt;p&gt;I wasn’t intending to plan another trip right away. But now biking season’s essentially over for winter (for me anyway), and for some reason I started looking at river valleys in the Alps. Now I think I’ve got a sweet itinerary plotted out, ready to go for next summer&lt;/p&gt;
+
+&lt;h3 id=&quot;writing&quot;&gt;Writing&lt;/h3&gt;
+
+&lt;p&gt;I’m about 80% through the rewrite of “A City Divided” (I guess I’ve been calling it). Apparently that’s twice where I was as of July. I tried to really push through on that in November but didn’t hit my stride until near the end.&lt;/p&gt;
+
+&lt;p&gt;Now I switch back to “The Enthrallers” for a little while. I have a first draft of the next chapter to revise.&lt;/p&gt;
+
+&lt;p&gt;Then maybe I switch back, get through that last 20%, and get ready to start querying. That’s what the December holidays are for, right? That might be over-ambitious.&lt;/p&gt;
+
+&lt;h3 id=&quot;otherwise&quot;&gt;Otherwise&lt;/h3&gt;
+
+&lt;p&gt;I had my first physical in a long while. It didn’t tell me anything I didn’t already know, which is probably a good thing.&lt;/p&gt;
+
+&lt;p&gt;I bought a coffee roasting machine. The Whirley-Pop just wasn’t cutting it. It made awful grating noises and the mechanism would jam up all the time, and the results were suffering. It feels a little less DIY to use a roasting machine, but this isn’t a “set it and forget it” kind of machine. You still actively monitor and adjust multiple variables as it roasts the beans. The results are already better and a lot more consistent.&lt;/p&gt;
+
+&lt;p&gt;Recently I played Disco Elysium, which I enjoyed a ton and highly recommend. It’s a detective RPG, and the core mechanic is that you walk around a town talking to people. Something you learn in conversation might allow you to go back to someone you already talked to and unlock more dialog options. But also party to these conversations are various voices inside the protagonist’s head. Things like empathy and rhetoric, and much weirder impulses. Those are also the skills you level up in. The dialog–internal and external–is often hilarious.&lt;/p&gt;</content><author><name></name></author><summary type="html">My intentions for regularly updating this blog have so far not turned into reality. There have been some other things going on. So here’s a rapid-fire update on various fronts:</summary></entry><entry><title type="html">How to Plan a Bike Trip</title><link href="/2019/07/20/how-to-plan-bike-trip.html" rel="alternate" type="text/html" title="How to Plan a Bike Trip" /><published>2019-07-20T00:00:00-05:00</published><updated>2019-07-20T00:00:00-05:00</updated><id>/2019/07/20/how-to-plan-bike-trip</id><content type="html" xml:base="/2019/07/20/how-to-plan-bike-trip.html">&lt;p&gt;I’ve only planned three trips that involved traveling by bike (the third coming up in September), but I want to share what I’ve learned so far. Whether you should travel by bike is a secondary question to whether you should travel at all. But for me, it’s allowed for a very different type of experience than it would be practical to have otherwise.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-do-i-mean-by-traveling-by-bike&quot;&gt;What do I mean by traveling by bike?&lt;/h3&gt;
+
+&lt;p&gt;I’m going to focus on using bikes to get from place to place. But there is a spectrum of what this could entail, depending on how much you’re willing to spend, vs. how much your willing to do yourself.&lt;/p&gt;
+
+&lt;p&gt;At one extreme, you can find all-inclusive bike tours arranged by travel companies or bike companies like Trek. These will typically arrange food and lodging, and transport your bags for you, leaving you unburdened while you ride. They may even ferry you to the start of a day’s ride, or pick you up at the end, and you might have a guide riding along with you.&lt;/p&gt;
+
+&lt;p&gt;At the other extreme, there is the option of planning your own route, cooking your own meals, pitching a tent anywhere you’re allowed to. If you were going to spend a long time traveling by bike, this way of doing it might be a necessity.&lt;/p&gt;
+
+&lt;p&gt;But for the trips I’ve planned so far, I’ve been aiming for a middle way: planning the route, finding reasonable hotels/hostels/AirBnB places to stay, carrying the bare minimum on the bike.&lt;/p&gt;
+
+&lt;p&gt;Planning this kind of trip can be a fun challenge of balancing numerous constraints, leading you to learn a lot about where you’re planning to go. I’ll start by going through some considerations to keep in mind, and then share some strategies I’ve used.&lt;/p&gt;
+
+&lt;h3 id=&quot;considerations&quot;&gt;Considerations&lt;/h3&gt;
+
+&lt;h4 id=&quot;distance&quot;&gt;Distance&lt;/h4&gt;
+
+&lt;p&gt;The first day of the trip ought to be a short one for multiple reasons. If you’re going to stepping off a plane first, that could take longer than expected. If you’re going to be renting a bike, that could eat up time too. Basically unless you’re going to able to prepare the night before and be ready to go first thing in the morning, then you’re going to be starting later on the first day than you would be able to once you get going. Physically, you should also plan to go easy on yourself the first day.&lt;/p&gt;
+
+&lt;p&gt;How far you can travel in a given day depends a lot on you. If you typically bike infrequently, slowly, or only in short trips, then you might have a shorter range. If you get home after a 15 mile ride and want to pass out, then going 30 miles in a day is essentially like doing that twice in a row. You can plan to push yourself a little once you get going, but don’t commit to something you might not be able to handle.&lt;/p&gt;
+
+&lt;p&gt;The other constraint is that you might not want to spend all day biking, even if you physically can. You might be traveling through a region that has other things to see and do. Or you might just want to take it easy, because we’re talking about a vacation here. One way or another, you’re probably going to want to take some kind of break every hour or half hour.&lt;/p&gt;
+
+&lt;h4 id=&quot;elevation&quot;&gt;Elevation&lt;/h4&gt;
+
+&lt;p&gt;This is also very personal. If you google “best biking routes in X country”, you might find a lot of posts about the spectacular views from the top of this certain mountain, and the excellent climb getting up there. For hardcore bikers, maybe that is in fact the best route. But for me, more elevation gain per day means going slower and being more exhausted, and probably making that day shorter in distance. So it’s important to pay attention to what the terrain of a route you’re considering is, before deciding whether you’re up to it.&lt;/p&gt;
+
+&lt;p&gt;Want to avoid unnecessary elevation changes? This is why “rails to trails” is popular: trains tracks typically stay relatively level. Following the course of a major river can also be a gentle slope.&lt;/p&gt;
+
+&lt;h4 id=&quot;surface&quot;&gt;Surface&lt;/h4&gt;
+
+&lt;p&gt;Smooth pavement is where you’ll be able to travel the fastest and thus the furthest. But it can be limiting. There are some trails that switch back and forth between pavement and gravel, so it helps to be prepared for that. In certain places, you can also find single-track trails that might be geared towards hiking, but allow mountain biking as well. This isn’t to say that one is better than the other, but the route you plan should match what you’re going to enjoy (and the type of bike you bring).&lt;/p&gt;
+
+&lt;h4 id=&quot;traffic&quot;&gt;Traffic&lt;/h4&gt;
+
+&lt;p&gt;A highway might be the most direct route between two places, and might also be the flattest. But traveling via highway can be taxing in other ways. They’re often unshaded. They may lack frequent, convenient stops. You may be breathing diesel smoke and biking through debris or roadkill. The traffic may be loud and fast and close by. Time spent on a highway can wear you out more quickly than a longer, hillier back road.&lt;/p&gt;
+
+&lt;p&gt;Though dealing with any vehicle traffic can also be a combination of your personal tolerance level, and local conditions. Are you practiced at riding near vehicle traffic? Is drivers in the region known for being cautious and courteous towards cyclists? How narrow is the shoulder? What’s the visibility like? For some of this, it helps to read other people’s accounts (with a grain of salt). You can also try to scope things out as much as possible. Google Street View is one way, or if you can find YouTube videos, even better.&lt;/p&gt;
+
+&lt;p&gt;Of course, getting away from traffic entirely can be ideal. But looking for long-ranging bike paths can limit your options.&lt;/p&gt;
+
+&lt;h4 id=&quot;stopping-points&quot;&gt;Stopping Points&lt;/h4&gt;
+
+&lt;p&gt;Unless you plan to camp, or perhaps even if you do, you’ll want to plan out where each day will start/end. Spending the night in a city or town makes it more convenient to find food and lodging. Or if you can find at least a lodge or resort to spend the night at, maybe that suffices.&lt;/p&gt;
+
+&lt;p&gt;As I mentioned earlier, you might want to plan for things other than biking. Are there historic sites or museums along the way? Getting off the bike and taking a short hike might be a nice change of pace.&lt;/p&gt;
+
+&lt;p&gt;For a shorter trip, this might not even come up, but a good rule of thumb is that you should also consider stopping for at least one day for every five that you spend going from place to place. Just as a way to recharge, rest, and sort out anything you neglect while you’re on the move, and to avoid letting the journey itself get too monotonous.&lt;/p&gt;
+
+&lt;h4 id=&quot;startend-logistics&quot;&gt;Start/End Logistics&lt;/h4&gt;
+
+&lt;p&gt;It’s worth considering, particularly if the route you’re interested in doesn’t begin in a major city, how are you going to get there? If you’re going to bring a bike, what will it take to bring it with you?&lt;/p&gt;
+
+&lt;p&gt;Many places allow bikes on trains, but they may have different rules about it. In many places, they aren’t allowed during rush hour. Sometimes they’re only allowed in certain cars of the train, and must be strapped in. Sometimes they need to be boxed or bagged up.&lt;/p&gt;
+
+&lt;p&gt;If you can get to or from the route via bus, then check whether the bus can handle a bike. Some buses might have a bike area inside, or a rack on the front. For longer-range Greyhound style buses, you might be allowed to put the bike in the luggage compartment. It all depends on the type of bus, and the policy of the company or government operating it.&lt;/p&gt;
+
+&lt;p&gt;If you’ll be renting a bike, then you might have to consider how to get the bike back to the rental shop. Though certain places may also allow one-way rentals.&lt;/p&gt;
+
+&lt;h4 id=&quot;scenery&quot;&gt;Scenery&lt;/h4&gt;
+
+&lt;p&gt;This might be tie-breaker compared to the other considerations, or it might be the entire point of traveling to a certain place. But it’s worth considering: what is the route actually going to look like? If you’re going to just be passing cornfield after cornfield, that might be calming, but it might be dull after multiple days. If you’re going to be near a dramatic waterfall, maybe it’s worth a slight detour to bike past it.&lt;/p&gt;
+
+&lt;h4 id=&quot;where-to-then&quot;&gt;Where to, then?&lt;/h4&gt;
+
+&lt;p&gt;Balancing these considerations can be a fun challenge. I’ve got a couple dozen ideas of trips I’d like to do. For sticking to established bike routes, check out the Eurovelo system. Those are all much longer than I’d be able to do in one trip, but they serve as a starting point to find a smaller section that would be achievable. Individual countries, including Canada and much of eastern Asia, often have their own national bike route systems. This is something that the US is lagging behind in, as well as any kind of national transportation system to help with the start/end of a trip.&lt;/p&gt;</content><author><name></name></author><summary type="html">I’ve only planned three trips that involved traveling by bike (the third coming up in September), but I want to share what I’ve learned so far. Whether you should travel by bike is a secondary question to whether you should travel at all. But for me, it’s allowed for a very different type of experience than it would be practical to have otherwise.</summary></entry><entry><title type="html">What I’m Writing</title><link href="/2019/07/08/writing-update.html" rel="alternate" type="text/html" title="What I'm Writing" /><published>2019-07-08T00:00:00-05:00</published><updated>2019-07-08T00:00:00-05:00</updated><id>/2019/07/08/writing-update</id><content type="html" xml:base="/2019/07/08/writing-update.html">&lt;p&gt;Just a quick update on what I’m writing at the moment. Lately I’ve been switching back and forth between two novels.&lt;/p&gt;
+
+&lt;h3 id=&quot;a-city-divided&quot;&gt;A City Divided&lt;/h3&gt;
+
+&lt;p&gt;This is something I started in 2015 and finished the first draft of last year, and now I’m doing a revision/rewrite. In parts it might only be the second draft. In other parts, it might be the third? fourth? fifth? Mostly it’s turning out to be a rewrite with a sentence borrowed from the previous draft here and there.&lt;/p&gt;
+
+&lt;p&gt;I started this draft earlier this year, for the purpose of trying out a new idea in the very first chapter. That change required propagating some changes into the following chapters. And then I started noticing all the plot holes and loose threads I’d left behind.&lt;/p&gt;
+
+&lt;p&gt;I feel pretty confident in the story overall, and none of the plot holes so far have been unpatchable. There were also some general changes I knew I wanted to make throughout, making the protagonist’s thoughts and feelings clearer to the reader, making the war-torn setting feel more omnipresent, and adding a few bits of depth to secondary characters.&lt;/p&gt;
+
+&lt;p&gt;At the moment, I’m about 40% of the way through that rewrite, but it’s been growing a bit as I go, so the denominator gets a little larger. So far it’s gone from 105,000 words to 111,000. But now it’s time to switch to the other project I’m in the middle of.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-enthrallers&quot;&gt;The Enthrallers&lt;/h3&gt;
+
+&lt;p&gt;This is an idea I’ve had kicking around for a few years. I took a stab at it in 2017, and fizzled but learned some things along the way. Then I tried it again during Nanowrimo last year. It took me a lot of that month to get a handle on how that story needed to be told. It wasn’t until November was over that I really had a plan for what the storylines would be, and how it would be structured overall.&lt;/p&gt;
+
+&lt;p&gt;At this point I have (I think) a pretty solid outline that I’m working off of. I have earlier versions of certain key events, sometimes two or three versions, but where the names aren’t correct anymore, character backstories aren’t accurate anymore. I’m about six chapters into the first draft, which from my outline could be about a quarter of the way through the story. So it may end up being more like novella length, but I’m also looking for parts that could be fleshed out, or need to be fleshed out more.&lt;/p&gt;
+
+&lt;p&gt;The story as a whole is framed as a letter that cuts away to third person narration. So I’m writing each chapter in first person initially, to get the feeling right, and to try to get the letter to flow in and out of the narrative smoothly. And then I’ll go back and find the places to break and switch point of view. It’s a fun challenge! And it’s requiring some research. At some point in its life cycle, it probably needs readers from a couple different backgrounds and/or historical perspectives. I also have a bit of a reading list to check out at some point.&lt;/p&gt;
+
+&lt;p&gt;Since I’m switching between these two things, progress is slow and steady. But I think there’s kind of a good balance of buckling down on one thing for a while, but then also getting to switch to something else occasionally. Maybe it’ll take most of the rest of the year to finish both of these drafts I’m in the middle of, but that’s okay by me.&lt;/p&gt;
+
+&lt;h3 id=&quot;and-then-what&quot;&gt;And then what?&lt;/h3&gt;
+
+&lt;p&gt;I should also get back into the habit of doing short stories. That probably needs to start by reading more of them. I have an anthology or two on my reading list. I should also perhaps check out some regular magazines that publish this sort of thing, and get electronic copies to read on my phone instead of Twitter. This literally did not occur to me until I was typing it out, but yes this seems like a very good idea.&lt;/p&gt;
+
+&lt;p&gt;I’m also starting to feel like recording another album of solo material. But that’s another big project that can expand to fill its container and absorb any free time that it touches. So I’m putting that off until I at least get to the end of one of these drafts. That also gives me time to really think about what I want this next set of songs to sound like.&lt;/p&gt;</content><author><name></name></author><summary type="html">Just a quick update on what I’m writing at the moment. Lately I’ve been switching back and forth between two novels.</summary></entry><entry><title type="html">Winter Taiwan Biking Trip</title><link href="/2019/07/01/taiwan-trip.html" rel="alternate" type="text/html" title="Winter Taiwan Biking Trip" /><published>2019-07-01T00:00:00-05:00</published><updated>2019-07-01T00:00:00-05:00</updated><id>/2019/07/01/taiwan-trip</id><content type="html" xml:base="/2019/07/01/taiwan-trip.html">&lt;p&gt;In December 2018, my partner and I took a trip to Taiwan, and spent most of the time biking down the east coast. I just want to put together some of my impressions of the trip. Maybe this can be useful to someone planning something similar; I referenced other people’s blogs in preparation. But I want to save how to plan this kind of trip for another time.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-14-hour-christmas-eve&quot;&gt;The 14 Hour Christmas Eve&lt;/h2&gt;
 
@@ -112,7 +333,7 @@
 
 &lt;p&gt;&lt;img src=&quot;https://pbs.twimg.com/media/DvzY8gzU8AAFYbh.jpg:small&quot; alt=&quot;Taipei&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;After an elaborate breakfast, we walked to Da’an Park. It had recently rained, and even in the downtown area, Taipei seemed fresh and verdant. Trees along the streets wore little identification tags with QR codes. We met up with my college friend Stella, who had the day off for New Years. While we waited for a table at Din Tai Fung, we walked around the neighborhood behind it, and tried scallion pancakes, soypresso, and more. After a feast of dim sum, we walked back to the train station, and it was pretty much time to catch a train to the airport.&lt;/p&gt;</content><author><name></name></author><summary type="html">In December 2018, my partner and I took a trip to Taiwan, and spent most of the time biking down the east coast. I just want to put together some of my impressions of the trip. Maybe this can be useful to someone planning something similar; I referenced other people’s blogs in preparation. But I want to save how to plan this kind of trip for another time.</summary></entry><entry><title type="html">What This Blog is About</title><link href="http://localhost:4000/2019/06/19/what-this-blog-is-about.html" rel="alternate" type="text/html" title="What This Blog is About" /><published>2019-06-19T00:00:00-05:00</published><updated>2019-06-19T00:00:00-05:00</updated><id>http://localhost:4000/2019/06/19/what-this-blog-is-about</id><content type="html" xml:base="http://localhost:4000/2019/06/19/what-this-blog-is-about.html">&lt;p&gt;If I’m ever going to declare my intentions for this blog, this is probably the most sensible time to do that.&lt;/p&gt;
+&lt;p&gt;After an elaborate breakfast, we walked to Da’an Park. It had recently rained, and even in the downtown area, Taipei seemed fresh and verdant. Trees along the streets wore little identification tags with QR codes. We met up with my college friend Stella, who had the day off for New Years. While we waited for a table at Din Tai Fung, we walked around the neighborhood behind it, and tried scallion pancakes, soypresso, and more. After a feast of dim sum, we walked back to the train station, and it was pretty much time to catch a train to the airport.&lt;/p&gt;</content><author><name></name></author><summary type="html">In December 2018, my partner and I took a trip to Taiwan, and spent most of the time biking down the east coast. I just want to put together some of my impressions of the trip. Maybe this can be useful to someone planning something similar; I referenced other people’s blogs in preparation. But I want to save how to plan this kind of trip for another time.</summary></entry><entry><title type="html">What This Blog is About</title><link href="/2019/06/19/what-this-blog-is-about.html" rel="alternate" type="text/html" title="What This Blog is About" /><published>2019-06-19T00:00:00-05:00</published><updated>2019-06-19T00:00:00-05:00</updated><id>/2019/06/19/what-this-blog-is-about</id><content type="html" xml:base="/2019/06/19/what-this-blog-is-about.html">&lt;p&gt;If I’m ever going to declare my intentions for this blog, this is probably the most sensible time to do that.&lt;/p&gt;
 
 &lt;h3 id=&quot;why-start-a-blog&quot;&gt;Why start a blog?&lt;/h3&gt;
 
