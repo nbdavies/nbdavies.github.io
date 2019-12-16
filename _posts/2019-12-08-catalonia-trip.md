@@ -41,7 +41,6 @@ Even as we went down into the Ter valley, the mountains were never far. (That's 
 ![El Far](https://pbs.twimg.com/media/EFZXx9NX4AA9zam?format=jpg&name=small)
 The day's ride ended up back in Girona, with plenty of time to walk the city walls.
 ![City walls](https://pbs.twimg.com/media/EFZ-nREX4AI57lm?format=jpg&name=small)
-![More city walls](https://pbs.twimg.com/media/EFZ-nREX4AI57lm?format=jpg&name=small)
 ![Girona river](https://pbs.twimg.com/media/EFZ-mO1XsAIVceR?format=jpg&name=small)
 The hotel put us in a room with a balcony overlooking the cathedral, so for dinner we sat up there and had flatbreads from a nearby bakery.
 
