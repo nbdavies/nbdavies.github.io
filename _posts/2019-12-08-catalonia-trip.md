@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Catalonia Trip"
+published: false
 ---
 I previously posted about how to plan a bike trip. Now I get to tell you how your plans can go wrong. 
 
