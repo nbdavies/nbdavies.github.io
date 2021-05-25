@@ -1,10 +1,9 @@
 ---
 layout: default
-title: Musician
+title: Nick Davies as a Musician
 active_nav: Musician
 ---
-# Musician
-## Discography
+# Nick Davies as a Musician
 
 ### Gentle Brontosaurus
 

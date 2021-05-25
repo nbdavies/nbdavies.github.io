@@ -3,7 +3,8 @@ layout: default
 title: Web Developer
 active_nav: Web Developer
 ---
-# Web Developer
+# Nick Davies as a Web Developer
+
 ## Experience
 
 * Senior developer on the TermSync application at [Esker](www.esker.com) since June 2016.
