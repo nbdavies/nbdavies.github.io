@@ -25,3 +25,6 @@ p img {
 .container img {
 	max-height: 600px;
 }
+.content img {
+	max-height: 600px;
+}
