@@ -51,6 +51,10 @@ img {
   vertical-align: middle;
 }
 
+p > img {
+  max-width: 600px;
+}
+
 /**
  * Figures
  */
