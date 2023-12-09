@@ -9,169 +9,348 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		<div class="container pb-4 pt-4">
-			<h1>
-				Nick Davies
-				<br>
-				<small class="text-muted">Author, Musician, Web Developer, Etc.</small>
-			</h1>
-			<!-- TODO: Add large-format pic? -->
-
-			<main>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="/">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/author">Author</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/musician">Musician</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/web_developer">Web Developer</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/about">More About Me</a>
-              </li>
-            </ul>
-          </div>
-          <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-          <div class="btn-group" role="group" aria-label="First group">
-            <button type="button" class="btn btn-secondary"><a href="mailto:nbdavies@gmail.com">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
-            </a></button>
-            <button type="button" class="btn btn-secondary"><a href="https://www.linkedin.com/in/nbdavies">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-            </a></button>
-            <button type="button" class="btn btn-secondary"><a href="https://github.com/nbdavies">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-            </a></button>
-            <button type="button" class="btn btn-secondary"><a href="https://www.facebook.com/nicholas.davies.988">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
-            </a></button>
-            <button type="button" class="btn btn-secondary"><a href="https://twitter.com/GentleBronto">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
-            </a></button>
-            <button type="button" class="btn btn-secondary"><a href="https://plus.google.com/+NicholasDavies988">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z" fill-rule="evenodd" clip-rule="evenodd"/></svg>
-            </a></button>
-            <button type="button" class="btn btn-secondary"><a href="https://www.youtube.com/user/nbdaviesify">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4.652 0h1.44l.988 3.702.916-3.702h1.454l-1.665 5.505v3.757h-1.431v-3.757l-1.702-5.505zm6.594 2.373c-1.119 0-1.861.74-1.861 1.835v3.349c0 1.204.629 1.831 1.861 1.831 1.022 0 1.826-.683 1.826-1.831v-3.349c0-1.069-.797-1.835-1.826-1.835zm.531 5.127c0 .372-.19.646-.532.646-.351 0-.554-.287-.554-.646v-3.179c0-.374.172-.651.529-.651.39 0 .557.269.557.651v3.179zm4.729-5.07v5.186c-.155.194-.5.512-.747.512-.271 0-.338-.186-.338-.46v-5.238h-1.27v5.71c0 .675.206 1.22.887 1.22.384 0 .918-.2 1.468-.853v.754h1.27v-6.831h-1.27zm2.203 13.858c-.448 0-.541.315-.541.763v.659h1.069v-.66c.001-.44-.092-.762-.528-.762zm-4.703.04c-.084.043-.167.109-.25.198v4.055c.099.106.194.182.287.229.197.1.485.107.619-.067.07-.092.105-.241.105-.449v-3.359c0-.22-.043-.386-.129-.5-.147-.193-.42-.214-.632-.107zm4.827-5.195c-2.604-.177-11.066-.177-13.666 0-2.814.192-3.146 1.892-3.167 6.367.021 4.467.35 6.175 3.167 6.367 2.6.177 11.062.177 13.666 0 2.814-.192 3.146-1.893 3.167-6.367-.021-4.467-.35-6.175-3.167-6.367zm-12.324 10.686h-1.363v-7.54h-1.41v-1.28h4.182v1.28h-1.41v7.54zm4.846 0h-1.21v-.718c-.223.265-.455.467-.696.605-.652.374-1.547.365-1.547-.955v-5.438h1.209v4.988c0 .262.063.438.322.438.236 0 .564-.303.711-.487v-4.939h1.21v6.506zm4.657-1.348c0 .805-.301 1.431-1.106 1.431-.443 0-.812-.162-1.149-.583v.5h-1.221v-8.82h1.221v2.84c.273-.333.644-.608 1.076-.608.886 0 1.18.749 1.18 1.631v3.609zm4.471-1.752h-2.314v1.228c0 .488.042.91.528.91.511 0 .541-.344.541-.91v-.452h1.245v.489c0 1.253-.538 2.013-1.813 2.013-1.155 0-1.746-.842-1.746-2.013v-2.921c0-1.129.746-1.914 1.837-1.914 1.161 0 1.721.738 1.721 1.914v1.656z"/></svg>
-            </a></button>
-            <button type="button" class="btn btn-secondary"><a href="https://soundcloud.com/spiral-island">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0v24h24v-24h-24zm4.667 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.841-.585 1.809 0 3.275 1.494 3.411 3.386 1.302-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
-            </a></button>
-          </div>
-          </div>
-        </nav>
+		<div class='fixed-top'>
+			<div class='container-fluid' style='background-image: url("https://pbs.twimg.com/media/EFYvgOnUYAIr0fP?format=jpg&name=small"); background-repeat: no-repeat; background-size: 100%;'>
+				<div class='row' style='background: rgba(255,255,255,0.6);'>
+					<!-- TODO: Add large-format pic? -->
+					<div class='col-sm'>
+						<h1>
+							Nick Davies
+						</h1>
+						<h2>
+							<small class="text-muted">Author, Musician, Web Developer, etc.</small>
+						</h2>
+					</div>
+					<div class='col-sm'>
+						<div class='d-flex justify-content-end'>
+							<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+								<div class="btn-group" role="group" aria-label="First group">
+									<button type="button" class="btn btn-outline-secondary bg-white"><a href="mailto:nbdavies@gmail.com">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
+									</a></button>
+									<button type="button" class="btn btn-outline-secondary bg-white"><a href="https://www.linkedin.com/in/nbdavies">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+									</a></button>
+									<button type="button" class="btn btn-outline-secondary bg-white"><a href="https://github.com/nbdavies">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+									</a></button>
+									<button type="button" class="btn btn-outline-secondary bg-white"><a href="https://twitter.com/GentleBronto">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+									</a></button>
+									<button type="button" class="btn btn-outline-secondary bg-white"><a href="https://www.youtube.com/user/nbdaviesify">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4.652 0h1.44l.988 3.702.916-3.702h1.454l-1.665 5.505v3.757h-1.431v-3.757l-1.702-5.505zm6.594 2.373c-1.119 0-1.861.74-1.861 1.835v3.349c0 1.204.629 1.831 1.861 1.831 1.022 0 1.826-.683 1.826-1.831v-3.349c0-1.069-.797-1.835-1.826-1.835zm.531 5.127c0 .372-.19.646-.532.646-.351 0-.554-.287-.554-.646v-3.179c0-.374.172-.651.529-.651.39 0 .557.269.557.651v3.179zm4.729-5.07v5.186c-.155.194-.5.512-.747.512-.271 0-.338-.186-.338-.46v-5.238h-1.27v5.71c0 .675.206 1.22.887 1.22.384 0 .918-.2 1.468-.853v.754h1.27v-6.831h-1.27zm2.203 13.858c-.448 0-.541.315-.541.763v.659h1.069v-.66c.001-.44-.092-.762-.528-.762zm-4.703.04c-.084.043-.167.109-.25.198v4.055c.099.106.194.182.287.229.197.1.485.107.619-.067.07-.092.105-.241.105-.449v-3.359c0-.22-.043-.386-.129-.5-.147-.193-.42-.214-.632-.107zm4.827-5.195c-2.604-.177-11.066-.177-13.666 0-2.814.192-3.146 1.892-3.167 6.367.021 4.467.35 6.175 3.167 6.367 2.6.177 11.062.177 13.666 0 2.814-.192 3.146-1.893 3.167-6.367-.021-4.467-.35-6.175-3.167-6.367zm-12.324 10.686h-1.363v-7.54h-1.41v-1.28h4.182v1.28h-1.41v7.54zm4.846 0h-1.21v-.718c-.223.265-.455.467-.696.605-.652.374-1.547.365-1.547-.955v-5.438h1.209v4.988c0 .262.063.438.322.438.236 0 .564-.303.711-.487v-4.939h1.21v6.506zm4.657-1.348c0 .805-.301 1.431-1.106 1.431-.443 0-.812-.162-1.149-.583v.5h-1.221v-8.82h1.221v2.84c.273-.333.644-.608 1.076-.608.886 0 1.18.749 1.18 1.631v3.609zm4.471-1.752h-2.314v1.228c0 .488.042.91.528.91.511 0 .541-.344.541-.91v-.452h1.245v.489c0 1.253-.538 2.013-1.813 2.013-1.155 0-1.746-.842-1.746-2.013v-2.921c0-1.129.746-1.914 1.837-1.914 1.161 0 1.721.738 1.721 1.914v1.656z"/></svg>
+									</a></button>
+									<button type="button" class="btn btn-outline-secondary bg-white"><a href="https://soundcloud.com/spiral-island">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0v24h24v-24h-24zm4.667 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.841-.585 1.809 0 3.275 1.494 3.411 3.386 1.302-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
+									</a></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						
+							<li class="nav-item active">
+								<a class="nav-link" href="/">Home</a>
+							</li>
+						
+						
+							<li class="nav-item">
+								<a class="nav-link" href="/author">Author</a>
+							</li>
+						
+						
+							<li class="nav-item">
+								<a class="nav-link" href="/musician">Musician</a>
+							</li>
+						
+						
+							<li class="nav-item">
+								<a class="nav-link" href="/web_developer">Web Developer</a>
+							</li>
+						
+						
+							<li class="nav-item">
+								<a class="nav-link" href="/about">More About Me</a>
+							</li>
+						
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="container">
+			<h1><br><br><br><br></h1>
+			<main class="gx-1">
         
-        
-  <h1><a href="/2019/12/08/catalonia-trip.html">Catalonia Trip</a></h1>
+  <h1><a href="/2023/12/06/farewell-idi.html">Idi Davies, 2007? - 2023</a></h1>
   <p class="author">
-    <span class="date">2019-12-08 00:00:00 -0600</span>
+    <span class="date">2023-12-06 00:00:00 -0600</span>
   </p>
   <div class="content">
-    <p>I previously posted about how to plan a bike trip. Now I get to tell you how your plans can go wrong.</p>
+    <p><img src="/imgs/Idi%20first.jpg" alt="Idi swaddled in blankets" /></p>
 
-<h3 id="prologue">Prologue</h3>
-<p>Back in the spring, I was starting to look at where to go next. I had a few possible trips in Europe spec’d out, and I was comparing airfares between them. I noticed that the cheapest options connected through Barcelona, so I looked at what the airfare to Barcelona was, and booked tickets to go there in September. It turned out there was an appealing bike route in the region north of Barcelona, called the Vies Verdes or Pirinexus. The route forms a giant loop, and our plan was to do roughly half of it, starting from Ripoll up in the mountains down to the coast, and along the coast for a few days, ending at Figueres.</p>
+<p>Idi came into my life in summer 2008, via the Dane County Humane Society. We don’t know for sure how old she was then. She was named for a dictator, in keeping with Mobutu Davies. She was never my cat alone, but her vets over the years knew her by my last name.</p>
 
-<p>Over the summer, I reserved rental bikes with a shop in Barcelona. It was a complicated process. The rental shop’s reservation system got prices wrong at first, and then a payment link never came, so I ended up having to enter it again. Once the bikes were reserved, I started reserving the hotels for each night along the route. The plan was to bike up bikes the day we landed, bike off the jetlag and see some sights, and then catch the train to Ripoll the next morning.</p>
+<p><img src="/imgs/Idi%202008.jpg" alt="Young Idi looking down from above" /></p>
 
-<p>Then the bike shop informed me that the day we planned to pick up the bikes, September 24, was a public holiday, and they would be closed. The first leg of our trip, from Ripoll to Olot, was expected to involve a mountain pass, and I wanted to allow plenty of time for that. I worried that if we didn’t pick up bikes until 10 AM the next day, we wouldn’t have as much time for that leg of the trip. I also wanted to bike around the day we arrived. So I went back to square one, trying to line up another bike rental.</p>
+<p>Throughout her life, she loved her humans so much, those she lived with and those she got to know. When we had to leave her home during the day, we’d leave NPR on for her, to help keep her calm. Whenever we were sad or anxious or sick, she would drape herself on us protectively. Last time I was job-searching, she knew I was nervous during live-coding interviews, and she’d try to help the only way she knew how: by meowing and demanding pets.</p>
 
-<p>I found a place that charged about the same, and looked to have what we needed. Having been burned once already, I contacted them and confirmed that they would actually be open that day, that they understood what kind of bike we needed, and that they had bikes of that type in our size.</p>
+<p><img src="/imgs/Idi%202012.jpg" alt="Idi sitting mugly on a row of books" /></p>
 
-<h3 id="day-1">Day 1</h3>
-<p>We arrived in Barcelona on schedule on September 24 after a 2.5-movie flight, and went from the airport to the bike shop. They had a bike for me that was okay but not in great condition, and for my partner, they had pulled out a city cruiser. It had a gear guard, swooping handle-bars, big triangular seat, etc. And it looked like it had probably been in storage for a decade. The shop owner didn’t handle it well at all. Rather than admit the error and helping fix it, he tried to convince us that this bike was what we had reserved, despite the evidence of our own eyes. When it became clear that they had nothing to offer, we left to get lunch, check into the hotel, and start looking for a back-up plan.</p>
+<p>When we had a bunk bed in a small downtown apartment, she loved to be at face level for <a href="https://www.youtube.com/watch?v=drXkLF8BpnQ">easy head-butting</a>. Most nights, we had a bedtime ritual where I’d lie down and she’d walk up my chest and nuzzle my nose. This year in particular, she’d often do this again just before my morning alarm. She loved ear rubs, and it’d often make her purr. Lately she learned to pet us gently with her paw, as a way to ask us to pet her.</p>
 
-<p>I spent much of that day contacting other rental shops. A lot were closed for the holiday, and others didn’t have what we needed. By the end of the day, our best bet was to show up at the first shop I’d talked to the next morning, and hope they still had bikes for us.</p>
+<p><img src="/imgs/Idi%202013.jpg" alt="Idi looking at the camera from a high shelf" /></p>
 
-<p>We did also get out for a walk through Parc de la Ciutadella, and see some of the festivities.
-<img src="https://pbs.twimg.com/media/EFQLG1tXkAI2ZIc?format=jpg&amp;name=small" alt="Parc" />
-<img src="https://pbs.twimg.com/media/EFQLHt6WkAEgQrn?format=jpg&amp;name=small" alt="Lebanese Dancing" /></p>
+<p>She enjoyed musical instruments: tin whistle, accordion, trumpet, keyboards, guitar. When I’d restring a guitar, she’d chase the loose strings.</p>
 
-<h3 id="day-2">Day 2</h3>
-<p>That shop did not have any bikes for us. At that point, we had checked out of last night’s hotel, so we were standing on the sidewalk, calling around a few more places that had been closed the previous day. Finally one of them didn’t have bikes in our sizes, but knew of another shop in Girona that might. I had pretty much exhausted our options Barcelona, so I gave them a try.</p>
+<p>Her jumping skills were never the best, but she loved sitting somewhere high. Over the years she moved four times, and always had to explore.</p>
 
-<p>We quickly changed plans for the day. One way or another, we had to get to Olot that night, where the next hotel was reserved, or forfeit what I’d already paid for it. But biking from Olot to Girona was the plan for day 3, so we decided to try biking Girona to Olot. Compared to the Ripoll-Olot segment we’d been planning to do that day, this was going to be even longer and more uphill.</p>
+<p><img src="/imgs/Idi%202014.jpg" alt="Idi sitting on a scratched up old couch" /></p>
 
-<p>We took a train to Girona and found the bike shop, and got some lunch while they finished getting the bikes ready. It was a relief to finally get on the road around 2:30 PM, and the first section was mostly nice and flat. But we were clearly headed up into the mountains soon.
-<img src="https://pbs.twimg.com/media/EFVYW5cWsAANkIH?format=jpg&amp;name=small" alt="Flat path for now" /></p>
+<p>For many years, she loved playing with a “fishing rod”-style toy most of all, chasing it in circles until she’d spin out on the floor. She also loved chasing a laser pointer. She’d play-wrestle with my hand, always holding back her teeth and claws.</p>
 
-<p>It was nearly dusk by the time we struggled up to Coll d’en Bas, the high mountain pass. By the time we reached the next town, it was completely dark. At that point the trail involved tight corners and narrow bridges, and the rental bikes’ headlights were more for being seen than for seeing, so we went the last 10 miles into Olot on road. Luckily the hotel was still open to take us in at 9 PM when we arrived, and then we got a well deserved plate of kabob meat in the town square.</p>
+<p><img src="/imgs/Idi%202015.jpg" alt="Idi sitting on my lap in the way of a laptop" /></p>
 
-<h3 id="day-3">Day 3</h3>
-<p><img src="https://pbs.twimg.com/media/EFYvgOnUYAIr0fP?format=jpg&amp;name=small" alt="Olot morning" />
-From here, the plan was definitely back on track, and I could just literally roll with it. After breakfast at the Olot market, we mostly retraced yesterday’s course. Except this time it was mostly downhill, and we could see things, and the first 10 miles of the path were new to us.
-<img src="https://pbs.twimg.com/media/EFYviEMU4AEiJXx?format=jpg&amp;name=small" alt="Near Olot" />
-<img src="https://pbs.twimg.com/media/EFYvj9hU4AAx3ls?format=jpg&amp;name=small" alt="Nice bridge" />
-Even as we went down into the Ter valley, the mountains were never far. (That’s a pun because this mountain is called El Far.)
-<img src="https://pbs.twimg.com/media/EFZXx9NX4AA9zam?format=jpg&amp;name=small" alt="El Far" />
-The day’s ride ended up back in Girona, with plenty of time to walk the city walls.
-<img src="https://pbs.twimg.com/media/EFZ-nREX4AI57lm?format=jpg&amp;name=small" alt="City walls" />
-<img src="https://pbs.twimg.com/media/EFZ-mO1XsAIVceR?format=jpg&amp;name=small" alt="Girona river" />
-The hotel put us in a room with a balcony overlooking the cathedral, so for dinner we sat up there and had flatbreads from a nearby bakery.</p>
+<p>She was no hunter, but she chattered at birds. When we lived in a 12th floor apartment, we’d <a href="https://www.youtube.com/watch?v=6NR7uzA9H70">put on bird videos for her</a>. She’d look for the birds behind the television.</p>
 
-<h3 id="day-4">Day 4</h3>
-<p>For breakfast we hit the public market in Girona too. (Public markets are great.) The first bit of riding took us through a lot of farms and office parks. By now we were also in the habit of getting sliced meat and cheese at a grocery to snack on later. Catalonia had some excellent varieties of these things.
-<img src="https://pbs.twimg.com/media/EFer65KWkAESq4a?format=jpg&amp;name=small" alt="Rolling hills" />
-In the latter half of the route, there were some nice rolling hills down towards the sea. We reached the Mediterranean at Sant Feliu de Guixolles.
-<img src="https://pbs.twimg.com/media/EFer7_zWkAcZaWE?format=jpg&amp;name=small" alt="Sea" />
-The day ended at Platya d’Aro, a beach town with a bustling strip.</p>
+<p>Her substances of choice were catnip–lots of rainbows to lick and kick–silvervine, and plastic carrot bags. Human food was rarely interesting to her, but there were times she went for a corn chip, or a cheddar popcorn bag, or a plate that had bacon on it. For a while, she had a habit of drinking water out of people’s water glasses. She’d also drink from the faucet in the bathtub. If you took a bath, sometimes she’d hop up to the side of the bathtub and drink the human broth.</p>
 
-<h3 id="day-5">Day 5</h3>
-<p>The next morning, we were mostly off the Vies Verdes and on the Pirinexus route. For one thing, it’s not as well signed, and uses some busy roads instead of designated bike path. The start of the route took us up over a ridge to the next beach town, Sant Antoni de Calonge.
-<img src="https://pbs.twimg.com/media/EFkxZPoUwAA08L1?format=jpg&amp;name=small" alt="More beach" />
-The terrain was quite varied; sometimes it was well-maintained gravel paths like this, with mountains in the distance. Other times it was dirt roads that were quite disused and difficult to bike. There’d be deep ruts, rocks sticking up, overgrown weeds on either side.
-<img src="https://pbs.twimg.com/media/EFkxevuVAAAiEuF?format=jpg&amp;name=small" alt="View of the castle ahead" />
-Most of the day we were making our way gradually towards Montgrí castle, which you can faintly see in the distinct on the center hill above. The approach to the town below, Torroella de Montgrí was a bit grueling. Flat ground, but difficult dirt roads, carving a sawtooth pattern towards the destination. We had picnic lunch in the town and then climbed the hill to the castle. Mid-afternoon may have not been the best time to climb it; it was very sunny and hot. The castle was impressive up close though, and offered a vantage in every direction. We could see all the way back to El Far.
-<img src="https://pbs.twimg.com/media/EFkxgEXU8AAFayT?format=jpg&amp;name=small" alt="Castle up close" />
-After that, we were getting really tired of the bumpy dirt roads that the Pirinexus route made use of, at least in that area, so for the last few miles to L’Escala, we switched over to the main road. The traffic was a little much, but the pavement was a real improvement.
-<img src="https://pbs.twimg.com/media/EFkxnUwU4AA3k0m?format=jpg&amp;name=small" alt="L'Escala" />
-For dinner we found a rostisseria, a regional type of rotisserie chicken.</p>
+<p><img src="/imgs/Idi%202016.jpg" alt="A mischevious loaf in front of a laptop" /></p>
 
-<h3 id="day-6">Day 6</h3>
-<p>The hotel in l’Escala provided breakfast, which was a pleasant surprise; hotel breakfest buffets these include someone slicing a leg of Iberian ham.</p>
+<p>We took her out on a leash occasionally, though it took a long time for her to get used to the harness. In her last few days, she actually requested to go outside, despite snow and meltwater on the ground.</p>
 
-<p>The original plan was to continue on the Pirinexus route as far as Castelló d’Empúries, and then cut across to Figueres, and take the train back, with bikes. But because of the change of plans at the beginning of the trip, the bikes now had to go back to Girona, which was a stop on the same train line. Also, we were still pretty tired of the types of roads the Pirinexus route used, and didn’t have high hopes for the next segment being better. So we decided to change plans.</p>
+<p>I knew this day would come. I thought about it enough that I should have been ready for it when it came. Turns out not so much.</p>
 
-<p>Even though we’d been riding two days since Girona, we hadn’t entirely been riding away from there, to it was only a 25 mile ride back. We took our chances with Google’s suggested route, and it was a very mixed bag. Some of it was single-lane paved road, which is absolutely perfect for riding–cars can’t just rush past you at speed. Flaçá was pretty quiet on a Sunday, but there was a nice bakery by the train station. Closer to Girona, we ended up on the C-66 highway, which was…not an ideal road for bikes to be on. At least the last leg into the city itself was back on bike paths and along the river.</p>
+<p><img src="/imgs/Idi%202017.jpg" alt="Playing video games with me" /></p>
 
-<p>We turned in the bikes and took the train back to Barcelona, where we checked into a hotel in the Gràcia neighborhood.</p>
+<p>Making sure she ate enough had been a struggle, since her first brush with death back in 2011 or so. And then this year, everything started to go. She had a bladder infection in February, which led to an intestinal blockage in March.</p>
 
-<h3 id="day-7">Day 7</h3>
-<p>We climbed Montjuïc, which was a nice hike up and a nice overlook over Barcelona. We tried going down the other side, only to find that it was a longer walk than expected. I feel like I might have made that mistake before too.
-<img src="https://pbs.twimg.com/media/EFxdpGvWwAEYMnA?format=jpg&amp;name=small" alt="View from Montjuic" /></p>
+<p><img src="/imgs/Idi%202018.jpg" alt="Extremely cozy cat on a red blanket" /></p>
 
-<p>I did a lot of reading that day; I was in the middle of “The Warrior Moon” and used all my phone battery on that.</p>
+<p>Then in May, she was getting thin and bony, and the arthritis in her hips was getting worse and not responding to injections. That was the first time a vet suggested talking “about her quality of life”. It was a valid question–the vet only saw Idi growling and hissing–but it seemed like we were running out of potential treatments, and I started to wonder if she might not make it to next year.</p>
 
-<h3 id="day-8">Day 8</h3>
-<p>There was also some biking I wanted to try in/around Barcelona, so we rented bikes again, just for the day. The first stop was Park Güell, which was already a rather hard climb. It was too full of tourists, and we weren’t sure what to do with the rental bikes, so we moved on. Then we climbed to the Carretera de les Aigües, a mostly flat route across the side of the Collserola ridge. It was a great ride, though it was also really sunny and hot.
-<img src="https://pbs.twimg.com/media/EFzS3RtXoAAgV9a?format=jpg&amp;name=small" alt="Carretera de les Aigües" />
-From there, we followed the Ronda Verde, a route around the perimeter of Barcelona. It’s fairly well marked, but it takes a lot of abrupt turns, rather than following any straight course for very long. Eventually we turned and used the bike lanes along one of the main avenues to get most of the way back to the city center where the rental shop was. That night, we went down to the beachside Barceloneta area for pizza and a sunset, and some wandering around the gothic quarter.
-<img src="https://pbs.twimg.com/media/EF0TYyXXkAEJKYm?format=jpg&amp;name=small" alt="Sunset" /></p>
+<p><img src="/imgs/Idi%202019.jpg" alt="Idi on her side looking at camera with big eyes" /></p>
 
-<h3 id="day-9">Day 9</h3>
-<p>The next day, we went to the zoo in the morning. In the afternoon, we took the bus back up to Park Güell and walked around a bit more. That night we walked around the Gràcia neighborhood again and got some excellent gelato.</p>
+<p>Over the following months, we started keeping score of how many servings of food she finished. Her front feet were collapsed, and it started to put a strain on her back feet, until she was essentially walking on her wrists and ankles.</p>
 
-<h3 id="the-end">The end</h3>
-<p>I really enjoyed a lot about the trip, though I may have had enough Barcelona for another 10 years. Maybe I’ve been reading too much Carlos Ruiz Zafón, and remembered it as a gloomy, damp, mysterious place more so than the bright, sunny, hectic metropolis that it is. For me, the best parts of the trip were certainly covering new ground outside the city.</p>
+<p>In September, she suddenly started vomiting a lot. We got a last minute appointment with her regular vet. They gave her an anti-nause injection and said if she still threw up after that, she needs emergent care. So the next morning we had to take her to the ER vet. She was completely out of it when we got there; the doctor said she was in a state of shock.</p>
 
-<p>I’ve been really fortunate to be able to do these trips, to Denmark and Taiwan and Catalonia. To be able to afford the flights and the lodging and the logistics and the food. To still be in good enough health to travel by the power of my own body. To have a life at home that we can step away from for 8 or 10 days at a time. To live in an age of global travel. I don’t want to do this kind of thing too often and start to take it for granted. Though there plenty of other places I want to see while I still have time and am still able to, other experiences to have.</p>
+<p><img src="/imgs/Idi%202020.jpg" alt="Ready to pounce on squirrels in the TV" /></p>
 
-<h3 id="where-to-next">Where to next?</h3>
-<p>I didn’t really mean to start planning my next trip so soon, it just kind of happened. Biking season is officially over for me, so I guess I’m daydreaming of future opportunities.</p>
+<p>She was hospitalized most of that week, and they determined that she had an infection of her liver and gallbladder, and also diabetes. After five days in hospital, she came home with a tube in her neck and an intensive course of antibiotics.</p>
 
-<p>I started looking at Eurovelo routes. Some of the major ones follow major rivers, starting from their headwaters in the Alps to where they join the sea, and I was curious about how far up to the source you could start.</p>
+<p>Over the last two months or so, we’ve been back to the vet a lot. We’ve been doing feedings through her e-tube multiple times of day. For a little while, she was eating more on her own, and it seemed like she might outlive the tube.</p>
 
-<p>It turns out that the Rhône and the Rhein (one branch anyway) start less than 30 miles from each other, on either side of Andermatt, a Swiss skiing village that’s also close to the source of the Ticino, Reuss, and Aare rivers. So I figured that might be a place to start, regardless of which river valley would be the best to follow. From there I worked out a route that I hope to go on next summer.</p>
+<p><img src="/imgs/Idi%202021.jpg" alt="Asking for pets please" /></p>
+
+<p>In the past week, the nausea started coming back. Plus her back legs started failing her, and her eyes got a weird texture. Whatever reflex made her gnash her teeth and paw her face was limiting her ability to eat.</p>
+
+<p>Then yesterday (Dec 5), she stopped throwing up. It seemed like an improvement at first, but by the evening, she was just really out of it and fading.</p>
+
+<p>We took her to the ER, and they determined that her kidneys were failing. According to the ER doc, they could put her on life support, but even then she wasn’t likely to make it through the night. There was basically no chance she’d ever come home, or really be conscious again.</p>
+
+<p><img src="/imgs/Idi%202022.jpg" alt="Coaching me while I exercise" /></p>
+
+<p>In that first visit to the ER, there was no choice because she could pull through and have some quality time left with us. And she did. She made it clear every day that there was still joy in her life and that she wanted to be with us.</p>
+
+<p>In the last visit to the ER, the choice was clear because drawing it out would do nothing for her or for us. It was still hard to give up on that chance she’d get better, no matter how implausibly slim it was.</p>
+
+<p><img src="/imgs/Idi%202023.jpg" alt="Sitting on me in bed, about to bap me for not petting" /></p>
+
+<p>I’m glad we had so much time together. I’m glad so many people got to meet her. Not just people who came over, but in the COVID/Zoom era, lots of coworkers and family and friends. And I’m glad that so much of her life is documented. Thanks to Sylvie, she had her own following <a href="https://www.instagram.com/idithecat/">on Instagram</a>.</p>
+
+<p>I would’ve had more time with her if I could. I know she would’ve wanted that too. We’re lucky that she was so very herself up until the end, up until she wasn’t here at all. We’re lucky that her slow decline didn’t frog-boil us into keeping her around in misery. This gentle, loving cat deserved a gentle, loving end.</p>
+
+<p><img src="/imgs/Idi%20last.jpg" alt="Idi at the hospital for the last time" /></p>
+
+  </div>
+
+  <h1><a href="/2021/08/22/priorities.html">Experimenting with Priorities</a></h1>
+  <p class="author">
+    <span class="date">2021-08-22 00:00:00 -0500</span>
+  </p>
+  <div class="content">
+    <p>There are things that I should do in the medium term, but when they happen in particular isn’t important.</p>
+
+<p>There are things that I would like to accomplish in the medium term, that are too large to take on in one uninterrupted chunk of time.</p>
+
+<p>There are things that I would like to make regular habits of.</p>
+
+<p>There are also things that I enjoy doing, when there’s time.</p>
+
+<p>These things all compete for finite hours in the day. Even more finite, when you discount work, meals, and other things that are not subject to procrastination.</p>
+
+<p>This is a challenge to figure out. Particularly because there are multiple areas where I want to continue progressing towards larger goals, without setting an area or goal aside entirely.</p>
+
+<p>A novel where I just completed a draft (yay!), but there are revisions to make, before I figure out who should see it next (boo!). Plus a backlog of short stories to revise as well.</p>
+
+<p>Lots of societal problems, and often multiple approaches to taking action on them. For instance, climate change needs to be addressed systemically, where effecting change through government is a long, uncertain process. There are also things I could do individually–donating to or volunteering with tree-planting initiatives. Helping with land-banking programs, or even buying and managing a piece of conservation land myself.</p>
+
+<p>Songs to practice for playing with the band, and a solo album that I’ve started.</p>
+
+<p>Things to try out in technology–new languages, new frameworks, ideas for apps to mock up. Sometimes these intersect with other priorities.</p>
+
+<p>Plenty to do around the house: getting a solar assessment, an energy efficiency assessment, getting attic insulation, getting insulated windows installed–these count as “social good” goals to some extent as well.</p>
+
+<p>Lately I’ve been in a job search cycle, which has largely preempted my usual careful balance of priorities. Now I’m trying to get back into some sort of rhythm.</p>
+
+<h3 id="a-solution">A Solution?</h3>
+
+<p>I put up a physical whiteboard. Sure you can write to-do lists digitally, and to-do list apps. I sometimes do, as a way to at least get them out of my head, where they make a distracting rattling noise. But if you want a to-do list that’s going to stick around, and not get lost or ignored when Netflix or Overwatch are <em>right there</em>, I think something physical helps.</p>
+
+<p>Most of my tasks to be done can or must be done from home, and while COVID has limited how much time I spend out anywhere, the limitation of location hasn’t been a problem. I can always take a picture of it before I go out.</p>
+
+<p>I have the whiteboard divided up into sections, with my next to-do’s for each area. Things like “exercise” and “reading” are on there, just to remind me to do them periodically, and to give myself permission to. It’s not like having a strict manager looking over my shoulder and telling me what to spend every hour on. It’s more of a menu to pick from.</p>
+
+<p>It might be too soon to tell, whether this will be a good system for me. I suspect that achieving balance might involve tracking some metadata of which section I’m pulling from more often.</p>
+
+  </div>
+
+  <h1><a href="/2021/08/16/rails-explain.html">Explaining explaining in Rails</a></h1>
+  <p class="author">
+    <span class="date">2021-08-16 00:00:00 -0500</span>
+  </p>
+  <div class="content">
+    <h3 id="what-is-explain">What is EXPLAIN?</h3>
+
+<p>SQL variants like MySQL include ways to inspect how a particular query would be executed, including what indices will be used. This can give you an idea of how the query can be expected to perform.</p>
+
+<p>For instance, if there’s more than one index on a table that the query could make use of, it can be handy to know which one it actually will make use of, for the particular database instance. That’s not something that’s always easy to reason out abstractly, and what route the database picks can be dependent on the scale/shape of the data actually present.</p>
+
+<p>The actual database query would go something like this:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>EXPLAIN ANALYZE SELECT *** FROM *** ...;
+</code></pre></div></div>
+<p>But in the context of a Rails application, you may want to get this output from the Rails console, or add a statement somewhere in your application code that runs the query and writes the result to a log file.</p>
+
+<p>I recently learned about this while troubleshooting a long-running query, where the tables involved in the query were temporary and not available after the fact, and the query itself was dynamically constructed in application code.</p>
+
+<p>There are a couple ways to perform an <code class="language-plaintext highlighter-rouge">EXPLAIN</code> query, depending what you’re starting with…</p>
+
+<h3 id="adding-to-a-scoperelation">Adding to a scope/relation</h3>
+
+<p>If you’re chaining together a scope or relation, something like <code class="language-plaintext highlighter-rouge">Person.where(first_name: 'Nick')</code>, then you can tack <code class="language-plaintext highlighter-rouge">.explain</code> on the end of the method chain, to return the explain output.</p>
+
+<h3 id="bespoke-sql">Bespoke SQL</h3>
+
+<p>Let’s say your code has constructed a SQL query directly. Maybe you have the query (as a SQL-encoded string) in a variable called <code class="language-plaintext highlighter-rouge">sql</code>.</p>
+
+<p>In a model context, where <code class="language-plaintext highlighter-rouge">self.class.connection</code> is the database connection, you might run the actual query using <code class="language-plaintext highlighter-rouge">self.class.connection.execute(sql)</code>. There are other methods that might be more convenient depending what you expect to get back from your query.</p>
+
+<p>In order to get the <code class="language-plaintext highlighter-rouge">EXPLAIN</code> output, you do need to consult the database itself, and the syntax could be <code class="language-plaintext highlighter-rouge">self.class.connection.explain(sql)</code>.</p>
+
+<p>Hope this helps!</p>
+
+  </div>
+
+  <h1><a href="/2021/01/11/comps.html">Querying tips: Comps</a></h1>
+  <p class="author">
+    <span class="date">2021-01-11 00:00:00 -0600</span>
+  </p>
+  <div class="content">
+    <p>Starting in January 2020, I queried a novel for the first time. Working through the list of agents I identified took about a year overall, though there was a chunk of time in April-July when I put the process on hold. I was starting to get editorial feedback, and wanted to put the novel through another draft before sending out more queries.</p>
+
+<p>I gave it a fair shake, but now that I’ve reached the end of the querying process for that novel, I’m ready to trunk it for now and move on. I still think that novel has potential, and I have some ideas for how to improve upon the current nth draft, but I’m reluctant to sink time into another revision of it right now, when I could spend that time on something that hasn’t gone through that cycle already.</p>
+
+<p>I’ve kept pretty mum throughout the process, on purpose. I didn’t want to reveal that agents I had queries out to were further down my list than others, not that that means anything. Nor did I want to reveal that other agents had already looked at the novel and passed on it, not that that means anything either.</p>
+
+<p>Now I’m at a good point to reflect on what I learned along the way. Take this all with plenty of salt. I’m not an authority! This is just about my experience with the process.</p>
+
+<p>In the first of these posts, I’ll be talking about comps. Comps, or comparable titles, are other books (or shows, movies, etc.) that you name-drop to help form an impression of your book. Some agents may ask for comps directly. It’s a common field in QueryManager. But pretty much any query you send out can include comps in the body of the query letter if you choose to, and it’s typically recommended to include them if you can.</p>
+
+<h1 id="the-comp-donts">The Comp Don’ts</h1>
+
+<p>Unfortunately, there are lots of ways to pick the wrong comp, or to misuse a comp.</p>
+
+<h2 id="dont-aim-too-high">Don’t aim too high</h2>
+
+<p>If you compare your book to a very successful touchstone of your genre, you’re probably saying one (or more) of these things:</p>
+
+<ul>
+  <li>You haven’t actually read much of your genre.</li>
+  <li>You may think very highly of yourself.</li>
+  <li>Your work may be cliche, taking inspiration from a well that many others have already drawn from.</li>
+</ul>
+
+<p>If Harry Potter is the clear reference point, then so be it. No point in obscuring that, if the first time anyone reads the manuscript they’re going to spot your primary inspiration. In that case, make sure you also make it clear what new element you bring to it. Harry Potter, but in Antarctica.</p>
+
+<h2 id="dont-aim-too-low">Don’t aim too low</h2>
+
+<p>If you compare your book to a more obscure title, you risk giving one of these impressions:</p>
+
+<ul>
+  <li>The comp might not mean anything to the agent. (Whether they take the time to check it out probably depends on the agent, and how their day is going.)</li>
+  <li>If it’s a book that didn’t perform well, that could tell the agent that selling something similar is going to be an uphill battle.</li>
+</ul>
+
+<h2 id="dont-go-too-old">Don’t go too old</h2>
+
+<p>If you’re citing a classic, you run into the pitfalls of citing a bestseller. You may think highly of yourself. You may not be reading enough of the genre you’re writing. You may be in dialogue with a work that there has already been a lot of dialogue with. It may be a style that got saturated. The readership may have moved on already.</p>
+
+<p>Citing something older and less famous risks some of those perceptions as well. It also means that if a book didn’t do well, and isn’t still selling today, there’s a longer track record by which to judge it.</p>
+
+<p>Although if your book taps into nostalgia for a particular period of literature, or if there’s specific source material you’re updating or subverting, it could well be the exception.</p>
+
+<h2 id="dont-go-too-far-afield">Don’t go too far afield</h2>
+
+<p>If you cite a comp that’s too different from your book, someone who reads your manuscript expecting one thing could be disappointed to find another. They could feel duped.</p>
+
+<p>However, if you’re doing a genre mashup, you may want to do an X-meets-Y comp, as a way to specify which strains of each genre you’re mostly pulling from.</p>
+
+<h2 id="dont-repeat-yourself">Don’t repeat yourself</h2>
+
+<p>If your book is about werewolves, you could comp another book about werewolves. But then including more comps about werewolves might just seem redundant and unhelpful. We get it. It’s a werewolf book, just like these hundred others. What else went into it?</p>
+
+<h1 id="the-dos">The Do’s</h1>
+
+<p>I still struggle with identifying comps. With so many pitfalls to it, it would certainly be nice if there were just one methodical set of instructions to follow, but it’s a subjective thing. It depends on what your story is about, and how you could convey that to someone else’s mind. But here are some possible starting points.</p>
+
+<h2 id="read">Read</h2>
+
+<p>This is kind of the default way to get comps. If you like writing, hopefully you’re already into reading, right?</p>
+
+<p>That said, it could be arduous to keep a pulse on books that seem similar to yours. If they’re recent titles, there’s no telling which ones are going to be well-received or not. Plus you likely also want to read things outside the particular sub-genre you’ve been writing in.</p>
+
+<p>I don’t think “this could be a comp” would be enough to justify reading something front to back. If you hate it, then the person who’s going to love what you’ve written is liable to hate it too. (Or not! Who knows.)</p>
+
+<h2 id="ask-your-readers">Ask your readers</h2>
+
+<p>Writing isn’t a solitary pursuit. There’s always someone else’s eyes involved. Whoever reads your work, ask them, if you get the chance, what they would compare it to. Be ready for them to name things you might not actually like.</p>
+
+<p>Get a second opinion about what genre (or genres) your story belongs in. You might be too close to get an accurate view of it. You worked so hard on that romantic subplot. That makes it a romance, right? Maybe you’ll gain a new understanding of what genre you should be listing in your query. Or maybe there’s something to fix in the manuscript, if it didn’t land in the genre you were aiming for.</p>
+
+<h2 id="follow-the-tags">Follow the tags</h2>
+
+<p>Use Goodreads, Amazon, or possibly your local library system, to find books that share characteristics with yours. This can also be a way to find authors, agents, publishers, etc. who are into what you’re into.</p>
+
+<h2 id="keep-track-of-your-inspiration">Keep track of your inspiration</h2>
+
+<p>Maybe you write because you read something amazing, and you want more of it in the world. Maybe there was a book that you read that didn’t go the way you expected, and you write to explore the possibilities that another author didn’t. Your influences could end up unrecognizable by the time you query. They could end up irrelevant (due to age or popularity). But it could be somewhere to start.</p>
+
+<h2 id="test-different-combinations">Test different combinations</h2>
+
+<p>Enter pitch contents like DarkPit, SFFPit, PitMad, DVPit (if that applies to you), etc. Try out a number of different pitches throughout the event, including different combinations of comp titles. See what people respond to.</p>
+
+<h2 id="tailor-your-comps-to-the-submission">Tailor your comps to the submission</h2>
+
+<p>If an agent has mentioned a particular book (favorably), then you know that’s a comp title that they’ll recognize, and that it’s something that matches their taste. That’s no guarantee of course. If you cite someone’s favorite novel as a comp, they’re going to have high expectations. But it does give you some common ground to build on.</p>
+
+<h1 id="good-luck">Good luck!</h1>
+
+<p>I hope my thought process helps you with yours. Above all, my guiding principles throughout the query process are:</p>
+
+<ul>
+  <li>This is a match-making process for business relationships.</li>
+  <li>Agents are human beings.</li>
+  <li>You’re a human being too.</li>
+  <li>Agents are professionals.</li>
+  <li>You’re aiming to be a professional too.</li>
+</ul>
 
   </div>
 
@@ -190,7 +369,7 @@ From there, we followed the Ronda Verde, a route around the perimeter of Barcelo
 
 <p>I also switched my band’s site (gentlebrontosaurus.com) over to a Jekyll/Github Pages stack like this one. The concept of pulling content from Facebook and Twitter dynamically wasn’t reliable in practice. Events didn’t show up consistently. The newsfeed wasn’t very useful. The Facebook API version I’d used was going to be deprecated soon. Also the SSL certificate had expired, and it seemed like Heroku was going to charge for maintenance of that. Since the site didn’t really need a database or API keys behind it anymore, moving to a static site made sense.</p>
 
-<p>I also fixed a couple things I’d noticed wrong with the page. YouTube embeds were loading Google Ads and Analytics scripts that caused errors. For the social icons, an <code class="highlighter-rouge">a</code> tag with an <code class="highlighter-rouge">object</code> inside it for SVG content no longer made the <code class="highlighter-rouge">object</code> clickable.</p>
+<p>I also fixed a couple things I’d noticed wrong with the page. YouTube embeds were loading Google Ads and Analytics scripts that caused errors. For the social icons, an <code class="language-plaintext highlighter-rouge">a</code> tag with an <code class="language-plaintext highlighter-rouge">object</code> inside it for SVG content no longer made the <code class="language-plaintext highlighter-rouge">object</code> clickable.</p>
 
 <p>The downside of this stack is that I had the site written in Slim, and I had to convert it all to HTML. There is a Jekyll plugin for Slim support, but it doesn’t work with more recent Jekyll versions. More to the point, Github Pages only supports certain Jekyll plugins, and that one isn’t in the list. Nor is HAML.</p>
 
@@ -218,261 +397,29 @@ From there, we followed the Ronda Verde, a route around the perimeter of Barcelo
 
   </div>
 
-  <h1><a href="/2019/07/20/how-to-plan-bike-trip.html">How to Plan a Bike Trip</a></h1>
-  <p class="author">
-    <span class="date">2019-07-20 00:00:00 -0500</span>
-  </p>
-  <div class="content">
-    <p>I’ve only planned three trips that involved traveling by bike (the third coming up in September), but I want to share what I’ve learned so far. Whether you should travel by bike is a secondary question to whether you should travel at all. But for me, it’s allowed for a very different type of experience than it would be practical to have otherwise.</p>
-
-<h3 id="what-do-i-mean-by-traveling-by-bike">What do I mean by traveling by bike?</h3>
-
-<p>I’m going to focus on using bikes to get from place to place. But there is a spectrum of what this could entail, depending on how much you’re willing to spend, vs. how much your willing to do yourself.</p>
-
-<p>At one extreme, you can find all-inclusive bike tours arranged by travel companies or bike companies like Trek. These will typically arrange food and lodging, and transport your bags for you, leaving you unburdened while you ride. They may even ferry you to the start of a day’s ride, or pick you up at the end, and you might have a guide riding along with you.</p>
-
-<p>At the other extreme, there is the option of planning your own route, cooking your own meals, pitching a tent anywhere you’re allowed to. If you were going to spend a long time traveling by bike, this way of doing it might be a necessity.</p>
-
-<p>But for the trips I’ve planned so far, I’ve been aiming for a middle way: planning the route, finding reasonable hotels/hostels/AirBnB places to stay, carrying the bare minimum on the bike.</p>
-
-<p>Planning this kind of trip can be a fun challenge of balancing numerous constraints, leading you to learn a lot about where you’re planning to go. I’ll start by going through some considerations to keep in mind, and then share some strategies I’ve used.</p>
-
-<h3 id="considerations">Considerations</h3>
-
-<h4 id="distance">Distance</h4>
-
-<p>The first day of the trip ought to be a short one for multiple reasons. If you’re going to stepping off a plane first, that could take longer than expected. If you’re going to be renting a bike, that could eat up time too. Basically unless you’re going to able to prepare the night before and be ready to go first thing in the morning, then you’re going to be starting later on the first day than you would be able to once you get going. Physically, you should also plan to go easy on yourself the first day.</p>
-
-<p>How far you can travel in a given day depends a lot on you. If you typically bike infrequently, slowly, or only in short trips, then you might have a shorter range. If you get home after a 15 mile ride and want to pass out, then going 30 miles in a day is essentially like doing that twice in a row. You can plan to push yourself a little once you get going, but don’t commit to something you might not be able to handle.</p>
-
-<p>The other constraint is that you might not want to spend all day biking, even if you physically can. You might be traveling through a region that has other things to see and do. Or you might just want to take it easy, because we’re talking about a vacation here. One way or another, you’re probably going to want to take some kind of break every hour or half hour.</p>
-
-<h4 id="elevation">Elevation</h4>
-
-<p>This is also very personal. If you google “best biking routes in X country”, you might find a lot of posts about the spectacular views from the top of this certain mountain, and the excellent climb getting up there. For hardcore bikers, maybe that is in fact the best route. But for me, more elevation gain per day means going slower and being more exhausted, and probably making that day shorter in distance. So it’s important to pay attention to what the terrain of a route you’re considering is, before deciding whether you’re up to it.</p>
-
-<p>Want to avoid unnecessary elevation changes? This is why “rails to trails” is popular: trains tracks typically stay relatively level. Following the course of a major river can also be a gentle slope.</p>
-
-<h4 id="surface">Surface</h4>
-
-<p>Smooth pavement is where you’ll be able to travel the fastest and thus the furthest. But it can be limiting. There are some trails that switch back and forth between pavement and gravel, so it helps to be prepared for that. In certain places, you can also find single-track trails that might be geared towards hiking, but allow mountain biking as well. This isn’t to say that one is better than the other, but the route you plan should match what you’re going to enjoy (and the type of bike you bring).</p>
-
-<h4 id="traffic">Traffic</h4>
-
-<p>A highway might be the most direct route between two places, and might also be the flattest. But traveling via highway can be taxing in other ways. They’re often unshaded. They may lack frequent, convenient stops. You may be breathing diesel smoke and biking through debris or roadkill. The traffic may be loud and fast and close by. Time spent on a highway can wear you out more quickly than a longer, hillier back road.</p>
-
-<p>Though dealing with any vehicle traffic can also be a combination of your personal tolerance level, and local conditions. Are you practiced at riding near vehicle traffic? Is drivers in the region known for being cautious and courteous towards cyclists? How narrow is the shoulder? What’s the visibility like? For some of this, it helps to read other people’s accounts (with a grain of salt). You can also try to scope things out as much as possible. Google Street View is one way, or if you can find YouTube videos, even better.</p>
-
-<p>Of course, getting away from traffic entirely can be ideal. But looking for long-ranging bike paths can limit your options.</p>
-
-<h4 id="stopping-points">Stopping Points</h4>
-
-<p>Unless you plan to camp, or perhaps even if you do, you’ll want to plan out where each day will start/end. Spending the night in a city or town makes it more convenient to find food and lodging. Or if you can find at least a lodge or resort to spend the night at, maybe that suffices.</p>
-
-<p>As I mentioned earlier, you might want to plan for things other than biking. Are there historic sites or museums along the way? Getting off the bike and taking a short hike might be a nice change of pace.</p>
-
-<p>For a shorter trip, this might not even come up, but a good rule of thumb is that you should also consider stopping for at least one day for every five that you spend going from place to place. Just as a way to recharge, rest, and sort out anything you neglect while you’re on the move, and to avoid letting the journey itself get too monotonous.</p>
-
-<h4 id="startend-logistics">Start/End Logistics</h4>
-
-<p>It’s worth considering, particularly if the route you’re interested in doesn’t begin in a major city, how are you going to get there? If you’re going to bring a bike, what will it take to bring it with you?</p>
-
-<p>Many places allow bikes on trains, but they may have different rules about it. In many places, they aren’t allowed during rush hour. Sometimes they’re only allowed in certain cars of the train, and must be strapped in. Sometimes they need to be boxed or bagged up.</p>
-
-<p>If you can get to or from the route via bus, then check whether the bus can handle a bike. Some buses might have a bike area inside, or a rack on the front. For longer-range Greyhound style buses, you might be allowed to put the bike in the luggage compartment. It all depends on the type of bus, and the policy of the company or government operating it.</p>
-
-<p>If you’ll be renting a bike, then you might have to consider how to get the bike back to the rental shop. Though certain places may also allow one-way rentals.</p>
-
-<h4 id="scenery">Scenery</h4>
-
-<p>This might be tie-breaker compared to the other considerations, or it might be the entire point of traveling to a certain place. But it’s worth considering: what is the route actually going to look like? If you’re going to just be passing cornfield after cornfield, that might be calming, but it might be dull after multiple days. If you’re going to be near a dramatic waterfall, maybe it’s worth a slight detour to bike past it.</p>
-
-<h4 id="where-to-then">Where to, then?</h4>
-
-<p>Balancing these considerations can be a fun challenge. I’ve got a couple dozen ideas of trips I’d like to do. For sticking to established bike routes, check out the Eurovelo system. Those are all much longer than I’d be able to do in one trip, but they serve as a starting point to find a smaller section that would be achievable. Individual countries, including Canada and much of eastern Asia, often have their own national bike route systems. This is something that the US is lagging behind in, as well as any kind of national transportation system to help with the start/end of a trip.</p>
-
-  </div>
-
-  <h1><a href="/2019/07/08/writing-update.html">What I'm Writing</a></h1>
-  <p class="author">
-    <span class="date">2019-07-08 00:00:00 -0500</span>
-  </p>
-  <div class="content">
-    <p>Just a quick update on what I’m writing at the moment. Lately I’ve been switching back and forth between two novels.</p>
-
-<h3 id="a-city-divided">A City Divided</h3>
-
-<p>This is something I started in 2015 and finished the first draft of last year, and now I’m doing a revision/rewrite. In parts it might only be the second draft. In other parts, it might be the third? fourth? fifth? Mostly it’s turning out to be a rewrite with a sentence borrowed from the previous draft here and there.</p>
-
-<p>I started this draft earlier this year, for the purpose of trying out a new idea in the very first chapter. That change required propagating some changes into the following chapters. And then I started noticing all the plot holes and loose threads I’d left behind.</p>
-
-<p>I feel pretty confident in the story overall, and none of the plot holes so far have been unpatchable. There were also some general changes I knew I wanted to make throughout, making the protagonist’s thoughts and feelings clearer to the reader, making the war-torn setting feel more omnipresent, and adding a few bits of depth to secondary characters.</p>
-
-<p>At the moment, I’m about 40% of the way through that rewrite, but it’s been growing a bit as I go, so the denominator gets a little larger. So far it’s gone from 105,000 words to 111,000. But now it’s time to switch to the other project I’m in the middle of.</p>
-
-<h3 id="the-enthrallers">The Enthrallers</h3>
-
-<p>This is an idea I’ve had kicking around for a few years. I took a stab at it in 2017, and fizzled but learned some things along the way. Then I tried it again during Nanowrimo last year. It took me a lot of that month to get a handle on how that story needed to be told. It wasn’t until November was over that I really had a plan for what the storylines would be, and how it would be structured overall.</p>
-
-<p>At this point I have (I think) a pretty solid outline that I’m working off of. I have earlier versions of certain key events, sometimes two or three versions, but where the names aren’t correct anymore, character backstories aren’t accurate anymore. I’m about six chapters into the first draft, which from my outline could be about a quarter of the way through the story. So it may end up being more like novella length, but I’m also looking for parts that could be fleshed out, or need to be fleshed out more.</p>
-
-<p>The story as a whole is framed as a letter that cuts away to third person narration. So I’m writing each chapter in first person initially, to get the feeling right, and to try to get the letter to flow in and out of the narrative smoothly. And then I’ll go back and find the places to break and switch point of view. It’s a fun challenge! And it’s requiring some research. At some point in its life cycle, it probably needs readers from a couple different backgrounds and/or historical perspectives. I also have a bit of a reading list to check out at some point.</p>
-
-<p>Since I’m switching between these two things, progress is slow and steady. But I think there’s kind of a good balance of buckling down on one thing for a while, but then also getting to switch to something else occasionally. Maybe it’ll take most of the rest of the year to finish both of these drafts I’m in the middle of, but that’s okay by me.</p>
-
-<h3 id="and-then-what">And then what?</h3>
-
-<p>I should also get back into the habit of doing short stories. That probably needs to start by reading more of them. I have an anthology or two on my reading list. I should also perhaps check out some regular magazines that publish this sort of thing, and get electronic copies to read on my phone instead of Twitter. This literally did not occur to me until I was typing it out, but yes this seems like a very good idea.</p>
-
-<p>I’m also starting to feel like recording another album of solo material. But that’s another big project that can expand to fill its container and absorb any free time that it touches. So I’m putting that off until I at least get to the end of one of these drafts. That also gives me time to really think about what I want this next set of songs to sound like.</p>
-
-  </div>
-
-  <h1><a href="/2019/07/01/taiwan-trip.html">Winter Taiwan Biking Trip</a></h1>
-  <p class="author">
-    <span class="date">2019-07-01 00:00:00 -0500</span>
-  </p>
-  <div class="content">
-    <p>In December 2018, my partner and I took a trip to Taiwan, and spent most of the time biking down the east coast. I just want to put together some of my impressions of the trip. Maybe this can be useful to someone planning something similar; I referenced other people’s blogs in preparation. But I want to save how to plan this kind of trip for another time.</p>
-
-<h2 id="the-14-hour-christmas-eve">The 14 Hour Christmas Eve</h2>
-
-<p>Our flight was 14 hours direct from Chicago to Taipei. Not the longest flight in the world, but certainly up there. We lifted off at 12:30 AM on December 24 and landed around 6 AM on December 25. I’m not good at sleeping on planes, so I was worried that, after being awake about 14 hours on December 23, 14 hours on the plane, and (hopefully) another 14 hours on December 25, that would mean about 42 straight hours awake. I was also getting over a cold, and with the help of Sudafed, I missed most of a Chinese-language heist movie.</p>
-
-<h2 id="day-1-train-to-taroko">Day 1: Train to Taroko</h2>
-
-<p>After arriving early on Christmas Day, we spent the morning on two trains: one from the airport to Taipei central station, and one from Taipei to Hualien. The train system wasn’t too hard to figure out, even on little sleep. The second train took us east to the other side of the island, and then south along the coast. It’s a pretty scenic route.</p>
-
-<p>We arrived at the Hualien station around noon, and rented bikes from the Giant store, which was at the corner right outside the station. It was super convenient. After a couple test rides, and drinks from the 7-Eleven, we were ready to go.</p>
-
-<p>Starting out, we managed to stay off the main highway using a combination of tiny side-streets and some larger roads with bike lanes. Then we had to join up with Route 9 for a while. There was plenty of bike lane to safely bike in, but it would still be a little jarring when huge diesel trucks went by. Outside the Kuang Long Museum (which I regret not visiting, now that I know what it is), I noticed the backs of my hands were starting to sunburn, and slathered on some lotion. The first day’s biking, from Hualien to Xincheng, was about 11 miles total, and very flat.</p>
-
-<p>We checked into our first hotel, Starry Inn. It was a nice, modern place. There were some friendly dogs hanging out in front. They didn’t have a bike rack, but they let us park our bikes by the reception desk. From there, we walked a block over to Xincheng station. The bus system getting from there to Taroko National Park was a bit confusing. The bus took us as far as the park visitor center, which is near the entrance.</p>
-
-<p><img src="https://pbs.twimg.com/media/DvQSPmvUUAABaV4.jpg:small" alt="Trail in Taroko National Park" /></p>
-
-<p>From there we hiked a trail that was almost all stairs for about 1 kilometer up a mountain. The way down was mostly switchbacks, ending where we started. It was about dusk, and we caught the last bus back to Xincheng, and got dinner in town, some really cheap, delicious pork noodles.</p>
-
-<p>I was surprised at how jet-lagged I wasn’t, given the absurd timing of the flight, and how little sleep I’d gotten. I think all of the physical activity–the biking and the hiking–probably made a huge difference. After all of that, I was quite ready to get a solid night’s worth of sleep.</p>
-
-<h2 id="day-2-through-hualien">Day 2: Through Hualien</h2>
-
-<p>The Starry Inn buffet breakfast was a mix of local and western items–coffee and hot soymilk for instance. And it was very nice, especially on sitting on the hotel’s top floor, looking out towards the mountains.</p>
-
-<p>We rode down the coast, with only a little bit along Route 9 at the beginning of the day. The Chisingtan Scenic Area was indeed scenic, and the weather was warm and sunny in the morning.</p>
-
-<p><img src="https://pbs.twimg.com/media/DvTpMiNUUAEM9IC.jpg:small" alt="Chisingtan Scenic Area" /></p>
-
-<p>Getting up to the Four-Eight Highland involved walking our bikes up stairs. Otherwise it was a smooth, beautiful ride, all the way down the coast by Hualien. I’d expected to make a detour towards downtown, or at least to a market for lunch. But in the moment, we didn’t really feel like leaving the coastal path, and we weren’t sure how long the weather would hold up.</p>
-
-<p>We did eventually have to stop for lunch. There was a park with horses, deer, and various birds. At an apple stand by the park, we bought a grilled sausage. At that point, I needed a bathroom and a caloric drink and some time sitting still out of the sun, so we stopped at a Starbucks that seemed like a popular Instagram spot because it was made from stacked shipping containers.</p>
-
-<p>We continued on the coastal path until it ended, and then rode next to a major road over a river. I missed the turn I was aiming for. The next road heading the right direction ended up being a worryingly-overgrown dirt track, so it was a relief that it did actually go through. Though there were some dogs that bothered us along the way. In all, I think that leg of the trip was about 27 miles.</p>
-
-<p>In Zhixue, we checked into a hotel called Yueting. The place seemed recently constructed, but in a sort of baroque 1980’s style. The proprietor didn’t seem accustomed to getting English-speaking customers, but he was very kind.</p>
-
-<h2 id="day-3-the-upper-valley">Day 3: The Upper Valley</h2>
-
-<p>For breakfast, we rode to a place in Shoufeng called Shoufeng Breakfast. Sort of Taiwanese diner food. From there, we took a side route up to a cherry blossom trail. But getting up there involved some tough climbing, and when we got there, there wasn’t anywhere to lock up and hike. Maybe that place is only open when the cherry blossoms are actually blossoming.</p>
-
-<p>Then we were back on Route 9 for a while. It was really impressive how there was some kind of bike accommodation the entire way. Sometimes it would be a bike lane right next to traffic, sometimes there would be a marked buffer, sometimes the bike lane would be off away from the road, behind a row of trees. But there was always something. In Fenglin, we had buns and bubble tea for lunch in the city park.</p>
-
-<p>Near Guangfu, we took another scenic route away from the main road, and spent some time birdwatching and feeding fish at Fata’an Wetlands Ecological Park. After that, it was about 4 PM and was getting a bit dark and rainy, so we headed to Sapientia Guest House. It was a good idea to get there by daylight, since it was down a twisty country road, and not easy to spot. I had to stop literally right in front of the gate to check the GPS to be sure. But the guest house doesn’t make dinner–it’s just run by a couple–so we ended up biking back into town after dark in the rain. When we got back from the Vietnamese restaurant, the host treated us to some of his home-roasted coffee, which was a treat. He had clearly invested a lot of time and equipment in getting it just right.</p>
-
-<p>I think after the extra excursion for dinner, this leg of the trip wound up being about 31 miles.</p>
-
-<h2 id="day-4-the-long-day">Day 4: The Long Day</h2>
-
-<p><img src="https://pbs.twimg.com/media/Dvddbl5VYAALL1d.jpg:small" alt="Balcony view" /></p>
-
-<p>It was cool to wake up out in the countryside, with a ton of birds singing just beyond our balcony. And the guest house folks made a great breakfast.</p>
-
-<p>When we started biking, the guest house’s dog joined us, probably for about a mile. Danongdafu Forest Park was beautiful and serene to bike through, and would be a good place to spend more time. From there, it looks like the road cuts straight across from there to Fuyuan, but at least when we were there, a couple blocks were unpaved, and too bumpy and overgrown to bike.</p>
-
-<p>Next to the Fuyuan station, we picked up a bike path going almost all the way to Ruisui. It included a really nice bridge over a river, and a cyclist rest stop. Have I mentioned how much I want infrastructure like this? That whole morning might have been the best biking of the whole trip.</p>
-
-<p><img src="https://pbs.twimg.com/media/DveLxrDUwAIbfRj.jpg:small" alt="Bike bridge" /></p>
-
-<p>I knew there was tough terrain ahead, so we stopped for ramen in Ruisui. We joined up with Route 9, crossed a bridge, and then where the highway turned to go up switchbacks, we took the local road straight up. We ended up walking our bikes most of the way, but right next to the road there were fields of coffee and tea bushes, which was really cool to see and to smell. At the top of the hill, we stopped at a cafe to drink some coffee and tea and to rest. Then it was back down the other side, which was a very fast and exciting ride.</p>
-
-<p>We followed Route 9 all the way to Yuli. There we stopped for a few things. I got biking gloves to keep my hands from sunburning. Sylvie got some tissues, because she was dealing with a cold. And for dinner, we got some large scallion pancakes with egg and hot sauce filling from a street cart. I’d thought Yuli would be a good place to stop for dinner, but I hadn’t counted on Taiwan also having early sunsets in winter.</p>
-
-<p>From the Yuli station, we took a bike path out of town and across the river. It was an unlit path, and the wind made an eerie noise against the bridge. On the other side, there was, as I’d hoped, a way to get from the bike path up to the intersection with Route 30. But it was very dark, so I have no idea if cutting through there was legal or not. It wasn’t a bad climb to the Antong Hot Springs Hotel, and there wasn’t much traffic on the road at night, which was good because there isn’t a designated bike lane along that road.</p>
-
-<p>Soaking in the hot springs was the best, after a long day of biking. Sylvie even tried the in-room hot spring. I think I was trying to read. Rather than bring bulky physical books that wouldn’t handle getting wet, I had loaded some Kindle books onto my phone. But I didn’t end up reading nearly as much as I’d expected to, because with all the physical exertion, I was finding it hard to keep my eyes open past 10 PM.</p>
-
-<h2 id="day-5-up-and-over">Day 5: Up and Over</h2>
-
-<p>Total distance: 21 miles</p>
-
-<p>The next morning was going to be the most challenging climb of the trip, going up 224 meters in only 3 miles. We ended up walking a lot of it, which was unsurprising. And the views were spectacular as we went further up.</p>
-
-<p><img src="https://pbs.twimg.com/media/Dvj5ErRUcAAOPVw.jpg:small" alt="View down to the valley" /></p>
-
-<p>Then we rode through a tunnel. It was about 1.5 miles long, and it was downhill heading eastward, the way we were going. Inside it felt plenty wide to bike safely.</p>
-
-<p>On the other side, we got more breath-taking views, now including the coast, as the road wound towards sea level.</p>
-
-<p><img src="https://pbs.twimg.com/media/DvlUJ_gU0AEAh8V.jpg:small" alt="Sanxiantai" /></p>
-
-<p>We cycled down the coast to Sanxiantai, where we got a hot meal and waited out the worst of the rain. Even so, the wind was threatening to whip my glasses off my face when we went out on the eight-arched bridge to the island. The scenery out there is really stunning, especially climbing up to the lighthouse. It felt like something out of Myst, or possibly an old Bond film.</p>
-
-<p><img src="https://pbs.twimg.com/media/DvlUPsQVAAAbLkM.jpg:small" alt="Lighthouse steps" /></p>
-
-<p>Another bike path brought us most of the way into Chenggong. At that point it was rainy and night time. The hotel, called Jou Lin Ger, wasn’t clearly marked. Fortunately one of the owners was out front with a small dog. Like Yueting, this place didn’t seem like it gets a lot of English-speaking customers, but the folks who run it were very nice. They shared some local fruits. Shoes basically weren’t allowed inside, but there were a lot of loaner vinyl slippers. The place seemed very empty–there was a second floor common area that was left unlit.</p>
-
-<p>That night, Sylvie noticed she had bite marks on her legs. Though we still don’t know what they were from, or when and where she got bitten. We searched the room for bedbugs and took every precaution we could, but didn’t find anything there.</p>
-
-<h2 id="day-6-beach-bumming">Day 6: Beach-bumming</h2>
-
-<p>Total distance: 30 miles?</p>
-
-<p><img src="https://pbs.twimg.com/media/DvqDSyBWoAAzQZH.jpg:small" alt="More biking along the coast" /></p>
-
-<p>For breakfast, we got hot drinks from 7-Eleven and steamed buns across the street. We rode down the coast, getting off the highway where we could, with stops at the Amis Folk Center, and the Donghe Bun Shop for more steamed buns. The bun shop was very popular, but worth it. This whole section of the coast was very nice, but there was also more traffic.</p>
-
-<p>In the afternoon, we went to the Dulan Sugar Factory, and then checked into Pasa Homestay. Our room was actually further inland from the main road than I’d expected. The guy who built and ran the place was really helpful, and drove me into town for cash and snacks. Then we hung out on Shanyuan Beach, where a big resort complex had been abandoned. Dinner was pizza–one takoyaki, one curry.</p>
-
-<p><img src="https://pbs.twimg.com/media/DvqDue8WkAA7a7p.jpg:small" alt="Shanyuan Beach" /></p>
-
-<h2 id="day-7-new-years-eve">Day 7: New Years Eve</h2>
-
-<p>Distance: 12 miles?</p>
-
-<p>The homestay provided buns to heat up in a toaster oven for breakfast. Then we biked into Taitung, got some snacks, and went to turn our bikes in near the train station. What I saw of Taitung wasn’t all that impressive. The biking was a bit more hazardous than elsewhere, with parked cars narrowing the bike lane. After turning in the bikes, we took a six hour train back to Taipei. The train went back up the coast, so in about two hours, we rewinded a full week of biking. It was also cool to get another look at all the towns we had passed through.</p>
-
-<p>In Taipei, we checked into a hotel next to the train station. Options were scarce because it was New Years Eve, and the Cosmos Hotel is sort of luxurious in an outdated way. The room had an elaborate control panel for all the lighting options. After dinner, we basically passed out, and didn’t make it to midnight, completely missing the fireworks.</p>
-
-<h2 id="day-8-taipei">Day 8: Taipei</h2>
-
-<p><img src="https://pbs.twimg.com/media/DvzY8gzU8AAFYbh.jpg:small" alt="Taipei" /></p>
-
-<p>After an elaborate breakfast, we walked to Da’an Park. It had recently rained, and even in the downtown area, Taipei seemed fresh and verdant. Trees along the streets wore little identification tags with QR codes. We met up with my college friend Stella, who had the day off for New Years. While we waited for a table at Din Tai Fung, we walked around the neighborhood behind it, and tried scallion pancakes, soypresso, and more. After a feast of dim sum, we walked back to the train station, and it was pretty much time to catch a train to the airport.</p>
-
-  </div>
-
 
 
 <div class="pagination">
   
     <span>&laquo; Prev</span>
   
-
+  &nbsp;
   
     
       <em>1</em>
     
+    &nbsp;
   
     
       <a href="/page2">2</a>
     
+    &nbsp;
   
-
+  
   
     <a href="/page2">Next &raquo;</a>
   
 </div>
-
 
 
 			</main>
