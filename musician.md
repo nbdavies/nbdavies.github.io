@@ -15,6 +15,8 @@ active_nav: Musician
 
 <iframe style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=3034033141/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://spiralisland.bandcamp.com/album/spiral-island">Spiral Island by Spiral Island</a></iframe>
 
+<iframe style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=882573698/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://spiralisland.bandcamp.com/album/impact-scripture">Impact Scripture by Spiral Island</a></iframe>
+
 ### TL;DR
 
 <iframe style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=2112219870/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://tldr.bandcamp.com/album/no-time-for-sleep">no time for sleep by TL;DR</a></iframe>
