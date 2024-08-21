@@ -1,4 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-04-24T20:34:49-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">General updates</title><link href="http://localhost:4000/2024/04/24/general-update.html" rel="alternate" type="text/html" title="General updates" /><published>2024-04-24T00:00:00-05:00</published><updated>2024-04-24T00:00:00-05:00</updated><id>http://localhost:4000/2024/04/24/general-update</id><content type="html" xml:base="http://localhost:4000/2024/04/24/general-update.html">&lt;p&gt;It’s been a while since I posted a general update, so here goes.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-08-20T23:34:40-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Making of Evacuation’s Out: Vocals</title><link href="http://localhost:4000/2024/08/20/making-of-vocals.html" rel="alternate" type="text/html" title="Making of Evacuation’s Out: Vocals" /><published>2024-08-20T00:00:00-05:00</published><updated>2024-08-20T00:00:00-05:00</updated><id>http://localhost:4000/2024/08/20/making-of-vocals</id><content type="html" xml:base="http://localhost:4000/2024/08/20/making-of-vocals.html">&lt;p&gt;On August 9, I released my third album as Spiral Island, &lt;a href=&quot;spiralisland.bandcamp.com&quot;&gt;Evacuation’s Out&lt;/a&gt;. In my next few blog posts, I’ll share some of what went into this album, starting with vocals.&lt;/p&gt;
+
+&lt;h1 id=&quot;recording&quot;&gt;Recording&lt;/h1&gt;
+
+&lt;p&gt;All of the songs on this album originally came out of &lt;a href=&quot;fawm.org&quot;&gt;February Album Writing Month&lt;/a&gt;, and I had rough demos to iterate on. But the demo vocals generally weren’t worth keeping, because when I recorded those demos, I was finding the melody in real-time, and singing quietly because it was 11pm by the time I wrote lyrics. As a result, 99% of the vocals got re-recorded, and parts got added over time.&lt;/p&gt;
+
+&lt;p&gt;(There was one vocal track I didn’t redo, the “echo” vocal on &lt;em&gt;In de Woestijn&lt;/em&gt;. I liked it better unpolished, and as a subtle Easter egg that it’s not actually a delay of the lead vocal.)&lt;/p&gt;
+
+&lt;h1 id=&quot;acoustics-i-refuse&quot;&gt;Acoustics: I refuse&lt;/h1&gt;
+
+&lt;p&gt;My home studio is in the corner of a rectangular room that’s about 10’ x 15’. Aside from my junk, there’s not much to absorb reflections. I don’t have a great ear for acoustics, but I know that the acoustics in the room are garbage. Besides that, there’s a window facing the street and a vent for the radiator and AC.&lt;/p&gt;
+
+&lt;p&gt;The acoustics are something that I don’t feel qualified to fix or even judge, really, so I’ve tried to just avoid them altogether. The sound of an acoustically pleasing space is something I can always add later, in the mix.&lt;/p&gt;
+
+&lt;p&gt;I use a Shure SM7B, for that sweet NPR tone and its focused cardioid pattern. It’s mounted on a standing desk, so that I can sing standing up and have my laptop at that level to punch in / punch out.&lt;/p&gt;
+
+&lt;p&gt;For lead vocals, I get pretty close to the mic, and for backing vocals, especially when I need to hit high notes, I’ll back up a couple feet and project more. The mic has a proximity effect that picks up more low-end when you sing close, so I typically EQ out any frequencies below the fundamental note of what I’m singing (200-400hz).&lt;/p&gt;
+
+&lt;p&gt;In addition to EQ, I’ll typically use a de-esser, compression to tame the dynamics, and auto-tune. At the end, the vocal will be routed to reverb and/or delay buses. But I’ll get into that more later, in my post about mixing the album.&lt;/p&gt;
+
+&lt;h1 id=&quot;auto-tune&quot;&gt;Auto-tune&lt;/h1&gt;
+
+&lt;p&gt;Recording my Spiral Island albums has been an opportunity to try out new studio tricks and technologies. On my previous album, I did things like use pitch shift to reach melodies I couldn’t sing otherwise. I used a sample-based vocal synth to fill the role of a gospel choir, and a Yamaha vocaloid to reach notes too low for me.&lt;/p&gt;
+
+&lt;p&gt;The vocals on that album were all tuned as well, using Reaper’s factory default ReaTune, but without a lot of hand-editing. Listening back to it nowadays, I don’t think I quite achieved the slick pop sound I was going for, and this is one reason why.&lt;/p&gt;
+
+&lt;p&gt;Starting on this album, I wanted to make songs that were energetic and digital, and to have vocals matching that vibe. So I did a shoot-out of all the auto-tune options I could find at the time:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Melodyne&lt;/li&gt;
+  &lt;li&gt;Nectar&lt;/li&gt;
+  &lt;li&gt;Waves Tune Real-time&lt;/li&gt;
+  &lt;li&gt;ReaTune&lt;/li&gt;
+  &lt;li&gt;bx_crispytuner&lt;/li&gt;
+  &lt;li&gt;Voloco&lt;/li&gt;
+  &lt;li&gt;Little AlterBoy&lt;/li&gt;
+  &lt;li&gt;Antares Auto-Tune Pro&lt;/li&gt;
+  &lt;li&gt;RePitch&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I could write another blog post on my impressions of all these, but for this album I settled on bx_crispytuner.&lt;/p&gt;
+
+&lt;p&gt;This was one of the more artificial-sounding plugins I tried, which I was more comfortable with on this album: the goal was to make catchy songs, not necessarily to fool anybody about my singing abilities.&lt;/p&gt;
+
+&lt;p&gt;It also does something to the vocal timbre, which I actually like on my vocals. And it does a pretty good job of figuring out what note you’re aiming for, which reduces the work of hand-editing it the rest of the way there.&lt;/p&gt;
+
+&lt;h1 id=&quot;how-i-used-auto-tune&quot;&gt;How I used auto-tune&lt;/h1&gt;
+
+&lt;p&gt;With a home recording project like this, I just kept doing takes until I had what I wanted, as close to the target notes as I can get. So generally all the notes you hear, I sang as best I could.&lt;/p&gt;
+
+&lt;p&gt;Even the low parts on &lt;em&gt;Cinemascope&lt;/em&gt;–I sung those notes and then shifted the formant to make it sound like it was pitched down, but it’s not. (The rap verse on &lt;em&gt;Wij Bevonden Ons&lt;/em&gt; uses a similar effect.)&lt;/p&gt;
+
+&lt;p&gt;One exception would be the harmony on &lt;em&gt;Perfect Imagining&lt;/em&gt;, which is a pitched-up copy of the lead vocal. Harmonies made this way often get lost in the mix, and end up sounding like overtones/undertones of the lead vocal, but in this song’s arrangement, I needed the timing to be an exact match.&lt;/p&gt;
+
+&lt;h1 id=&quot;other-vocalish-stuff&quot;&gt;Other vocalish stuff&lt;/h1&gt;
+
+&lt;p&gt;The gang vocals on &lt;em&gt;I’m Gonna Sleep&lt;/em&gt; were just multiple tracks of me doing grunty voices.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Wij Bevonden Ons&lt;/em&gt; also includes a bit of Chipspeech. While I used a vocal synth for a gospel choir on the last album, I think these days, with the proliferation of deceptive AI-based tools, I’d maybe rather inlist actual backing singers, or use a more obvious fake, like Yamaha Vocaloid or Chipspeech.&lt;/p&gt;</content><author><name></name></author><summary type="html">On August 9, I released my third album as Spiral Island, Evacuation’s Out. In my next few blog posts, I’ll share some of what went into this album, starting with vocals.</summary></entry><entry><title type="html">General updates</title><link href="http://localhost:4000/2024/04/24/general-update.html" rel="alternate" type="text/html" title="General updates" /><published>2024-04-24T00:00:00-05:00</published><updated>2024-04-24T00:00:00-05:00</updated><id>http://localhost:4000/2024/04/24/general-update</id><content type="html" xml:base="http://localhost:4000/2024/04/24/general-update.html">&lt;p&gt;It’s been a while since I posted a general update, so here goes.&lt;/p&gt;
 
 &lt;h2 id=&quot;music&quot;&gt;Music&lt;/h2&gt;
 
