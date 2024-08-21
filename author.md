@@ -9,6 +9,7 @@ There are thousands of Nick Davies's in the world, but this pen name is me.
 ## Publications
 
 * "Crop Circles in the Carpet" in [Fusion Fragment](https://www.fusionfragment.com/) issue 21, May 2024
+* "La Cumparsita" in [The Colored Lens](https://thecoloredlens.com/) Summer 2024 issue.
 
 ## Awards
 
